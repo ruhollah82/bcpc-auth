@@ -9,6 +9,8 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { useAuthStore } from "./store/auth.store";
+import React from "react";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -42,6 +44,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
+  const hydrate = useAuthStore((s) => s.hydrate);
+
+  React.useEffect(() => {
+    hydrate(); // تنها سمت کلاینت اجرا می‌شود
+  }, [hydrate]);
+
   return <Outlet />;
 }
 
