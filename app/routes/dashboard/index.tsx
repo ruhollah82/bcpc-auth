@@ -9,7 +9,7 @@ export default function Dashboard() {
 
   React.useEffect(() => {
     if (!isAuthenticated) {
-      navigate(`/auth/login?redirectTo=/dashboard`, { replace: true });
+      navigate(`/login`, { replace: true });
     }
   }, [isAuthenticated, navigate]);
 
