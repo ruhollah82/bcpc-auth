@@ -1,6 +1,6 @@
-import type { Route } from "../../+types/root";
 import { useNavigate, useSearchParams } from "react-router";
 import { useAuthStore } from "../../store/auth.store";
+import { LoginForm } from "../../components/forms/LoginForm";
 
 export default function Login() {
   const login = useAuthStore((s) => s.login);
@@ -9,22 +9,18 @@ export default function Login() {
 
   const redirectTo = params.get("redirectTo") ?? "/dashboard";
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    // مثال فقط
-    login({ id: "1", username: "team-leader" }, "TOKEN_123");
-
-    navigate(redirectTo, { replace: true });
+  const handleSubmit = (username: string, password: string) => {
+    // simple validation
+    if (username && password) {
+      login({ id: "1", username }, "TOKEN_123");
+      navigate(redirectTo, { replace: true });
+    }
   };
 
   return (
     <main className="p-4">
-      <h1>Login</h1>
-
-      <form onSubmit={handleSubmit}>
-        <button type="submit">Click to Login</button>
-      </form>
+      <h1 className="text-2xl font-bold">Login</h1>
+      <LoginForm onSubmit={handleSubmit} />
     </main>
   );
 }

@@ -1,21 +1,21 @@
-import type { Route } from "../../+types/root";
-import { redirect } from "react-router";
+import { useNavigate } from "react-router";
 import { useAuthStore } from "../../store/auth.store";
-
-export const loader: Route.LoaderFunction = async () => {
-  // ❗ loader روی سرور اجرا می‌شود و به localStorage دسترسی ندارد
-  // فقط باید token را از cookie backend بگیری (برای مثال ساده، از Zustand سمت کلاینت چک می‌کنیم)
-  const { isAuthenticated } = useAuthStore.getState();
-
-  if (!isAuthenticated) {
-    return redirect(`/login?redirectTo=/dashboard`);
-  }
-
-  return null;
-};
+import React from "react";
 
 export default function Dashboard() {
   const user = useAuthStore((s) => s.user);
+  const isAuthenticated = useAuthStore((s) => s.isAuthenticated);
+  const navigate = useNavigate();
+
+  React.useEffect(() => {
+    if (!isAuthenticated) {
+      navigate(`/auth/login?redirectTo=/dashboard`, { replace: true });
+    }
+  }, [isAuthenticated, navigate]);
+
+  if (!isAuthenticated) {
+    return null; // Or a loading spinner
+  }
 
   return (
     <main className="p-4">
