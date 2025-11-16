@@ -1,6 +1,6 @@
 import { useNavigate, useSearchParams } from "react-router";
-import { useAuthStore } from "../../store/auth.store";
-import { LoginForm } from "../../components/forms/LoginForm";
+import { useAuthStore } from "../../../store/auth.store";
+import { LoginForm } from "../../../components/forms/LoginForm";
 
 export default function Login() {
   const login = useAuthStore((s) => s.login);

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import { useState } from "react";
-import { useAuthStore } from "../../store/auth.store";
+import { useAuthStore } from "../../../store/auth.store";
 
 export default function Register() {
   const register = useAuthStore((s) => s.register);
