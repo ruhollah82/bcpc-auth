@@ -3,16 +3,16 @@ const radiusBase = 16;
 export const baseTokens = {
   token: {
     // Primary Colors (Pink)
-    primary1: "#fce4ec",
-    primary2: "#f8bbd0",
-    primary3: "#f48fb1",
-    primary4: "#f06292",
-    primary5: "#ec407a",
-    primary6: "#e91e63",
-    primary7: "#d81b60",
-    primary8: "#c2185b",
-    primary9: "#ad1457",
-    primary10: "#880e4f",
+    primary1: "#fff3e1",
+    primary2: "#ffe0b2",
+    primary3: "#ffcc80",
+    primary4: "#ffb74d",
+    primary5: "#ffa726",
+    primary6: "#ff8000",
+    primary7: "#f57c00",
+    primary8: "#ef6c00",
+    primary9: "#e65100",
+    primary10: "#ff5722",
 
     // Secondary Colors (Purple)
     secondary1: "#f3e5f5",
