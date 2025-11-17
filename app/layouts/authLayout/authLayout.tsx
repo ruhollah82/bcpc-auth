@@ -15,7 +15,6 @@ const AuthLayout = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "2rem",
       }}
     >
       <div
