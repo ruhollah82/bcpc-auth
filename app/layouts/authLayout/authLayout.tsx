@@ -26,7 +26,6 @@ const AuthLayout = () => {
           overflow: "hidden",
         }}
       >
-        {/* LeftSide (Image Section) */}
         {screens.md && (
           <div
             style={{
@@ -40,7 +39,6 @@ const AuthLayout = () => {
             <LeftSide />
           </div>
         )}
-        {/* RightSide (Form Section) */}
         <div
           style={{
             flex: 5,

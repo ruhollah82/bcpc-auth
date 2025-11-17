@@ -12,6 +12,8 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import { useAuthStore } from "./store/auth.store";
 import React from "react";
+import { ThemeProvider } from "./theme/ThemeProvider";
+import { App as AntdApp, Spin } from "antd";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -57,7 +59,15 @@ export default function App() {
     hydrate(); // تنها سمت کلاینت اجرا می‌شود
   }, [hydrate]);
 
-  return <Outlet />;
+  return (
+    <>
+      <ThemeProvider>
+        <AntdApp>
+          <Outlet />
+        </AntdApp>
+      </ThemeProvider>
+    </>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
