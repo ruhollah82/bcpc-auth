@@ -1,6 +1,5 @@
 // components/forms/RegisterForm.tsx
 import { useState } from "react";
-import type { FormEvent } from "react";
 import { Form, Button, Alert } from "antd";
 import { Icon } from "@iconify/react";
 import { UserAccountForm } from "./UserAccountForm";
