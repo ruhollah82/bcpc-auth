@@ -9,7 +9,7 @@ export default function Dashboard() {
 
   React.useEffect(() => {
     if (!isAuthenticated) {
-      navigate(`/login`, { replace: true });
+      navigate(`/register`, { replace: true });
     }
   }, [isAuthenticated, navigate]);
 
