@@ -12,7 +12,8 @@ import {
   Modal,
   Form,
   Input,
-  Select,
+  Select, 
+  Image,
 } from "antd";
 import { motion, AnimatePresence } from "framer-motion";
 import { Icon } from "@iconify/react";
@@ -315,15 +316,17 @@ export default function Register() {
   };
 
   return (
-    <div style={{ padding: "24px", maxWidth: "800px", margin: "0 auto" }}>
+    <div style={{ padding: "24px", maxWidth: "800px", margin: "0 auto" , height:"90vh"}}>
       <Card>
         <div style={{ textAlign: "center", marginBottom: "24px" }}>
           <Space direction="vertical" size="small">
-            <Icon
-              icon="mdi:account-multiple-plus"
-              width="48"
-              height="48"
-              style={{ color: "#1890ff" }}
+            <Image
+              src="/favicon.svg"
+              preview={false}
+              style={{
+                padding:"10px",
+                alignItems:"center"
+              }} 
             />
             <Title level={2}>ثبت نام و ایجاد تیم</Title>
             <Paragraph type="secondary">
