@@ -36,6 +36,7 @@ export const UserInfoStep: React.FC<StepComponentProps> = ({
           size="large"
           placeholder="رمز عبور"
           prefix={<Icon icon="mdi:lock" />}
+          className="ltr-input"
         />
       </Form.Item>
 
@@ -51,6 +52,7 @@ export const UserInfoStep: React.FC<StepComponentProps> = ({
           size="large"
           placeholder="ایمیل"
           prefix={<Icon icon="mdi:email" />}
+          className="ltr-input"
         />
       </Form.Item>
     </Space>

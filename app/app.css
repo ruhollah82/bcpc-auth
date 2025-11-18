@@ -11,3 +11,13 @@ body {
     color-scheme: light;
   }
 }
+
+.ltr-input input {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+.ltr-input input::placeholder {
+  direction: rtl !important;
+  text-align: right !important;
+}
