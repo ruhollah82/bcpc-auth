@@ -10,9 +10,17 @@ const LeftSide = () => {
 
   return (
     <Image
-      src="/imgleftdesktop.png"   
+     
       preview={false}    
-      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+      style={{             
+        minWidth: "100vh",            
+        minHeight: "100vh",           
+        objectFit: "cover",
+        backgroundImage: "url('/imgleftdesktop.png')",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover"
+         }}
     />
     );
   };
