@@ -27,35 +27,21 @@ export const TeamInfoStep: React.FC<StepComponentProps> = ({
       </Form.Item>
 
       <Form.Item
-        label="توضیحات"
-        name="descriptions"
+        label="شعار تیم"
+        name="descriptionsteam"
         rules={[
-          { max: 500, message: "توضیحات نمی‌تواند بیشتر از ۵۰۰ کاراکتر باشد" },
+          { max: 100, message: "توضیحات نمی‌تواند بیشتر از 100 کاراکتر باشد" },
         ]}
       >
         <Input.TextArea
-          rows={3}
-          placeholder="توضیحات درباره تیم"
+          rows={2}
+          placeholder="شعار تیم"
           showCount
-          maxLength={500}
+          maxLength={100}
         />
       </Form.Item>
 
-      <Form.Item
-        label="سازمان"
-        name="organization_id"
-        rules={[{ required: true, message: "لطفا سازمان را انتخاب کنید" }]}
-      >
-        <Select
-          size="large"
-          placeholder="انتخاب سازمان"
-          suffixIcon={<Icon icon="mdi:chevron-down" />}
-        >
-          <Option value="org1">سازمان ۱</Option>
-          <Option value="org2">سازمان ۲</Option>
-          <Option value="org3">سازمان ۳</Option>
-        </Select>
-      </Form.Item>
+     
     </Space>
   );
 };
