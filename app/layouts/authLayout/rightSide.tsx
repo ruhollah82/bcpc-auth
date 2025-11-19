@@ -22,6 +22,7 @@ const RightSide = () => {
         overflowY: "scroll",
       }}
     >
+      
       <Outlet />
     </Flex>
   );

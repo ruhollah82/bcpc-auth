@@ -11,6 +11,10 @@ body {
     color-scheme: light;
   }
 }
+* {
+  scrollbar-color: #f56e15 #ffffff8e;
+  scrollbar-width: 10px;
+  
 
 .ltr-input input {
   direction: ltr !important;
