@@ -7,19 +7,12 @@ import { ContactInfoStep } from "./steps/ContactInfoStep";
 export const useWizardSteps = () => {
   const steps: WizardStep[] = [
     {
-      title: "اطلاعات کاربر",
-      component: UserInfoStep,
-      fields: ["username", "password", "email"],
-    },
-    {
-      title: "اطلاعات تیم",
+      title: "ایجاد تیم",
       component: TeamInfoStep,
-      fields: ["teamname", "organization_id"],
     },
     {
-      title: "اطلاعات تماس",
-      component: ContactInfoStep,
-      fields: ["phoneNumber"],
+      title: "افزودن اعضا",
+      component: UserInfoStep,
     },
   ];
 
