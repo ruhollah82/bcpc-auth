@@ -66,11 +66,11 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
         />
       )}
 
-      <Steps
+      {/* <Steps
         current={currentStep}
         items={steps.map((step) => ({ title: step.title }))}
         style={{ marginBottom: "32px" }}
-      />
+      /> */}
 
       <Form
         form={form}
@@ -80,9 +80,11 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
       >
         <div
           style={{
-            minHeight: "300px",
+            height: "380px", // ارتفاع ثابت
+            overflowY: "auto", // اسکرول عمودی
+            overflowX: "hidden",
             position: "relative",
-            overflow: "hidden",
+            paddingRight: "8px",
           }}
         >
           <AnimatePresence mode="wait" custom={direction}>

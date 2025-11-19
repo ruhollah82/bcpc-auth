@@ -15,8 +15,8 @@ const AuthLayout = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor:"#e7dedeff",
-        padding: window.innerWidth < 768 ? "0px" : "5% 10%"
+        backgroundColor: "#e7dedeff",
+        padding: window.innerWidth < 768 ? "0px" : "5% 10%",
       }}
     >
       <div
@@ -25,11 +25,11 @@ const AuthLayout = () => {
           width: "100%",
           height: "100%",
           overflow: "hidden",
-          backgroundColor:"#ffffffff",
-           boxShadow: "0 4px 15px rgba(0, 0, 0, 0.23)",
-          aspectRatio:"1/1",
-          objectFit:"cover",
-          borderRadius: window.innerWidth<768 ? "0px" : "50px"
+          backgroundColor: "#ffffffff",
+          boxShadow: "0 4px 15px rgba(0, 0, 0, 0.23)",
+          aspectRatio: "1/1",
+          objectFit: "cover",
+          borderRadius: window.innerWidth < 768 ? "0px" : "50px",
         }}
       >
         {screens.md && (
@@ -40,7 +40,7 @@ const AuthLayout = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              overflow:"hidden"
+              overflow: "hidden",
             }}
           >
             <LeftSide />
