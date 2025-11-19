@@ -21,8 +21,8 @@ export const UserInfoStep = () => {
 
   return (
     <Space direction="vertical" size="middle" style={{ width: "100%" }}>
-      <Card title="اطلاعات سرگروه" bordered={false}>
-        <Form.Item label="نام و نام خانوادگی سرگروه" required>
+      <Card title="عضو اول گروه" bordered={false}>
+        <Form.Item label="نام و نام خانوادگی" required>
           <Input
             size="large"
             value={leaderName}
@@ -87,9 +87,6 @@ export const UserInfoStep = () => {
         </Card>
       ))}
 
-      {/* ------------------------------------------------- */}
-      {/*                 انتخاب دانشگاه */}
-      {/* ------------------------------------------------- */}
       <Form.Item label="دانشگاه" required>
         <Select
           size="large"
