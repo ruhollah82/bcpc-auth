@@ -8,6 +8,7 @@ interface Team {
   leaderEmail: string;
   leaderPhone: string;
   members: string[];
+  descriptionsteam?: string; // ⭐ اضافه شد
 }
 
 interface TeamState {
@@ -21,6 +22,10 @@ interface TeamState {
   university: string;
   members: string[];
 
+  // ⭐ فیلدهای جدید از فرم TeamInfoStep
+  teamname: string;
+  descriptionsteam: string;
+
   // --- اکشن‌ها ---
   setLeader: (data: { name?: string; email?: string; phone?: string }) => void;
 
@@ -29,6 +34,10 @@ interface TeamState {
   addMember: () => void;
   updateMember: (index: number, name: string) => void;
   removeMember: (index: number) => void;
+
+  // ⭐ اکشن‌های جدید
+  setTeamName: (name: string) => void;
+  setTeamDescription: (desc: string) => void;
 
   resetTeamForm: () => void;
 
@@ -50,6 +59,10 @@ export const useTeamStore = create<TeamState>((set) => ({
   university: "",
   members: [],
 
+  // ⭐ فیلدهای جدید فرم TeamInfoStep
+  teamname: "",
+  descriptionsteam: "",
+
   // اکشن‌های فرم
   setLeader: ({ name, email, phone }) =>
     set((state) => ({
@@ -62,7 +75,7 @@ export const useTeamStore = create<TeamState>((set) => ({
 
   addMember: () =>
     set((state) => {
-      if (state.members.length >= 2) return state; // حداکثر ۲ عضو
+      if (state.members.length >= 2) return state;
       return { members: [...state.members, ""] };
     }),
 
@@ -80,6 +93,12 @@ export const useTeamStore = create<TeamState>((set) => ({
       return { members: updated };
     }),
 
+  // ⭐ اکشن جدید: نام تیم
+  setTeamName: (name) => set({ teamname: name }),
+
+  // ⭐ اکشن جدید: شعار تیم
+  setTeamDescription: (desc) => set({ descriptionsteam: desc }),
+
   resetTeamForm: () =>
     set({
       leaderName: "",
@@ -87,6 +106,8 @@ export const useTeamStore = create<TeamState>((set) => ({
       leaderPhone: "",
       university: "",
       members: [],
+      teamname: "",
+      descriptionsteam: "",
     }),
 
   // مدیریت تیم‌ها

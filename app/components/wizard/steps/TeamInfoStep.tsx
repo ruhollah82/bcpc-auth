@@ -1,14 +1,14 @@
-// components/wizard/steps/TeamInfoStep.tsx
-import { Form, Input, Select, Space } from "antd";
+import { Form, Input, Space } from "antd";
 import { Icon } from "@iconify/react";
+import { useTeamStore } from "../../../store/team.store";
 import type { StepComponentProps } from "../../../types/registration.types";
-
-const { Option } = Select;
 
 export const TeamInfoStep: React.FC<StepComponentProps> = ({
   formData,
   onDataChange,
 }) => {
+  const { setTeamName, setTeamDescription } = useTeamStore();
+
   return (
     <Space direction="vertical" size="middle" style={{ width: "100%" }}>
       <Form.Item
@@ -23,6 +23,7 @@ export const TeamInfoStep: React.FC<StepComponentProps> = ({
           size="large"
           placeholder="نام تیم"
           prefix={<Icon icon="mdi:account-group" />}
+          onChange={(e) => setTeamName(e.target.value)}
         />
       </Form.Item>
 
@@ -38,10 +39,9 @@ export const TeamInfoStep: React.FC<StepComponentProps> = ({
           placeholder="شعار تیم"
           showCount
           maxLength={100}
+          onChange={(e) => setTeamDescription(e.target.value)}
         />
       </Form.Item>
-
-     
     </Space>
   );
 };
