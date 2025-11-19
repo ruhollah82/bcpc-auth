@@ -16,7 +16,7 @@ const AuthLayout = () => {
         justifyContent: "center",
         alignItems: "center",
         backgroundColor:"#e7dedeff",
-        padding:"4em 20em",
+        padding: window.innerWidth < 768 ? "0px" : "5% 10%"
       }}
     >
       <div
@@ -29,7 +29,7 @@ const AuthLayout = () => {
            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.23)",
           aspectRatio:"1/1",
           objectFit:"cover",
-          borderRadius:"50px"
+          borderRadius: window.innerWidth<768 ? "0px" : "50px"
         }}
       >
         {screens.md && (
