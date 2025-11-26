@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:3001/api/v1",
+  baseURL: "https://api.bircpc.ir/api/v1",
   timeout: 8000,
 });
 
