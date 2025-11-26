@@ -58,15 +58,6 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
   };
 
   const handleSubmit = async () => {
-    openModal({
-      type: "success",
-      title: "ثبت نام موفق",
-      message: "تیم شما با موفقیت ثبت شد.",
-      onConfirm: () => {
-        // مثلا navigate به داشبورد
-        console.log("/dashboard");
-      },
-    });
     try {
       setLoading(true);
 
