@@ -1,11 +1,13 @@
 // components/wizard/RegistrationWizard.tsx
-import { Steps, Button, Form, Alert } from "antd";
+import { Form, Alert } from "antd";
 import { motion, AnimatePresence } from "framer-motion";
 import { Icon } from "@iconify/react";
 import { WizardStepComponent } from "./WizardStepComponent";
 import { WizardNavigation } from "./WizardNavigation";
 import { useWizardSteps } from "./useWizardSteps";
 import type { FormData } from "../../types/registration.types";
+import { useTeamStore } from "../../store/team.store";
+import { useUIStore } from "../../store/ui.store";
 
 interface RegistrationWizardProps {
   currentStep: number;
@@ -47,9 +49,57 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
 }) => {
   const { steps } = useWizardSteps();
   const [form] = Form.useForm();
+  const submitTeam = useTeamStore((state) => state.submitTeam);
+  const resetTeamForm = useTeamStore((state) => state.resetTeamForm);
+  const { setLoading, openModal } = useUIStore();
 
   const handleFormValuesChange = (changedValues: any) => {
     onFormDataChange(changedValues);
+  };
+
+  const handleSubmit = async () => {
+    openModal({
+      type: "success",
+      title: "ثبت نام موفق",
+      message: "تیم شما با موفقیت ثبت شد.",
+      onConfirm: () => {
+        // مثلا navigate به داشبورد
+        console.log("/dashboard");
+      },
+    });
+    try {
+      setLoading(true);
+
+      // validate فرم قبل submit
+      await form.validateFields();
+
+      const response = await submitTeam();
+      console.log("API RESPONSE:", response);
+
+      openModal({
+        type: "success",
+        title: "ثبت نام موفق",
+        message: "تیم شما با موفقیت ثبت شد.",
+        onConfirm: () => {
+          // مثلا navigate به داشبورد
+          // navigate("/dashboard");
+        },
+      });
+      resetTeamForm(); // ریست فرم بعد از موفقیت
+    } catch (err: any) {
+      console.error("Submit failed:", err);
+      openModal({
+        type: "error",
+        title: "ریدی",
+        message: "ریدم تو فرانت",
+        onConfirm: () => {
+          // مثلا navigate به داشبورد
+          // navigate("/dashboard");
+        },
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -116,7 +166,7 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
           isSubmitting={isSubmitting}
           onBack={onBack}
           onNext={onNext}
-          onSubmit={onSubmit}
+          onSubmit={handleSubmit}
           form={form}
           stepFields={steps[currentStep].fields}
         />

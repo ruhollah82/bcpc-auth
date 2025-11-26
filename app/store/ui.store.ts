@@ -2,10 +2,15 @@ import { create } from "zustand";
 
 interface UIState {
   loading: boolean;
-  modal: string | null;
+  modal: {
+    type: "success" | "error" | "info";
+    title: string;
+    message: string;
+    onConfirm?: () => void;
+  } | null;
 
   setLoading: (value: boolean) => void;
-  openModal: (name: string) => void;
+  openModal: (modal: UIState["modal"]) => void;
   closeModal: () => void;
 }
 
@@ -14,6 +19,6 @@ export const useUIStore = create<UIState>((set) => ({
   modal: null,
 
   setLoading: (value) => set({ loading: value }),
-  openModal: (name) => set({ modal: name }),
+  openModal: (modal) => set({ modal }),
   closeModal: () => set({ modal: null }),
 }));

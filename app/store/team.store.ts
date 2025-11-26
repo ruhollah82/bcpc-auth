@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import { TeamService } from "../services/teamService"; // فرض بر اینه که سرویس API داری
 
 interface Team {
   id: string;
@@ -24,7 +25,6 @@ interface TeamState {
   descriptionsteam: string;
 
   setLeader: (data: { name?: string; email?: string; phone?: string }) => void;
-
   setUniversity: (uni: string) => void;
 
   addMember: () => void;
@@ -39,9 +39,11 @@ interface TeamState {
   setTeams: (teams: Team[]) => void;
   addTeam: (team: Team) => void;
   selectTeam: (teamId: string) => void;
+
+  submitTeam: () => Promise<Team>; // ✅ async و response رو برمی‌گردونه
 }
 
-export const useTeamStore = create<TeamState>((set) => ({
+export const useTeamStore = create<TeamState>((set, get) => ({
   teams: [],
   selectedTeam: null,
   leaderName: "",
@@ -58,6 +60,7 @@ export const useTeamStore = create<TeamState>((set) => ({
       leaderEmail: email ?? state.leaderEmail,
       leaderPhone: phone ?? state.leaderPhone,
     })),
+
   setUniversity: (uni) => set({ university: uni }),
   addMember: () =>
     set((state) => {
@@ -90,16 +93,33 @@ export const useTeamStore = create<TeamState>((set) => ({
       descriptionsteam: "",
     }),
 
-  // مدیریت تیم‌ها
   setTeams: (teams) => set({ teams }),
-
-  addTeam: (team) =>
-    set((state) => ({
-      teams: [...state.teams, team],
-    })),
-
+  addTeam: (team) => set((state) => ({ teams: [...state.teams, team] })),
   selectTeam: (teamId) =>
     set((state) => ({
       selectedTeam: state.teams.find((t) => t.id === teamId) || null,
     })),
+
+  submitTeam: async () => {
+    try {
+      const state = get();
+      const payload = {
+        teamname: state.teamname,
+        descriptions: state.descriptionsteam,
+        organization_id: state.university,
+        email: state.leaderEmail,
+        phoneNumber: state.leaderPhone,
+        users: [state.leaderName, ...state.members],
+      };
+
+      const created = await TeamService.createTeam(payload);
+
+      set((state) => ({ teams: [...state.teams, created] }));
+
+      return created; // ✅ برمی‌گردونیم response
+    } catch (err) {
+      console.error("SubmitTeam error:", err);
+      throw err; // مهم برای catch در کامپوننت
+    }
+  },
 }));

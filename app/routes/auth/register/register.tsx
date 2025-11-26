@@ -12,10 +12,9 @@ import {
   Select,
   Image,
 } from "antd";
-import { motion, AnimatePresence } from "framer-motion";
-import { Icon } from "@iconify/react";
+
 import { RegistrationWizard } from "../../../components/wizard/RegistrationWizard";
-import { RegistrationModal } from "../../../components/wizard/RegistrationModal";
+import { AppModal } from "../../../components/wizard/RegistrationModal";
 import { useRegistration } from "../../../hooks/useRegistration";
 
 export default function Register() {
@@ -29,12 +28,9 @@ export default function Register() {
     direction,
     isSubmitting,
     error,
-    modalVisible,
-    modalStatus,
     handleNext,
     handleBack,
     handleSubmit,
-    handleModalClose,
     updateFormData,
   } = useRegistration(redirectTo, navigate);
 
@@ -73,13 +69,7 @@ export default function Register() {
         />
       </div>
 
-      <RegistrationModal
-        visible={modalVisible}
-        status={modalStatus}
-        error={error}
-        onClose={handleModalClose}
-        redirectTo={redirectTo}
-      />
+      <AppModal />
     </div>
   );
 }

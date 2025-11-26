@@ -1,69 +1,81 @@
-// components/wizard/RegistrationModal.tsx
 import { Modal, Button, Typography } from "antd";
 import { Icon } from "@iconify/react";
+import { useUIStore } from "../../store/ui.store";
 
 const { Title, Paragraph } = Typography;
 
-interface RegistrationModalProps {
-  visible: boolean;
-  status: "success" | "error";
-  error: string | null;
-  onClose: () => void;
-  redirectTo: string;
-}
+export const AppModal = () => {
+  const { modal, closeModal } = useUIStore();
 
-export const RegistrationModal: React.FC<RegistrationModalProps> = ({
-  visible,
-  status,
-  error,
-  onClose,
-  redirectTo,
-}) => {
+  if (!modal) return null;
+
+  const iconProps = {
+    width: 64,
+    height: 64,
+    style: { marginBottom: 16 },
+  };
+
+  const getIcon = () => {
+    switch (modal.type) {
+      case "success":
+        return (
+          <Icon
+            icon="mdi:check-circle"
+            {...iconProps}
+            style={{ color: "#52c41a" }}
+          />
+        );
+      case "error":
+        return (
+          <Icon
+            icon="mdi:alert-circle"
+            {...iconProps}
+            style={{ color: "#ff4d4f" }}
+          />
+        );
+      default:
+        return (
+          <Icon
+            icon="mdi:information"
+            {...iconProps}
+            style={{ color: "#1890ff" }}
+          />
+        );
+    }
+  };
+
+  const handleConfirm = () => {
+    closeModal();
+    modal.onConfirm?.();
+  };
+
   return (
     <Modal
-      open={visible}
-      onCancel={onClose}
+      open={true}
+      onCancel={handleConfirm}
       footer={[
-        <Button key="submit" type="primary" onClick={onClose}>
-          {status === "success" ? "ورود به داشبورد" : "بستن"}
+        <Button key="submit" type="primary" onClick={handleConfirm}>
+          {modal.type === "success" ? "تایید" : "بستن"}
         </Button>,
       ]}
       centered
     >
       <div style={{ textAlign: "center", padding: "20px" }}>
-        {status === "success" ? (
-          <>
-            <Icon
-              icon="mdi:check-circle"
-              width="64"
-              height="64"
-              style={{ color: "#52c41a", marginBottom: "16px" }}
-            />
-            <Title level={3} style={{ color: "#52c41a" }}>
-              ثبت نام موفق
-            </Title>
-            <Paragraph>
-              ثبت نام و ایجاد تیم با موفقیت انجام شد. در حال انتقال به
-              داشبورد...
-            </Paragraph>
-          </>
-        ) : (
-          <>
-            <Icon
-              icon="mdi:alert-circle"
-              width="64"
-              height="64"
-              style={{ color: "#ff4d4f", marginBottom: "16px" }}
-            />
-            <Title level={3} style={{ color: "#ff4d4f" }}>
-              خطا در ثبت نام
-            </Title>
-            <Paragraph>
-              {error ||
-                "متاسفانه در ثبت نام مشکلی پیش آمده است. لطفا مجددا تلاش کنید."}
-            </Paragraph>
-          </>
-        )}
+        {getIcon()}
+        <Title
+          level={3}
+          style={{
+            color:
+              modal.type === "success"
+                ? "#52c41a"
+                : modal.type === "error"
+                ? "#ff4d4f"
+                : "#1890ff",
+          }}
+        >
+          {modal.title}
+        </Title>
+        <Paragraph>{modal.message}</Paragraph>
       </div>
     </Modal>
   );
