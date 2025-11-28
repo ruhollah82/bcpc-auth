@@ -1,5 +1,7 @@
-import { Form, Input, Select, Space, Button, Card } from "antd";
+import { Form, Input, Select, Button } from "antd";
+import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
+import { FloatingIcons } from "~/components/ui/FloatingIcons";
 import { useTeamStore } from "../../../store/team.store";
 
 const { Option } = Select;
@@ -11,7 +13,6 @@ export const UserInfoStep = () => {
     leaderPhone,
     university,
     members,
-
     setLeader,
     setUniversity,
     addMember,
@@ -19,34 +20,77 @@ export const UserInfoStep = () => {
     removeMember,
   } = useTeamStore();
 
-  const [form] = Form.useForm();
-
-  // Email regex simple validation
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  // Phone number regex (basic, adjust as needed)
   const phoneRegex = /^[0-9]{10,15}$/;
 
-  const handleAddMember = () => {
-    addMember();
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        duration: 0.5,
+      },
+    },
   };
 
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.4, ease: "easeOut" },
+    },
+  };
+
+  const floatingIconsConfig = [
+    { icon: "mdi:star", color: "#ffe58f", minSize: 12, maxSize: 20 },
+    { icon: "mdi:heart", color: "#ff9c6e", minSize: 14, maxSize: 22 },
+    { icon: "mdi:diamond-stone", color: "#ffd666", minSize: 14, maxSize: 22 },
+    {
+      icon: "mdi:star-four-points",
+      color: "#ff7875",
+      minSize: 12,
+      maxSize: 18,
+    },
+  ];
+
   return (
-    <Form
-      form={form}
-      layout="vertical"
-      style={{ width: "100%" }}
-      initialValues={{
-        leaderName,
-        leaderEmail,
-        leaderPhone,
-        university,
-        members,
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      style={{
+        width: "100%",
+        position: "relative",
+        overflow: "visible", // مهم
+        minHeight: "100%", // مهم
       }}
     >
-      <Space direction="vertical" size="middle" style={{ width: "100%" }}>
-        <Card title="عضو اول گروه" bordered={false}>
+      {/* <FloatingIcons count={15} icons={floatingIconsConfig} zIndex={0} /> */}
+
+      <div style={{ position: "relative", zIndex: 1 }}>
+        {/* Leader Name */}
+        <motion.div variants={itemVariants}>
           <Form.Item
-            label="نام و نام خانوادگی"
+            label={
+              <span
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 8,
+                  fontWeight: 600,
+                  fontSize: "16px",
+                  color: "#1f1f1f",
+                }}
+              >
+                <Icon
+                  icon="mdi:account"
+                  style={{ color: "#ffd666", fontSize: "20px" }}
+                />
+                نام و نام خانوادگی سرگروه
+              </span>
+            }
             name="leaderName"
             rules={[
               {
@@ -54,88 +98,159 @@ export const UserInfoStep = () => {
                 message: "لطفا نام و نام خانوادگی را وارد کنید",
               },
             ]}
+            style={{ marginBottom: 28 }}
           >
             <Input
               size="large"
               value={leaderName}
               onChange={(e) => setLeader({ name: e.target.value })}
               placeholder="نام و نام خانوادگی"
-              prefix={<Icon icon="mdi:user" />}
+              prefix={
+                <Icon
+                  icon="mdi:user"
+                  style={{ color: "#1890ff", fontSize: 20 }}
+                />
+              }
+              style={{
+                borderRadius: 12,
+                fontSize: 16,
+                padding: "12px 16px",
+                border: "2px solid #f0f0f0",
+                background: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+              }}
             />
           </Form.Item>
+        </motion.div>
 
+        {/* Leader Email */}
+        <motion.div variants={itemVariants}>
           <Form.Item
-            label="ایمیل سرگروه"
+            label={
+              <span
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 8,
+                  fontWeight: 600,
+                  fontSize: 16,
+                  color: "#1f1f1f",
+                }}
+              >
+                <Icon
+                  icon="mdi:email-check"
+                  style={{ color: "#ffd666", fontSize: 20 }}
+                />
+                ایمیل سرگروه
+              </span>
+            }
             name="leaderEmail"
             rules={[
               { required: true, message: "لطفا ایمیل را وارد کنید" },
-              {
-                pattern: emailRegex,
-                message: "ایمیل وارد شده معتبر نیست",
-              },
+              { pattern: emailRegex, message: "ایمیل معتبر نیست" },
             ]}
+            style={{ marginBottom: 28 }}
           >
             <Input
               size="large"
               value={leaderEmail}
               onChange={(e) => setLeader({ email: e.target.value })}
               placeholder="ایمیل"
-              prefix={<Icon icon="mdi:email" />}
+              prefix={
+                <Icon
+                  icon="mdi:email"
+                  style={{ color: "#1890ff", fontSize: 20 }}
+                />
+              }
+              style={{
+                borderRadius: 12,
+                fontSize: 16,
+                padding: "12px 16px",
+                border: "2px solid #f0f0f0",
+                background: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+              }}
             />
           </Form.Item>
+        </motion.div>
 
+        {/* Leader Phone */}
+        <motion.div variants={itemVariants}>
           <Form.Item
-            label="شماره تماس"
+            label={
+              <span
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 8,
+                  fontWeight: 600,
+                  fontSize: 16,
+                  color: "#1f1f1f",
+                }}
+              >
+                <Icon
+                  icon="mdi:phone"
+                  style={{ color: "#ffd666", fontSize: 20 }}
+                />
+                شماره تماس
+              </span>
+            }
             name="leaderPhone"
             rules={[
-              { required: true, message: "لطفا شماره تماس را وارد کنید" },
-              {
-                pattern: phoneRegex,
-                message: "شماره تماس معتبر نیست",
-              },
+              { required: true, message: "شماره تماس را وارد کنید" },
+              { pattern: phoneRegex, message: "شماره تماس معتبر نیست" },
             ]}
+            style={{ marginBottom: 28 }}
           >
             <Input
               size="large"
               value={leaderPhone}
               onChange={(e) => setLeader({ phone: e.target.value })}
               placeholder="شماره تماس"
-              prefix={<Icon icon="mdi:phone" />}
+              prefix={
+                <Icon
+                  icon="mdi:phone"
+                  style={{ color: "#1890ff", fontSize: 20 }}
+                />
+              }
+              style={{
+                borderRadius: 12,
+                fontSize: 16,
+                padding: "12px 16px",
+                border: "2px solid #f0f0f0",
+                background: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+              }}
             />
           </Form.Item>
-        </Card>
+        </motion.div>
 
-        <Button
-          type="primary"
-          onClick={handleAddMember}
-          disabled={members.length >= 2}
-          icon={<Icon icon="mdi:account-plus" />}
-        >
-          افزودن عضو جدید
-        </Button>
-
-        {members.map((member, index) => (
-          <Card
-            key={index}
-            size="small"
-            title={`عضو ${index + 1}`}
-            extra={
-              <Button
-                danger
-                type="text"
-                icon={<Icon icon="mdi:delete" />}
-                onClick={() => removeMember(index)}
-              />
-            }
+        {/* Add Member Button */}
+        <motion.div variants={itemVariants}>
+          <Button
+            type="primary"
+            onClick={addMember}
+            disabled={members.length >= 2}
+            icon={<Icon icon="mdi:account-plus" />}
+            style={{
+              borderRadius: 12,
+              height: 48,
+              fontSize: 16,
+              fontWeight: 600,
+            }}
           >
+            افزودن عضو جدید
+          </Button>
+        </motion.div>
+
+        {/* Members */}
+        {members.map((member, index) => (
+          <motion.div key={index} variants={itemVariants}>
             <Form.Item
-              label="نام و نام خانوادگی"
-              name={`member-${index}`}
+              label={`عضو ${index + 1}`}
+              name={`member${index}`}
               rules={[
-                {
-                  required: true,
-                  message: "لطفا نام و نام خانوادگی را وارد کنید",
-                },
+                { required: true, message: "نام و نام خانوادگی را وارد کنید" },
               ]}
             >
               <Input
@@ -143,30 +258,79 @@ export const UserInfoStep = () => {
                 value={member}
                 onChange={(e) => updateMember(index, e.target.value)}
                 placeholder="نام و نام خانوادگی"
-                prefix={<Icon icon="mdi:user-plus" />}
+                prefix={
+                  <Icon
+                    icon="mdi:user-plus"
+                    style={{ color: "#1890ff", fontSize: 20 }}
+                  />
+                }
+                suffix={
+                  <Icon
+                    icon="mdi:delete"
+                    style={{
+                      color: "#ff4d4f",
+                      fontSize: 20,
+                      cursor: "pointer",
+                    }}
+                    onClick={() => removeMember(index)}
+                  />
+                }
+                style={{
+                  borderRadius: 12,
+                  fontSize: 16,
+                  padding: "12px 16px",
+                  border: "2px solid #f0f0f0",
+                  background:
+                    "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+                }}
               />
             </Form.Item>
-          </Card>
+          </motion.div>
         ))}
 
-        <Form.Item
-          label="دانشگاه"
-          name="university"
-          rules={[
-            { required: true, message: "لطفا دانشگاه خود را انتخاب کنید" },
-          ]}
-        >
-          <Select
-            size="large"
-            value={university}
-            onChange={setUniversity}
-            placeholder="دانشگاه خود را انتخاب کنید"
-            suffixIcon={<Icon icon="mdi:chevron-down" />}
+        {/* University */}
+        <motion.div variants={itemVariants}>
+          <Form.Item
+            label={
+              <span
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 8,
+                  fontWeight: 600,
+                  fontSize: 16,
+                  color: "#1f1f1f",
+                }}
+              >
+                <Icon
+                  icon="mdi:school"
+                  style={{ color: "#ffd666", fontSize: 20 }}
+                />
+                دانشگاه
+              </span>
+            }
+            name="university"
+            rules={[{ required: true, message: "دانشگاه را انتخاب کنید" }]}
           >
-            <Option value="University-of-Birjand">دانشگاه بیرجند</Option>
-          </Select>
-        </Form.Item>
-      </Space>
-    </Form>
+            <Select
+              size="large"
+              value={university}
+              onChange={setUniversity}
+              placeholder="دانشگاه خود را انتخاب کنید"
+              suffixIcon={<Icon icon="mdi:chevron-down" />}
+              style={{
+                borderRadius: 12,
+                border: "2px solid #f0f0f0",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+                background: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
+              }}
+            >
+              <Option value="University-of-Birjand">دانشگاه بیرجند</Option>
+            </Select>
+          </Form.Item>
+        </motion.div>
+      </div>
+    </motion.div>
   );
 };

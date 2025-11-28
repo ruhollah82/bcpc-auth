@@ -1,7 +1,7 @@
 import { create } from "zustand";
-
 interface UIState {
   loading: boolean;
+  // Remove isValid from here - we'll handle validation locally
   modal: {
     type: "success" | "error" | "info";
     title: string;

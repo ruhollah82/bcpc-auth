@@ -8,6 +8,7 @@ import { useWizardSteps } from "./useWizardSteps";
 import type { FormData } from "../../types/registration.types";
 import { useTeamStore } from "../../store/team.store";
 import { useUIStore } from "../../store/ui.store";
+import { useCallback, useEffect, useRef } from "react"; // Add this import
 
 interface RegistrationWizardProps {
   currentStep: number;
@@ -53,15 +54,23 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
   const resetTeamForm = useTeamStore((state) => state.resetTeamForm);
   const { setLoading, openModal } = useUIStore();
 
-  const handleFormValuesChange = (changedValues: any) => {
-    onFormDataChange(changedValues);
-  };
+  // Set form initial values when step changes
+  useEffect(() => {
+    form.setFieldsValue(formData);
+  }, [currentStep, form, formData]);
+
+  const handleFormValuesChange = useCallback(
+    (changedValues: any, allValues: any) => {
+      onFormDataChange(changedValues);
+    },
+    [onFormDataChange]
+  );
 
   const handleSubmit = async () => {
     try {
       setLoading(true);
 
-      // validate فرم قبل submit
+      // Final validation before API call
       await form.validateFields();
 
       const response = await submitTeam();
@@ -72,21 +81,25 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
         title: "ثبت نام موفق",
         message: "تیم شما با موفقیت ثبت شد.",
         onConfirm: () => {
-          // مثلا navigate به داشبورد
-          // navigate("/dashboard");
+          // navigate to dashboard
         },
       });
-      resetTeamForm(); // ریست فرم بعد از موفقیت
+      resetTeamForm();
     } catch (err: any) {
       console.error("Submit failed:", err);
+
+      // Extract validation errors if any
+      let errorMessage = "مشکلی در ثبت نام به وجود آمده است.";
+      if (err.errorFields && err.errorFields.length > 0) {
+        errorMessage = "لطفا تمام فیلدهای ضروری را به درستی پر کنید.";
+      } else if (err.message) {
+        errorMessage = err.message;
+      }
+
       openModal({
         type: "error",
-        title: "ریدی",
-        message: "ریدم تو فرانت",
-        onConfirm: () => {
-          // مثلا navigate به داشبورد
-          // navigate("/dashboard");
-        },
+        title: "خطا در ثبت نام",
+        message: errorMessage,
       });
     } finally {
       setLoading(false);
@@ -107,22 +120,17 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
         />
       )}
 
-      {/* <Steps
-        current={currentStep}
-        items={steps.map((step) => ({ title: step.title }))}
-        style={{ marginBottom: "32px" }}
-      /> */}
-
       <Form
         form={form}
         layout="vertical"
         onValuesChange={handleFormValuesChange}
         initialValues={formData}
+        validateTrigger="onBlur"
       >
         <div
           style={{
-            height: "380px", // ارتفاع ثابت
-            overflowY: "auto", // اسکرول عمودی
+            height: "380px",
+            overflowY: "auto",
             overflowX: "hidden",
             position: "relative",
             paddingRight: "8px",
