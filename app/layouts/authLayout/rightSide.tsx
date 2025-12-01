@@ -8,6 +8,7 @@ const { useToken } = theme;
 const RightSide = () => {
   const navigate = useNavigate();
   const token = useToken();
+
   return (
     <Flex
       align="center"
@@ -22,7 +23,6 @@ const RightSide = () => {
         overflowY: "scroll",
       }}
     >
-      
       <Outlet />
     </Flex>
   );

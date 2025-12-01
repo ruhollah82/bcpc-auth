@@ -16,6 +16,7 @@ import {
 import { RegistrationWizard } from "../../../components/wizard/RegistrationWizard";
 import { AppModal } from "../../../components/wizard/RegistrationModal";
 import { useRegistration } from "../../../hooks/useRegistration";
+import { FloatingIcons } from "~/components/ui/FloatingIcons";
 
 export default function Register() {
   const navigate = useNavigate();
@@ -35,41 +36,43 @@ export default function Register() {
   } = useRegistration(redirectTo, navigate);
 
   return (
-    <div className="w-full  flex justify-center items-start ">
-      <div
-        className="
+    <>
+      <div className="w-full  flex justify-center items-start ">
+        <div
+          className="
           w-full p-3 
-          md:w-[60%] md:p-6 
+          md:w-[70%] md:p-6 
           max-w-4xl
         "
-      >
-        <div className="text-center mb-6">
-          <Space direction="vertical" size="small">
-            <Image
-              src="/favicon.svg"
-              preview={false}
-              style={{
-                padding: "10px",
-                alignItems: "center",
-              }}
-            />
-          </Space>
+        >
+          <div className="text-center mb-6">
+            <Space direction="vertical" size="small">
+              <Image
+                src="/favicon.svg"
+                preview={false}
+                style={{
+                  padding: "10px",
+                  alignItems: "center",
+                }}
+              />
+            </Space>
+          </div>
+
+          <RegistrationWizard
+            currentStep={currentStep}
+            direction={direction}
+            isSubmitting={isSubmitting}
+            error={error}
+            formData={formData}
+            onNext={handleNext}
+            onBack={handleBack}
+            onSubmit={handleSubmit}
+            onFormDataChange={updateFormData}
+          />
         </div>
 
-        <RegistrationWizard
-          currentStep={currentStep}
-          direction={direction}
-          isSubmitting={isSubmitting}
-          error={error}
-          formData={formData}
-          onNext={handleNext}
-          onBack={handleBack}
-          onSubmit={handleSubmit}
-          onFormDataChange={updateFormData}
-        />
+        <AppModal />
       </div>
-
-      <AppModal />
-    </div>
+    </>
   );
 }

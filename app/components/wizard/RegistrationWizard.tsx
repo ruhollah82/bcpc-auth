@@ -9,6 +9,7 @@ import type { FormData } from "../../types/registration.types";
 import { useTeamStore } from "../../store/team.store";
 import { useUIStore } from "../../store/ui.store";
 import { useCallback, useEffect, useRef } from "react"; // Add this import
+import { FloatingIcons } from "../ui/FloatingIcons";
 
 interface RegistrationWizardProps {
   currentStep: number;
@@ -21,6 +22,18 @@ interface RegistrationWizardProps {
   onSubmit: () => void;
   onFormDataChange: (data: Partial<FormData>) => void;
 }
+
+const floatingIconsConfig = [
+  { icon: "mdi:star", color: "#ffe58f", minSize: 12, maxSize: 20 },
+  { icon: "mdi:heart", color: "#ff9c6e", minSize: 14, maxSize: 22 },
+  { icon: "mdi:diamond-stone", color: "#ffd666", minSize: 14, maxSize: 22 },
+  {
+    icon: "mdi:star-four-points",
+    color: "#ff7875",
+    minSize: 12,
+    maxSize: 18,
+  },
+];
 
 const stepVariants = {
   enter: (direction: number) => ({
@@ -108,6 +121,7 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
 
   return (
     <>
+      {/* <FloatingIcons count={15} icons={floatingIconsConfig} zIndex={50} /> */}
       {error && (
         <Alert
           message="خطای ثبت نام"
@@ -119,7 +133,6 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
           style={{ marginBottom: "16px" }}
         />
       )}
-
       <Form
         form={form}
         layout="vertical"
@@ -133,7 +146,8 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
             overflowY: "auto",
             overflowX: "hidden",
             position: "relative",
-            paddingRight: "8px",
+            paddingRight: "1rem",
+            paddingLeft: "1rem",
           }}
         >
           <AnimatePresence mode="wait" custom={direction}>

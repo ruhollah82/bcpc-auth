@@ -99,6 +99,7 @@ export const FloatingIcons: React.FC<FloatingIconsProps> = ({
         overflow: "hidden",
       }}
     >
+      {/* <h1>skclslkdnc</h1> */}
       {selectedIcons.map((config) => (
         <FloatingIcon
           key={`floating-icon-${config.id}`}

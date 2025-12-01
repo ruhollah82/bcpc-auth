@@ -1,7 +1,6 @@
 import { Form, Input, Select, Button } from "antd";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
-import { FloatingIcons } from "~/components/ui/FloatingIcons";
 import { useTeamStore } from "../../../store/team.store";
 
 const { Option } = Select;
@@ -43,22 +42,9 @@ export const UserInfoStep = () => {
     },
   };
 
-  const floatingIconsConfig = [
-    { icon: "mdi:star", color: "#ffe58f", minSize: 12, maxSize: 20 },
-    { icon: "mdi:heart", color: "#ff9c6e", minSize: 14, maxSize: 22 },
-    { icon: "mdi:diamond-stone", color: "#ffd666", minSize: 14, maxSize: 22 },
-    {
-      icon: "mdi:star-four-points",
-      color: "#ff7875",
-      minSize: 12,
-      maxSize: 18,
-    },
-  ];
-
   return (
     <motion.div
       variants={containerVariants}
-      initial="hidden"
       animate="visible"
       style={{
         width: "100%",
@@ -67,8 +53,6 @@ export const UserInfoStep = () => {
         minHeight: "100%", // مهم
       }}
     >
-      {/* <FloatingIcons count={15} icons={floatingIconsConfig} zIndex={0} /> */}
-
       <div style={{ position: "relative", zIndex: 1 }}>
         {/* Leader Name */}
         <motion.div variants={itemVariants}>
