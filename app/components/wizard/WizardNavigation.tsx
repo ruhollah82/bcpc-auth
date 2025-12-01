@@ -1,8 +1,6 @@
 import { Button } from "antd";
 import { Icon } from "@iconify/react";
 import type { FormInstance } from "antd";
-import { useTeamStore } from "../../store/team.store";
-import { useUIStore } from "../../store/ui.store";
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -103,88 +101,17 @@ export const WizardNavigation: React.FC<WizardNavigationProps> = ({
         gap: 16,
         minHeight: 40,
         width: "100%",
+        direction: "rtl",
       }}
     >
-      {/* Left Column - Back Button (only visible after first step) */}
       <div style={{ gridColumn: "1", justifySelf: "start" }}>
         <AnimatePresence>
           {!isFirst && (
             <motion.div
-              key="back-button"
+              key="action-button"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.3 }}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Button
-                size="large"
-                onClick={onBack}
-                icon={
-                  <motion.div
-                    whileHover={{ x: 3 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                  >
-                    <Icon icon="mdi:arrow-right" />
-                  </motion.div>
-                }
-              >
-                بازگشت
-              </Button>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-
-      {/* Center Column - Enter Button (only visible in first step) */}
-      <div style={{ gridColumn: "2", justifySelf: "center" }}>
-        <AnimatePresence>
-          {isFirst && (
-            <motion.div
-              key="enter-button"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              transition={{ duration: 0.3 }}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Button type="primary" size="large" onClick={handleNext}>
-                <motion.span
-                  whileHover={{
-                    textShadow: "0px 0px 8px rgba(255,255,255,0.8)",
-                  }}
-                >
-                  ورود به دنیای BCPC
-                </motion.span>
-                <motion.div
-                  animate={{
-                    x: [0, 5, 0],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                >
-                  <Icon icon="mdi:arrow-left" />
-                </motion.div>
-              </Button>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-
-      {/* Right Column - Next/Submit Button (only visible after first step) */}
-      <div style={{ gridColumn: "3", justifySelf: "end" }}>
-        <AnimatePresence>
-          {!isFirst && (
-            <motion.div
-              key="action-button"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 20 }}
               transition={{ duration: 0.3 }}
             >
               {!isLast ? (
@@ -208,20 +135,22 @@ export const WizardNavigation: React.FC<WizardNavigationProps> = ({
                     size="large"
                     onClick={handleNext}
                     disabled={!isStepValid}
+                    icon={
+                      <motion.div
+                        whileHover={{ x: -3 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 400,
+                          damping: 10,
+                        }}
+                      >
+                        <Icon icon="mdi:arrow-right" /> {/* تغییر آیکون */}
+                      </motion.div>
+                    }
                   >
                     <motion.span transition={{ duration: 0.4 }}>
                       ادامه
                     </motion.span>
-                    <motion.div
-                      whileHover={{ x: -3 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 10,
-                      }}
-                    >
-                      <Icon icon="mdi:arrow-left" />
-                    </motion.div>
                   </Button>
                 </motion.div>
               ) : (
@@ -248,6 +177,25 @@ export const WizardNavigation: React.FC<WizardNavigationProps> = ({
                     onClick={handleSubmit}
                     disabled={!isStepValid || isSubmitting}
                     loading={isSubmitting}
+                    icon={
+                      <motion.div
+                        animate={
+                          isStepValid && !isSubmitting
+                            ? {
+                                scale: [1, 1.1, 1],
+                                rotate: [0, 5, -5, 0],
+                              }
+                            : {}
+                        }
+                        transition={{
+                          duration: 2,
+                          repeat: Infinity,
+                          repeatDelay: 3,
+                        }}
+                      >
+                        <Icon icon="mdi:check" />
+                      </motion.div>
+                    }
                   >
                     <AnimatePresence mode="wait">
                       {isSubmitting ? (
@@ -267,27 +215,86 @@ export const WizardNavigation: React.FC<WizardNavigationProps> = ({
                           ثبت نهایی
                         </motion.span>
                       )}
-                      <motion.div
-                        animate={
-                          isStepValid && !isSubmitting
-                            ? {
-                                scale: [1, 1.1, 1],
-                                rotate: [0, 5, -5, 0],
-                              }
-                            : {}
-                        }
-                        transition={{
-                          duration: 2,
-                          repeat: Infinity,
-                          repeatDelay: 3,
-                        }}
-                      >
-                        <Icon icon="mdi:check" />
-                      </motion.div>
                     </AnimatePresence>
                   </Button>
                 </motion.div>
               )}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+
+      {/* Center Column - Enter Button (only visible in first step) */}
+      <div style={{ gridColumn: "2", justifySelf: "center" }}>
+        <AnimatePresence>
+          {isFirst && (
+            <motion.div
+              key="enter-button"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.3 }}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Button
+                type="primary"
+                size="large"
+                onClick={handleNext}
+                icon={
+                  <motion.div
+                    animate={{
+                      x: [0, 5, 0],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  >
+                    <Icon icon="mdi:arrow-right" />
+                  </motion.div>
+                }
+              >
+                <motion.span
+                  whileHover={{
+                    textShadow: "0px 0px 8px rgba(255,255,255,0.8)",
+                  }}
+                >
+                  ورود به دنیای BCPC
+                </motion.span>
+              </Button>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+
+      <div style={{ gridColumn: "3", justifySelf: "end" }}>
+        <AnimatePresence>
+          {!isFirst && (
+            <motion.div
+              key="back-button"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 20 }}
+              transition={{ duration: 0.3 }}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Button
+                size="large"
+                onClick={onBack}
+                icon={
+                  <motion.div
+                    whileHover={{ x: 3 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  >
+                    <Icon icon="mdi:arrow-left" /> {/* تغییر آیکون */}
+                  </motion.div>
+                }
+              >
+                بازگشت
+              </Button>
             </motion.div>
           )}
         </AnimatePresence>

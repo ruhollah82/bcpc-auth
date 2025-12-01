@@ -1,8 +1,8 @@
 import { Form, Input, Select, Button } from "antd";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Icon } from "@iconify/react";
 import { useTeamStore } from "../../../store/team.store";
-import type { Variants } from "framer-motion";
+import { universities } from "~/data/universities";
 
 const { Option } = Select;
 
@@ -23,7 +23,14 @@ export const UserInfoStep = () => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const phoneRegex = /^[0-9]{10,15}$/;
 
-  const containerVariants: Variants = {
+  const onSearch = (value: string) => {
+    console.log("جستجو:", value);
+  };
+
+  const onChange = (value: string) => {
+    console.log(`انتخاب شده: ${value}`);
+  };
+  const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -41,109 +48,20 @@ export const UserInfoStep = () => {
       y: 0,
       transition: {
         duration: 0.4,
-        ease: [0.25, 0.46, 0.45, 0.94], // cubic-bezier equivalent of "easeOut"
+        ease: [0.25, 0.46, 0.45, 0.94], // cubic-bezier equivalent of easeOut
       },
     },
   };
 
-  // لیست دانشگاه‌ها با قابلیت جستجو
-  const universities = [
-    {
-      value: "university-of-birjand",
-      label: "دانشگاه بیرجند",
-    },
-    {
-      value: "university-of-tehran",
-      label: "دانشگاه تهران",
-    },
-    {
-      value: "sharif-university",
-      label: "دانشگاه صنعتی شریف",
-    },
-    {
-      value: "amirkabir-university",
-      label: "دانشگاه صنعتی امیرکبیر",
-    },
-    {
-      value: "kharazmi-university",
-      label: "دانشگاه خوارزمی",
-    },
-    {
-      value: "shahid-beheshti-university",
-      label: "دانشگاه شهید بهشتی",
-    },
-    {
-      value: "allameh-tabatabai-university",
-      label: "دانشگاه علامه طباطبایی",
-    },
-    {
-      value: "tabriz-university",
-      label: "دانشگاه تبریز",
-    },
-    {
-      value: "isfahan-university",
-      label: "دانشگاه اصفهان",
-    },
-    {
-      value: "shiraz-university",
-      label: "دانشگاه شیراز",
-    },
-    {
-      value: "mashhad-university",
-      label: "دانشگاه فردوسی مشهد",
-    },
-    {
-      value: "sistan-and-baluchestan-university",
-      label: "دانشگاه سیستان و بلوچستان",
-    },
-    {
-      value: "azad-university",
-      label: "دانشگاه آزاد اسلامی",
-    },
-    {
-      value: "payame-noor-university",
-      label: "دانشگاه پیام نور",
-    },
-    {
-      value: "university-of-applied-science",
-      label: "دانشگاه علمی کاربردی",
-    },
-    {
-      value: "elmo-sanaat-university",
-      label: "دانشگاه علم و صنعت ایران",
-    },
-    {
-      value: "khajeh-nasir-university",
-      label: "دانشگاه خواجه نصیرالدین طوسی",
-    },
-    {
-      value: "shahrood-university",
-      label: "دانشگاه صنعتی شاهرود",
-    },
-    {
-      value: "yazd-university",
-      label: "دانشگاه یزد",
-    },
-    {
-      value: "kerman-university",
-      label: "دانشگاه شهید باهنر کرمان",
-    },
-    {
-      value: "other",
-      label: "سایر دانشگاه‌ها",
-    },
-  ];
-
   return (
     <motion.div
       variants={containerVariants}
-      // initial="hidden"
       animate="visible"
       style={{
         width: "100%",
         position: "relative",
-        overflow: "visible",
-        minHeight: "100%",
+        overflow: "visible", // مهم
+        minHeight: "100%", // مهم
       }}
     >
       <div style={{ position: "relative", zIndex: 1 }}>
@@ -314,14 +232,9 @@ export const UserInfoStep = () => {
               height: 48,
               fontSize: 16,
               fontWeight: 600,
-              marginBottom: 24,
-              width: "100%",
-              // background: "linear-gradient(135deg, #1890ff 0%, #096dd9 100%)",
-              border: "none",
-              // boxShadow: "0 4px 12px rgba(24, 144, 255, 0.3)",
             }}
           >
-            افزودن عضو جدید (حداکثر ۲ عضو)
+            افزودن عضو جدید
           </Button>
         </motion.div>
 
@@ -329,35 +242,17 @@ export const UserInfoStep = () => {
         {members.map((member, index) => (
           <motion.div key={index} variants={itemVariants}>
             <Form.Item
-              label={
-                <span
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 8,
-                    fontWeight: 600,
-                    fontSize: 16,
-                    color: "#1f1f1f",
-                  }}
-                >
-                  <Icon
-                    icon="mdi:account-group"
-                    style={{ color: "#ffd666", fontSize: 20 }}
-                  />
-                  عضو {index + 1}
-                </span>
-              }
+              label={`عضو ${index + 1}`}
               name={`member${index}`}
               rules={[
                 { required: true, message: "نام و نام خانوادگی را وارد کنید" },
               ]}
-              style={{ marginBottom: 28 }}
             >
               <Input
                 size="large"
                 value={member}
                 onChange={(e) => updateMember(index, e.target.value)}
-                placeholder="نام و نام خانوادگی عضو"
+                placeholder="نام و نام خانوادگی"
                 prefix={
                   <Icon
                     icon="mdi:user-plus"
@@ -388,8 +283,7 @@ export const UserInfoStep = () => {
             </Form.Item>
           </motion.div>
         ))}
-
-        {/* University Select with Search */}
+        {/* University */}
         <motion.div variants={itemVariants}>
           <Form.Item
             label={
@@ -412,90 +306,35 @@ export const UserInfoStep = () => {
             }
             name="university"
             rules={[{ required: true, message: "دانشگاه را انتخاب کنید" }]}
-            style={{ marginBottom: 28 }}
           >
-            <div style={{ position: "relative" }}>
-              <Icon
-                icon="mdi:magnify"
-                style={{
-                  position: "absolute",
-                  left: 12,
-                  top: "50%",
-                  transform: "translateY(-50%)",
-                  fontSize: 20,
-                  color: "#1890ff",
-                  zIndex: 2,
-                  pointerEvents: "none",
-                }}
-              />
-              <Select
-                size="large"
-                showSearch
-                value={university}
-                onChange={setUniversity}
-                placeholder="دانشگاه خود را جستجو و انتخاب کنید..."
-                optionFilterProp="label"
-                filterSort={(optionA, optionB) =>
-                  (optionA?.label ?? "")
-                    .toLowerCase()
-                    .localeCompare((optionB?.label ?? "").toLowerCase())
-                }
-                filterOption={(input, option) =>
-                  (option?.label ?? "")
-                    .toLowerCase()
-                    .includes(input.toLowerCase())
-                }
-                suffixIcon={
-                  <Icon
-                    icon="mdi:chevron-down"
-                    style={{
-                      fontSize: 20,
-                      color: "#666",
-                      transition: "transform 0.3s",
-                    }}
-                  />
-                }
-                style={{
-                  width: "100%",
-                  borderRadius: 12,
-                  fontSize: 16,
-                  border: "2px solid #f0f0f0",
-                  background:
-                    "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
-                  boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
-                  height: "auto",
-                  minHeight: 40,
-                  paddingLeft: 40,
-                }}
-                dropdownStyle={{
-                  borderRadius: 12,
-                  border: "2px solid #f0f0f0",
-                  background:
-                    "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-                  marginTop: 4,
-                  maxHeight: 300,
-                  overflow: "auto",
-                }}
-                optionRender={(option) => (
-                  <div
-                    style={{
-                      padding: "8px 12px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 8,
-                    }}
-                  >
-                    <Icon
-                      icon="mdi:school-outline"
-                      style={{ color: "#1890ff", fontSize: 18 }}
-                    />
-                    {option.label}
-                  </div>
-                )}
-                options={universities}
-              />
-            </div>
+            <Select
+              showSearch
+              optionFilterProp="label"
+              filterOption={(input, option) =>
+                (option?.label ?? "")
+                  .toLowerCase()
+                  .includes(input.toLowerCase())
+              }
+              size="large"
+              value={university}
+              onChange={(value) => {
+                setUniversity(value);
+                onChange(value); // اگر نیاز به log دارید
+              }}
+              onSearch={onSearch}
+              placeholder="دانشگاه خود را انتخاب کنید"
+              suffixIcon={<Icon icon="mdi:chevron-down" />}
+              style={{
+                borderRadius: 12,
+                border: "2px solid #f0f0f0",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+                background: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
+              }}
+              dropdownStyle={{
+                borderRadius: 12,
+              }}
+              options={universities}
+            />
           </Form.Item>
         </motion.div>
       </div>
