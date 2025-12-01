@@ -232,6 +232,7 @@ export const UserInfoStep = () => {
               height: 48,
               fontSize: 16,
               fontWeight: 600,
+              marginBottom: "1rem",
             }}
           >
             افزودن عضو جدید
@@ -295,6 +296,7 @@ export const UserInfoStep = () => {
                   fontWeight: 600,
                   fontSize: 16,
                   color: "#1f1f1f",
+                  marginTop: "1rem",
                 }}
               >
                 <Icon
