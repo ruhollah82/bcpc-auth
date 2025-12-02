@@ -1,7 +1,13 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "Vazir";
+  src: url("/fonts/Vazir/webfonts/Vazirmatn-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+  --font-sans: "Vazir", "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -9,11 +15,12 @@ html,
 body {
   @media (prefers-color-scheme: dark) {
     color-scheme: light;
+    font-family: "Vazir";
   }
 }
 * {
-  scrollbar-color: #f56e15 #ffffff8e;
-  scrollbar-width: 10px;
+  scrollbar-color: #f56f1567 #ffffff8e;
+  scrollbar-width: 0.25rem;
 }
 
 .ltr-input input {
