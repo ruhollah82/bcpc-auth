@@ -39,3 +39,28 @@ export interface TeamCreationData {
   phoneNumber: string;
   users: string[];
 }
+export interface Team {
+  id: string;
+  name: string;
+  university: string;
+  leaderName: string;
+  leaderEmail: string;
+  leaderPhone: string;
+  members: string[];
+  descriptionsteam?: string;
+}
+export interface TeamResponse {
+  id: string;
+  name: string;
+  leaderName: string;
+  leaderEmail: string;
+  leaderPhone: string;
+  members: string[];
+  descriptionsteam?: string;
+
+  username: string; // اضافه شد
+  password: string; // اضافه شد
+  email?: string; // اختیاری
+  success?: boolean;
+  error?: any;
+}

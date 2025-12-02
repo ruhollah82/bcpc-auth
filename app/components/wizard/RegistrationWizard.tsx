@@ -1,5 +1,5 @@
 // components/wizard/RegistrationWizard.tsx
-import { Form, Alert } from "antd";
+import { Form, Alert, Spin } from "antd";
 import { motion, AnimatePresence } from "framer-motion";
 import { Icon } from "@iconify/react";
 import { WizardStepComponent } from "./WizardStepComponent";
@@ -10,6 +10,7 @@ import { useTeamStore } from "../../store/team.store";
 import { useUIStore } from "../../store/ui.store";
 import { useCallback, useEffect, useRef } from "react"; // Add this import
 import { FloatingIcons } from "../ui/FloatingIcons";
+import { Navigate, redirect } from "react-router";
 
 interface RegistrationWizardProps {
   currentStep: number;
@@ -65,7 +66,7 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
   const [form] = Form.useForm();
   const submitTeam = useTeamStore((state) => state.submitTeam);
   const resetTeamForm = useTeamStore((state) => state.resetTeamForm);
-  const { setLoading, openModal } = useUIStore();
+  const { setLoading, openModal, loading } = useUIStore();
 
   // Set form initial values when step changes
   useEffect(() => {
@@ -78,26 +79,44 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
     },
     [onFormDataChange]
   );
-
   const handleSubmit = async () => {
     try {
       setLoading(true);
 
-      // Final validation before API call
-      await form.validateFields();
-
       const response = await submitTeam();
       console.log("API RESPONSE:", response);
 
-      openModal({
-        type: "success",
-        title: "ثبت نام موفق",
-        message: "تیم شما با موفقیت ثبت شد.",
-        onConfirm: () => {
-          // navigate to dashboard
-        },
-      });
-      resetTeamForm();
+      // Check if the response indicates success
+      if (response?.success === true) {
+        // Format message with credentials markers
+        const message = `تیم شما با موفقیت ثبت شد.
+
+مشخصات ورود به حساب کاربری:
+
+USERNAME: ${response.username}
+PASSWORD: ${response.password}
+${response.email ? `EMAIL: ${response.email}` : ""}`;
+
+        openModal({
+          type: "success",
+          title: "ثبت نام موفق",
+          message: message,
+          onConfirm: () => {
+            resetTeamForm();
+            window.location.href = "https://bircpc.ir";
+          },
+        });
+      } else {
+        // Handle API error response (success: false)
+        const errorMessage =
+          response?.error || "مشکلی در ثبت نام به وجود آمده است.";
+
+        openModal({
+          type: "error",
+          title: "خطا در ثبت نام",
+          message: errorMessage,
+        });
+      }
     } catch (err: any) {
       console.error("Submit failed:", err);
 
@@ -133,57 +152,59 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
           style={{ marginBottom: "16px" }}
         />
       )}
-      <Form
-        form={form}
-        layout="vertical"
-        onValuesChange={handleFormValuesChange}
-        initialValues={formData}
-        validateTrigger="onBlur"
-      >
-        <div
-          style={{
-            height: "380px",
-            overflowY: "auto",
-            overflowX: "hidden",
-            position: "relative",
-            paddingRight: "1rem",
-            paddingLeft: "1rem",
-          }}
-        >
-          <AnimatePresence mode="wait" custom={direction}>
-            <motion.div
-              key={currentStep}
-              custom={direction}
-              variants={stepVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{
-                x: { type: "spring", stiffness: 300, damping: 30 },
-                opacity: { duration: 0.2 },
-              }}
-              style={{ width: "100%" }}
-            >
-              <WizardStepComponent
-                step={steps[currentStep]}
-                formData={formData}
-                onDataChange={onFormDataChange}
-              />
-            </motion.div>
-          </AnimatePresence>
-        </div>
-
-        <WizardNavigation
-          currentStep={currentStep}
-          totalSteps={steps.length}
-          isSubmitting={isSubmitting}
-          onBack={onBack}
-          onNext={onNext}
-          onSubmit={handleSubmit}
+      <Spin spinning={loading} tip="درحال ارسال اطلاعات تیم ...">
+        <Form
           form={form}
-          stepFields={steps[currentStep].fields}
-        />
-      </Form>
+          layout="vertical"
+          onValuesChange={handleFormValuesChange}
+          initialValues={formData}
+          validateTrigger="onBlur"
+        >
+          <div
+            style={{
+              height: "380px",
+              overflowY: "auto",
+              overflowX: "hidden",
+              position: "relative",
+              paddingRight: "1rem",
+              paddingLeft: "1rem",
+            }}
+          >
+            <AnimatePresence mode="wait" custom={direction}>
+              <motion.div
+                key={currentStep}
+                custom={direction}
+                variants={stepVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{
+                  x: { type: "spring", stiffness: 300, damping: 30 },
+                  opacity: { duration: 0.2 },
+                }}
+                style={{ width: "100%" }}
+              >
+                <WizardStepComponent
+                  step={steps[currentStep]}
+                  formData={formData}
+                  onDataChange={onFormDataChange}
+                />
+              </motion.div>
+            </AnimatePresence>
+          </div>
+
+          <WizardNavigation
+            currentStep={currentStep}
+            totalSteps={steps.length}
+            isSubmitting={isSubmitting}
+            onBack={onBack}
+            onNext={onNext}
+            onSubmit={handleSubmit}
+            form={form}
+            stepFields={steps[currentStep].fields}
+          />
+        </Form>
+      </Spin>
     </>
   );
 };

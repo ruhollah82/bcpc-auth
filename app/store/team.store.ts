@@ -1,16 +1,6 @@
 import { create } from "zustand";
 import { TeamService } from "../services/teamService"; // فرض بر اینه که سرویس API داری
-
-interface Team {
-  id: string;
-  name: string;
-  university: string;
-  leaderName: string;
-  leaderEmail: string;
-  leaderPhone: string;
-  members: string[];
-  descriptionsteam?: string;
-}
+import type { Team, TeamResponse } from "~/types/registration.types";
 
 interface TeamState {
   teams: Team[];
@@ -40,7 +30,7 @@ interface TeamState {
   addTeam: (team: Team) => void;
   selectTeam: (teamId: string) => void;
 
-  submitTeam: () => Promise<Team>; // ✅ async و response رو برمی‌گردونه
+  submitTeam: () => Promise<TeamResponse>; // ✅ async و response رو برمی‌گردونه
 }
 
 export const useTeamStore = create<TeamState>((set, get) => ({
@@ -100,9 +90,10 @@ export const useTeamStore = create<TeamState>((set, get) => ({
       selectedTeam: state.teams.find((t) => t.id === teamId) || null,
     })),
 
-  submitTeam: async () => {
+  submitTeam: async (): Promise<TeamResponse> => {
     try {
       const state = get();
+
       const payload = {
         teamname: state.teamname,
         descriptions: state.descriptionsteam,
@@ -114,12 +105,10 @@ export const useTeamStore = create<TeamState>((set, get) => ({
 
       const created = await TeamService.createTeam(payload);
 
-      set((state) => ({ teams: [...state.teams, created] }));
-
-      return created; // ✅ برمی‌گردونیم response
+      return created;
     } catch (err) {
       console.error("SubmitTeam error:", err);
-      throw err; // مهم برای catch در کامپوننت
+      throw err;
     }
   },
 }));

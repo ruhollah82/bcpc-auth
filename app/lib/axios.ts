@@ -2,16 +2,11 @@ import axios from "axios";
 
 export const api = axios.create({
   baseURL: "https://api.bircpc.ir/api/v1",
-  timeout: 8000,
+  timeout: 15000,
 });
 
-// درخواست قبل از ارسال
 api.interceptors.request.use(
   (config) => {
-    // اگر توکن داشتی اینجا اضافه کن
-    // const token = localStorage.getItem("token");
-    // if (token) config.headers.Authorization = `Bearer ${token}`;
-
     return config;
   },
   (error) => {
