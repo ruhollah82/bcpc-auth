@@ -74,6 +74,8 @@ export const darkTheme = {
       colorPrimaryHover: baseTokens.token.primary8,
       colorPrimaryActive: baseTokens.token.primary7,
       colorPrimaryBorder: baseTokens.token.primary7,
+      boxShadow: "0 2px 8px rgba(0,0,0,0.3)",
+      borderWidth: baseTokens.token.componentBorderWidth,
     },
     Card: {
       ...baseTokens.components.Card,
@@ -82,9 +84,27 @@ export const darkTheme = {
     },
     Input: {
       ...baseTokens.components.Input,
-      colorBgContainer: "#1d1d1d",
+      colorBgContainer: "#242424",
       colorBorder: "#424242",
       colorText: "rgba(255, 255, 255, 0.85)",
+      borderWidth: baseTokens.token.componentBorderWidth,
+      boxShadow: "0 2px 8px rgba(0,0,0,0.3)",
+    },
+    TextArea: {
+      ...baseTokens.components.TextArea,
+      colorBgContainer: "#242424",
+      colorBorder: "#424242",
+      colorText: "rgba(255, 255, 255, 0.85)",
+      borderWidth: baseTokens.token.componentBorderWidth,
+      boxShadow: "0 2px 8px rgba(0,0,0,0.3)",
+    },
+    Select: {
+      ...baseTokens.components.Select,
+      colorBgContainer: "#242424",
+      colorBorder: "#424242",
+      colorText: "rgba(255, 255, 255, 0.85)",
+      borderWidth: baseTokens.token.componentBorderWidth,
+      boxShadow: "0 2px 8px rgba(0,0,0,0.3)",
     },
     Table: {
       ...baseTokens.components.Table,

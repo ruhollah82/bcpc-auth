@@ -1,4 +1,5 @@
 // components/AnimatedIcon.tsx
+import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
 
@@ -11,7 +12,7 @@ export interface AnimatedIconProps {
   className?: string;
 }
 
-export const AnimatedIcon: React.FC<AnimatedIconProps> = ({
+export const AnimatedIcon: React.FC<AnimatedIconProps> = React.memo(({
   icon,
   size = 24,
   color = "currentColor",
@@ -19,7 +20,7 @@ export const AnimatedIcon: React.FC<AnimatedIconProps> = ({
   duration = 8,
   className = "",
 }) => {
-  const getAnimationProps = () => {
+  const animationProps = useMemo(() => {
     switch (animation) {
       case "rotate":
         return {
@@ -45,7 +46,7 @@ export const AnimatedIcon: React.FC<AnimatedIconProps> = ({
           transition: {
             duration,
             repeat: Infinity,
-            repeatType: "reverse",
+            repeatType: "reverse" as const,
           },
         };
       case "spin":
@@ -63,15 +64,15 @@ export const AnimatedIcon: React.FC<AnimatedIconProps> = ({
       default:
         return {};
     }
-  };
+  }, [animation, duration]);
 
   return (
     <motion.span
       className={className}
       style={{ display: "inline-flex", fontSize: size, color }}
-      {...getAnimationProps()}
+      {...animationProps}
     >
       <Icon icon={icon} />
     </motion.span>
   );
-};
+});

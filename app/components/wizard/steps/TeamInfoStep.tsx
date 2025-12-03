@@ -1,28 +1,11 @@
+import React, { useCallback } from "react";
 import { Form, Input } from "antd";
 import { motion, type Variants } from "framer-motion";
 import { Icon } from "@iconify/react";
 import { useTeamStore } from "../../../store/team.store";
 import type { StepComponentProps } from "../../../types/registration.types";
 
-export const TeamInfoStep: React.FC<StepComponentProps> = ({
-  onDataChange,
-}) => {
-  const { setTeamName, setTeamDescription } = useTeamStore();
-
-  const handleTeamNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setTeamName(value);
-    onDataChange?.({ teamname: value });
-  };
-
-  const handleDescriptionChange = (
-    e: React.ChangeEvent<HTMLTextAreaElement>
-  ) => {
-    const value = e.target.value;
-    setTeamDescription(value);
-    onDataChange?.({ descriptions: value });
-  };
-
+// Static values moved outside component to prevent recreation
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -45,6 +28,25 @@ export const TeamInfoStep: React.FC<StepComponentProps> = ({
       },
     },
   };
+
+export const TeamInfoStep: React.FC<StepComponentProps> = React.memo(({
+  onDataChange,
+}) => {
+  const { setTeamName, setTeamDescription } = useTeamStore();
+
+  const handleTeamNameChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setTeamName(value);
+    onDataChange?.({ teamname: value });
+  }, [setTeamName, onDataChange]);
+
+  const handleDescriptionChange = useCallback((
+    e: React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
+    const value = e.target.value;
+    setTeamDescription(value);
+    onDataChange?.({ descriptions: value });
+  }, [setTeamDescription, onDataChange]);
 
   return (
     <motion.div
@@ -110,14 +112,6 @@ export const TeamInfoStep: React.FC<StepComponentProps> = ({
                 />
               }
               onChange={handleTeamNameChange}
-              style={{
-                borderRadius: 12,
-                fontSize: "16px",
-                padding: "12px 16px",
-                border: "2px solid #f0f0f0",
-                background: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
-                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.06)",
-              }}
             />
           </Form.Item>
         </motion.div>
@@ -170,14 +164,7 @@ export const TeamInfoStep: React.FC<StepComponentProps> = ({
               maxLength={100}
               onChange={handleDescriptionChange}
               style={{
-                borderRadius: 12,
                 resize: "none",
-                fontSize: "16px",
-                padding: "12px",
-                border: "2px solid #f0f0f0",
-                background: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
-                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.06)",
-                lineHeight: 1.6,
               }}
             />
           </Form.Item>
@@ -185,4 +172,4 @@ export const TeamInfoStep: React.FC<StepComponentProps> = ({
       </div>
     </motion.div>
   );
-};
+});

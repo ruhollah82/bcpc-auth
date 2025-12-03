@@ -1,3 +1,4 @@
+import React, { useCallback } from "react";
 import { Form, Input, Select, Button } from "antd";
 import { motion, type Variants } from "framer-motion";
 import { Icon } from "@iconify/react";
@@ -6,7 +7,34 @@ import { universities } from "~/data/universities";
 
 const { Option } = Select;
 
-export const UserInfoStep = () => {
+// Static values moved outside component to prevent recreation
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const phoneRegex = /^[0-9]{10,15}$/;
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      duration: 0.5,
+    },
+  },
+};
+
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: [0.25, 0.46, 0.45, 0.94], // cubic-bezier equivalent of easeOut
+    },
+  },
+};
+
+export const UserInfoStep = React.memo(() => {
   const {
     leaderName,
     leaderEmail,
@@ -20,38 +48,55 @@ export const UserInfoStep = () => {
     removeMember,
   } = useTeamStore();
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const phoneRegex = /^[0-9]{10,15}$/;
+  const handleLeaderNameChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setLeader({ name: e.target.value });
+    },
+    [setLeader]
+  );
 
-  const onSearch = (value: string) => {
+  const handleLeaderEmailChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setLeader({ email: e.target.value });
+    },
+    [setLeader]
+  );
+
+  const handleLeaderPhoneChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setLeader({ phone: e.target.value });
+    },
+    [setLeader]
+  );
+
+  const handleMemberChange = useCallback(
+    (index: number, value: string) => {
+      updateMember(index, value);
+    },
+    [updateMember]
+  );
+
+  const handleRemoveMember = useCallback(
+    (index: number) => {
+      removeMember(index);
+    },
+    [removeMember]
+  );
+
+  const handleUniversityChange = useCallback(
+    (value: string) => {
+      setUniversity(value);
+    },
+    [setUniversity]
+  );
+
+  const onSearch = useCallback((value: string) => {
     console.log("جستجو:", value);
-  };
+  }, []);
 
-  const onChange = (value: string) => {
+  const onChange = useCallback((value: string) => {
     console.log(`انتخاب شده: ${value}`);
-  };
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        duration: 0.5,
-      },
-    },
-  };
-
-  const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.4,
-        ease: [0.25, 0.46, 0.45, 0.94], // cubic-bezier equivalent of easeOut
-      },
-    },
-  };
+  }, []);
 
   return (
     <motion.div
@@ -98,7 +143,7 @@ export const UserInfoStep = () => {
             <Input
               size="large"
               value={leaderName}
-              onChange={(e) => setLeader({ name: e.target.value })}
+              onChange={handleLeaderNameChange}
               placeholder="نام و نام خانوادگی"
               prefix={
                 <Icon
@@ -106,14 +151,6 @@ export const UserInfoStep = () => {
                   style={{ color: "#1890ff", fontSize: 20 }}
                 />
               }
-              style={{
-                borderRadius: 12,
-                fontSize: 16,
-                padding: "12px 16px",
-                border: "2px solid #f0f0f0",
-                background: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
-              }}
             />
           </Form.Item>
         </motion.div>
@@ -149,7 +186,7 @@ export const UserInfoStep = () => {
             <Input
               size="large"
               value={leaderEmail}
-              onChange={(e) => setLeader({ email: e.target.value })}
+              onChange={handleLeaderEmailChange}
               placeholder="ایمیل"
               prefix={
                 <Icon
@@ -157,14 +194,6 @@ export const UserInfoStep = () => {
                   style={{ color: "#1890ff", fontSize: 20 }}
                 />
               }
-              style={{
-                borderRadius: 12,
-                fontSize: 16,
-                padding: "12px 16px",
-                border: "2px solid #f0f0f0",
-                background: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
-              }}
             />
           </Form.Item>
         </motion.div>
@@ -200,7 +229,7 @@ export const UserInfoStep = () => {
             <Input
               size="large"
               value={leaderPhone}
-              onChange={(e) => setLeader({ phone: e.target.value })}
+              onChange={handleLeaderPhoneChange}
               placeholder="شماره تماس"
               prefix={
                 <Icon
@@ -208,14 +237,6 @@ export const UserInfoStep = () => {
                   style={{ color: "#1890ff", fontSize: 20 }}
                 />
               }
-              style={{
-                borderRadius: 12,
-                fontSize: 16,
-                padding: "12px 16px",
-                border: "2px solid #f0f0f0",
-                background: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
-              }}
             />
           </Form.Item>
         </motion.div>
@@ -227,13 +248,7 @@ export const UserInfoStep = () => {
             onClick={addMember}
             disabled={members.length >= 2}
             icon={<Icon icon="mdi:account-plus" />}
-            style={{
-              borderRadius: 12,
-              height: 48,
-              fontSize: 16,
-              fontWeight: 600,
-              marginBottom: "1rem",
-            }}
+            style={{ marginBottom: "1rem" }}
           >
             افزودن عضو جدید
           </Button>
@@ -252,7 +267,7 @@ export const UserInfoStep = () => {
               <Input
                 size="large"
                 value={member}
-                onChange={(e) => updateMember(index, e.target.value)}
+                onChange={(e) => handleMemberChange(index, e.target.value)}
                 placeholder="نام و نام خانوادگی"
                 prefix={
                   <Icon
@@ -268,18 +283,9 @@ export const UserInfoStep = () => {
                       fontSize: 20,
                       cursor: "pointer",
                     }}
-                    onClick={() => removeMember(index)}
+                    onClick={() => handleRemoveMember(index)}
                   />
                 }
-                style={{
-                  borderRadius: 12,
-                  fontSize: 16,
-                  padding: "12px 16px",
-                  border: "2px solid #f0f0f0",
-                  background:
-                    "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
-                  boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
-                }}
               />
             </Form.Item>
           </motion.div>
@@ -320,18 +326,12 @@ export const UserInfoStep = () => {
               size="large"
               value={university}
               onChange={(value) => {
-                setUniversity(value);
+                handleUniversityChange(value);
                 onChange(value); // اگر نیاز به log دارید
               }}
               onSearch={onSearch}
               placeholder="دانشگاه خود را انتخاب کنید"
               suffixIcon={<Icon icon="mdi:chevron-down" />}
-              style={{
-                borderRadius: 12,
-                border: "2px solid #f0f0f0",
-                boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
-                background: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
-              }}
               dropdownStyle={{
                 borderRadius: 12,
               }}
@@ -342,4 +342,4 @@ export const UserInfoStep = () => {
       </div>
     </motion.div>
   );
-};
+});

@@ -1,4 +1,5 @@
 // components/FloatingIcons.tsx
+import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
 
@@ -22,7 +23,7 @@ interface FloatingIconsProps {
 const FloatingIcon: React.FC<{
   config: FloatingIconConfig;
   id: number;
-}> = ({ config, id }) => {
+}> = React.memo(({ config, id }) => {
   const {
     icon,
     color = "#ffd666",
@@ -33,13 +34,36 @@ const FloatingIcon: React.FC<{
     opacity = 0.4,
   } = config;
 
-  const position = {
-    x: Math.random() * 100,
-    y: Math.random() * 100,
-  };
+  // Memoize position and size calculations to prevent recreation on re-renders
+  const { position, size, duration } = useMemo(
+    () => ({
+      position: {
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+      },
+      size: minSize + Math.random() * (maxSize - minSize),
+      duration: minDuration + Math.random() * (maxDuration - minDuration),
+    }),
+    [minSize, maxSize, minDuration, maxDuration]
+  );
 
-  const size = minSize + Math.random() * (maxSize - minSize);
-  const duration = minDuration + Math.random() * (maxDuration - minDuration);
+  // Memoize animation values to prevent recreation
+  const { animationValues, animationTransition } = useMemo(
+    () => ({
+      animationValues: {
+        x: [0, Math.random() * 100 - 50, Math.random() * 100 - 50],
+        y: [0, Math.random() * 100 - 50, Math.random() * 100 - 50],
+        rotate: [0, 180, 360],
+        scale: [0.8, 1.2, 0.8],
+      },
+      animationTransition: {
+        duration: duration,
+        repeat: Infinity,
+        repeatType: "reverse" as const,
+      },
+    }),
+    [duration]
+  );
 
   return (
     <motion.div
@@ -52,61 +76,52 @@ const FloatingIcon: React.FC<{
         opacity: opacity,
         pointerEvents: "none",
       }}
-      animate={{
-        x: [0, Math.random() * 100 - 50, Math.random() * 100 - 50],
-        y: [0, Math.random() * 100 - 50, Math.random() * 100 - 50],
-        rotate: [0, 180, 360],
-        scale: [0.8, 1.2, 0.8],
-      }}
-      transition={{
-        duration: duration,
-        repeat: Infinity,
-        repeatType: "reverse",
-        ease: "easeInOut",
-      }}
+      animate={animationValues}
+      transition={animationTransition}
     >
       <Icon icon={icon} />
     </motion.div>
   );
-};
+});
 
-export const FloatingIcons: React.FC<FloatingIconsProps> = ({
-  count = 8,
-  icons,
-  className = "",
-  zIndex = 0,
-}) => {
-  // Randomly select icons from the provided list
-  const selectedIcons = Array.from({ length: count }, (_, index) => {
-    const randomConfig = icons[Math.floor(Math.random() * icons.length)];
-    return {
-      ...randomConfig,
-      id: index,
-    };
-  });
+export const FloatingIcons: React.FC<FloatingIconsProps> = React.memo(
+  ({ count = 8, icons, className = "", zIndex = 0 }) => {
+    // Memoize selected icons to prevent recreation on re-renders
+    const selectedIcons = useMemo(
+      () =>
+        Array.from({ length: count }, (_, index) => {
+          const randomConfig = icons[Math.floor(Math.random() * icons.length)];
+          return {
+            ...randomConfig,
+            id: index,
+          };
+        }),
+      [count, icons]
+    );
 
-  return (
-    <div
-      className={className}
-      style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        pointerEvents: "none",
-        zIndex: zIndex,
-        overflow: "hidden",
-      }}
-    >
-      {/* <h1>skclslkdnc</h1> */}
-      {selectedIcons.map((config) => (
-        <FloatingIcon
-          key={`floating-icon-${config.id}`}
-          config={config}
-          id={config.id}
-        />
-      ))}
-    </div>
-  );
-};
+    return (
+      <div
+        className={className}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          pointerEvents: "none",
+          zIndex: zIndex,
+          overflow: "hidden",
+        }}
+      >
+        {/* <h1>skclslkdnc</h1> */}
+        {selectedIcons.map((config) => (
+          <FloatingIcon
+            key={`floating-icon-${config.id}`}
+            config={config}
+            id={config.id}
+          />
+        ))}
+      </div>
+    );
+  }
+);

@@ -70,6 +70,10 @@ export const lightTheme = {
     ...baseTokens.components,
     Button: {
       ...baseTokens.components.Button,
+      colorBgContainer: baseTokens.token.componentBackground,
+      boxShadow: baseTokens.token.componentBoxShadow,
+      colorBorder: baseTokens.token.componentBorderColor,
+      borderWidth: baseTokens.token.componentBorderWidth,
     },
     Card: {
       ...baseTokens.components.Card,
@@ -78,8 +82,24 @@ export const lightTheme = {
     },
     Input: {
       ...baseTokens.components.Input,
-      colorBgContainer: baseTokens.token.neutral1,
-      colorBorder: baseTokens.token.neutral5,
+      colorBgContainer: baseTokens.token.componentBackground,
+      colorBorder: baseTokens.token.componentBorderColor,
+      borderWidth: baseTokens.token.componentBorderWidth,
+      boxShadow: baseTokens.token.componentBoxShadow,
+    },
+    TextArea: {
+      ...baseTokens.components.TextArea,
+      colorBgContainer: baseTokens.token.componentBackground,
+      colorBorder: baseTokens.token.componentBorderColor,
+      borderWidth: baseTokens.token.componentBorderWidth,
+      boxShadow: baseTokens.token.componentBoxShadow,
+    },
+    Select: {
+      ...baseTokens.components.Select,
+      colorBgContainer: baseTokens.token.componentBackground,
+      colorBorder: baseTokens.token.componentBorderColor,
+      borderWidth: baseTokens.token.componentBorderWidth,
+      boxShadow: baseTokens.token.componentBoxShadow,
     },
     Table: {
       ...baseTokens.components.Table,

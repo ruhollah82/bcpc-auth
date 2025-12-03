@@ -1,4 +1,5 @@
 const radiusBase = 16;
+const componentRadius = 12; // Specific radius for form components
 
 export const baseTokens = {
   token: {
@@ -74,19 +75,50 @@ export const baseTokens = {
     neutral9: "#434343",
     neutral10: "#262626",
 
+    // Typography
     borderRadius: radiusBase,
     fontFamily: "Vazirmatn, Vazir, Tahoma, sans-serif",
+    fontSize: 16,
+    fontSizeSM: 14,
+    fontSizeLG: 16,
+
+    // Custom Design Tokens
+    componentBorderRadius: componentRadius,
+    componentBorderWidth: 2,
+    componentPadding: "12px 16px",
+    componentBoxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+    componentBackground: "linear-gradient(135deg, #ffffff 0%, #fafafa 100%)",
+    componentBorderColor: "#f0f0f0",
+    buttonHeight: 48,
+    buttonFontWeight: 600,
   },
 
   components: {
     Button: {
-      borderRadius: radiusBase,
+      borderRadius: componentRadius,
+      controlHeight: 48,
+      fontWeight: 600,
     },
     Input: {
-      borderRadius: radiusBase,
+      borderRadius: componentRadius,
+      controlHeight: 40,
+      paddingBlock: 12,
+      paddingInline: 16,
+      fontSize: 16,
+    },
+    TextArea: {
+      borderRadius: componentRadius,
+      paddingBlock: 12,
+      paddingInline: 16,
+      fontSize: 16,
+      lineHeight: 1.6,
     },
     Select: {
-      borderRadius: radiusBase,
+      borderRadius: componentRadius,
+      controlHeight: 40,
+      paddingBlock: 12,
+      paddingInline: 16,
+      fontSize: 16,
     },
     Card: {
       borderRadius: radiusBase * 1.5,

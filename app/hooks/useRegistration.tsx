@@ -1,5 +1,5 @@
 // hooks/useRegistration.ts
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useAuthStore } from "../store/auth.store";
 import type { FormData } from "../types/registration.types";
 

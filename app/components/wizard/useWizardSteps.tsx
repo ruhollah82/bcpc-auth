@@ -1,11 +1,12 @@
 // components/wizard/useWizardSteps.ts
+import { useMemo } from "react";
 import type { WizardStep } from "../../types/registration.types";
 import { UserInfoStep } from "./steps/UserInfoStep";
 import { TeamInfoStep } from "./steps/TeamInfoStep";
 import { WelcomeStep } from "./steps/WelcomeStep";
 
-export const useWizardSteps = () => {
-  const steps: WizardStep[] = [
+// Memoize steps outside component to prevent recreation
+const STEPS: WizardStep[] = [
     {
       title: "خوش آمدید",
       component: WelcomeStep,
@@ -29,6 +30,9 @@ export const useWizardSteps = () => {
       ], // All required fields including members
     },
   ];
+
+export const useWizardSteps = () => {
+  const steps = useMemo(() => STEPS, []);
 
   return { steps };
 };
