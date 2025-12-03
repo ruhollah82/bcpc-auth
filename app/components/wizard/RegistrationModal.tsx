@@ -198,7 +198,7 @@ export const AppModal = () => {
           </div>
 
           <Alert
-            message="توجه مهم"
+            message="توجه:"
             description="برای ورود به پنل کاربری خود به این اطلاعات نیاز خواهید داشت. لطفا آنها را در جایی امن یادداشت کنید."
             type="warning"
             showIcon
@@ -260,11 +260,11 @@ export const AppModal = () => {
 
         {showCredentials && renderCredentials(modal.message)}
 
-        {!showCredentials && modal.message && (
+        {/* {!showCredentials && modal.message && (
           <div style={{ textAlign: "center", marginTop: 16 }}>
             <Text>{modal.message}</Text>
           </div>
-        )}
+        )} */}
       </div>
     </Modal>
   );
