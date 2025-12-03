@@ -79,16 +79,29 @@ export const RegistrationWizard: React.FC<RegistrationWizardProps> = ({
     },
     [onFormDataChange]
   );
+
+  function translateErrorMessage(error: string) {
+    if (!error) return "مشکلی در ثبت نام به وجود آمده است.";
+
+    if (error.includes("already exists")) {
+      return "تیمی با این نام قبلا ثبت شده است.";
+    }
+
+    if (error.includes("Failed to create team")) {
+      return "خطایی در ایجاد تیم رخ داده است. لطفاً دوباره تلاش کنید.";
+    }
+
+    // fallback
+    return "مشکلی در ثبت نام به وجود آمده است.";
+  }
+
   const handleSubmit = async () => {
     try {
       setLoading(true);
 
       const response = await submitTeam();
-      console.log("API RESPONSE:", response);
 
-      // Check if the response indicates success
       if (response?.success === true) {
-        // Format message with credentials markers
         const message = `تیم شما با موفقیت ثبت شد.
 
 مشخصات ورود به حساب کاربری:
@@ -100,38 +113,45 @@ ${response.email ? `EMAIL: ${response.email}` : ""}`;
         openModal({
           type: "success",
           title: "ثبت نام موفق",
-          message: message,
+          message,
           onConfirm: () => {
             resetTeamForm();
+            location.reload();
             window.location.href = "https://bircpc.ir";
           },
         });
-      } else {
-        // Handle API error response (success: false)
-        const errorMessage =
-          response?.error || "مشکلی در ثبت نام به وجود آمده است.";
 
-        openModal({
-          type: "error",
-          title: "خطا در ثبت نام",
-          message: errorMessage,
-        });
+        return;
       }
-    } catch (err: any) {
-      console.error("Submit failed:", err);
 
-      // Extract validation errors if any
+      openModal({
+        type: "error",
+        title: "خطا در ثبت نام",
+        message: translateErrorMessage(response?.error),
+        onConfirm: () => {
+          resetTeamForm();
+          location.reload();
+        },
+      });
+    } catch (err: any) {
+      console.log("Submit failed:", err);
+
       let errorMessage = "مشکلی در ثبت نام به وجود آمده است.";
-      if (err.errorFields && err.errorFields.length > 0) {
-        errorMessage = "لطفا تمام فیلدهای ضروری را به درستی پر کنید.";
+
+      if (err.response?.data?.error) {
+        errorMessage = translateErrorMessage(err.response.data.error);
       } else if (err.message) {
-        errorMessage = err.message;
+        errorMessage = translateErrorMessage(err.message);
       }
 
       openModal({
         type: "error",
         title: "خطا در ثبت نام",
         message: errorMessage,
+        onConfirm: () => {
+          resetTeamForm();
+          location.reload();
+        },
       });
     } finally {
       setLoading(false);

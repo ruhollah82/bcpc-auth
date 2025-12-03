@@ -1,2483 +1,2197 @@
 export const universities = [
   {
-    value: "Bam University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی بم",
+    "value": "University of Torbat Heydarieh",
+    "label": "دانشگاه تربت حیدریه"
   },
   {
-    value: "Maragheh University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی مراغه",
+    "value": "Sabzevar University of New Technology",
+    "label": "دانشگاه فناوری‌های نوین سبزوار"
   },
   {
-    value: "Jiroft University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی جیرفت",
+    "value": "University of Applied Science and Technology of Qom",
+    "label": "دانشگاه علمی کاربردی قم"
   },
   {
-    value: "Saveh University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی ساوه",
+    "value": "Malayer University",
+    "label": "دانشگاه ملایر"
   },
-  { value: "University of Torbat Heydarieh", label: "دانشگاه تربت حیدریه" },
   {
-    value: "Sabzevar University of New Technology",
-    label: "دانشگاه فناوری‌های نوین سبزوار",
+    "value": "Mazandaran University of Science and Technology",
+    "label": "دانشگاه علم و فناوری مازندران"
   },
   {
-    value: "University of Applied Science and Technology of Qom",
-    label: "دانشگاه علمی کاربردی قم",
+    "value": "Shariaty Technical College",
+    "label": "دانشکده فنی شریعتی"
   },
-  { value: "Malayer University", label: "دانشگاه ملایر" },
   {
-    value: "Mazandaran University of Science and Technology",
-    label: "دانشگاه علم و فناوری مازندران",
+    "value": "Jundishapur University of Technology",
+    "label": "دانشگاه صنعتی جندیشاپور"
   },
-  { value: "Shariaty Technical College", label: "دانشکده فنی شریعتی" },
   {
-    value: "Jundishapur University of Technology",
-    label: "دانشگاه صنعتی جندیشاپور",
+    "value": "University of Zabol",
+    "label": "دانشگاه زابل"
   },
-  { value: "University of Zabol", label: "دانشگاه زابل" },
   {
-    value: "Islamic Azad University, Shoushtar Branch",
-    label: "دانشگاه آزاد اسلامی واحد شوشتر",
+    "value": "Islamic Azad University, Shoushtar Branch",
+    "label": "دانشگاه آزاد اسلامی واحد شوشتر"
   },
   {
-    value: "Islamic Azad University, Qom branch",
-    label: "دانشگاه آزاد اسلامی واحد قم",
+    "value": "Islamic Azad University, Qom branch",
+    "label": "دانشگاه آزاد اسلامی واحد قم"
   },
-  { value: "University of Iranians", label: "دانشگاه ایرانیان" },
   {
-    value: "International University of Chabahar",
-    label: "دانشگاه بین‌المللی چابهار",
+    "value": "University of Iranians",
+    "label": "دانشگاه ایرانیان"
   },
   {
-    value: "University of Islamic Republic of Iran Broadcasting",
-    label: "دانشگاه صدا و سیما",
+    "value": "International University of Chabahar",
+    "label": "دانشگاه بین‌المللی چابهار"
   },
   {
-    value: "Iranian Center for Translation Studies",
-    label: "مرکز مطالعات ترجمه ایران",
+    "value": "University of Islamic Republic of Iran Broadcasting",
+    "label": "دانشگاه صدا و سیما"
   },
   {
-    value: "Islamic Azad University of Tafresh",
-    label: "دانشگاه آزاد اسلامی واحد تفرش",
+    "value": "Iranian Center for Translation Studies",
+    "label": "مرکز مطالعات ترجمه ایران"
   },
   {
-    value: "Islamic Azad University of Zanjan",
-    label: "دانشگاه آزاد اسلامی واحد زنجان",
+    "value": "Islamic Azad University of Tafresh",
+    "label": "دانشگاه آزاد اسلامی واحد تفرش"
   },
   {
-    value: "Kashan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی کاشان",
+    "value": "Islamic Azad University of Zanjan",
+    "label": "دانشگاه آزاد اسلامی واحد زنجان"
   },
-  { value: "Kharazmi University", label: "دانشگاه خوارزمی" },
   {
-    value: "Khayyam Institute of Higher Education, Mashhad",
-    label: "موسسه آموزش عالی خیام مشهد",
+    "value": "Kharazmi University",
+    "label": "دانشگاه خوارزمی"
   },
   {
-    value: "Islamic Azad University, Sanandaj branch",
-    label: "دانشگاه آزاد اسلامی واحد سنندج",
+    "value": "Khayyam Institute of Higher Education, Mashhad",
+    "label": "موسسه آموزش عالی خیام مشهد"
   },
   {
-    value: "Payam Noor University of Mahabad",
-    label: "دانشگاه پیام نور مهاباد",
+    "value": "Islamic Azad University, Sanandaj branch",
+    "label": "دانشگاه آزاد اسلامی واحد سنندج"
   },
-  { value: "Tabarestan University", label: "دانشگاه طبرستان" },
   {
-    value: "Ramin University of Agriculture and Natural Resources",
-    label: "دانشگاه رامین کشاورزی و منابع طبیعی",
+    "value": "Payam Noor University of Mahabad",
+    "label": "دانشگاه پیام نور مهاباد"
   },
   {
-    value: "Mazandaran University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی مازندران",
+    "value": "Tabarestan University",
+    "label": "دانشگاه طبرستان"
   },
   {
-    value: "Qom University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی قم",
+    "value": "Ramin University of Agriculture and Natural Resources",
+    "label": "دانشگاه رامین کشاورزی و منابع طبیعی"
   },
   {
-    value: "Islamic Azad University of Kerman",
-    label: "دانشگاه آزاد اسلامی واحد کرمان",
+    "value": "Islamic Azad University of Kerman",
+    "label": "دانشگاه آزاد اسلامی واحد کرمان"
   },
   {
-    value: "Islamic Azad University of Saveh",
-    label: "دانشگاه آزاد اسلامی واحد ساوه",
+    "value": "Islamic Azad University of Saveh",
+    "label": "دانشگاه آزاد اسلامی واحد ساوه"
   },
-  { value: "University of Mazandaran", label: "دانشگاه مازندران" },
   {
-    value: "Malek Ashtar University of Technology",
-    label: "دانشگاه صنعتی مالک اشتر",
+    "value": "University of Mazandaran",
+    "label": "دانشگاه مازندران"
   },
-  { value: "Mofid University", label: "دانشگاه مفید" },
-  { value: "Petroleum University of Technology", label: "دانشگاه صنعت نفت" },
   {
-    value: "Azad University at Qazvin",
-    label: "دانشگاه آزاد اسلامی واحد قزوین",
+    "value": "Malek Ashtar University of Technology",
+    "label": "دانشگاه صنعتی مالک اشتر"
   },
   {
-    value: "Qeshm Institute of Higher Education",
-    label: "موسسه آموزش عالی قشم",
+    "value": "Mofid University",
+    "label": "دانشگاه مفید"
   },
-  { value: "Semnan University", label: "دانشگاه سمنان" },
-  { value: "Shahed University", label: "دانشگاه شاهد" },
   {
-    value: "Shahid Bahonar University of Kerman",
-    label: "دانشگاه شهید باهنر کرمان",
+    "value": "Petroleum University of Technology",
+    "label": "دانشگاه صنعت نفت"
   },
   {
-    value: "Shahid Rajaee Teacher Training University",
-    label: "دانشگاه تربیت دبیر شهید رجایی",
+    "value": "Azad University at Qazvin",
+    "label": "دانشگاه آزاد اسلامی واحد قزوین"
   },
   {
-    value: "Shahid Sattari University of Aeronautical Engineering",
-    label: "دانشگاه صنعتی شهید ستاری",
+    "value": "Qeshm Institute of Higher Education",
+    "label": "موسسه آموزش عالی قشم"
   },
-  { value: "Shahrekord University", label: "دانشگاه شهرکرد" },
   {
-    value: "Sharif University of Technology International Campus",
-    label: "پردیس بین‌المللی دانشگاه صنعتی شریف",
+    "value": "Semnan University",
+    "label": "دانشگاه سمنان"
   },
-  { value: "Sheikh Bahaei University", label: "دانشگاه شیخ بهایی" },
   {
-    value: "Shiraz Pasargad Higher Education Institute",
-    label: "موسسه آموزش عالی پاسارگاد شیراز",
+    "value": "Shahed University",
+    "label": "دانشگاه شاهد"
   },
-  { value: "Shiraz University of Technology", label: "دانشگاه صنعتی شیراز" },
-  { value: "Shomal University", label: "دانشگاه شمال" },
-  { value: "Tafresh University", label: "دانشگاه تفرش" },
-  { value: "Tarbiat Modares University", label: "دانشگاه تربیت مدرس" },
-  { value: "University of Birjand", label: "دانشگاه بیرجند" },
-  { value: "University of Bonab", label: "دانشگاه بناب" },
-  { value: "University of Guilan", label: "دانشگاه گیلان" },
-  { value: "University of Mohaghegh Ardabili", label: "دانشگاه محقق اردبیلی" },
   {
-    value: "University of Religions and Denominations",
-    label: "دانشگاه ادیان و مذاهب",
+    "value": "Shahid Bahonar University of Kerman",
+    "label": "دانشگاه شهید باهنر کرمان"
   },
-  { value: "University of Science and Culture", label: "دانشگاه علم و فرهنگ" },
   {
-    value: "University of Sistan and Baluchestan",
-    label: "دانشگاه سیستان و بلوچستان",
+    "value": "Shahid Rajaee Teacher Training University",
+    "label": "دانشگاه تربیت دبیر شهید رجایی"
   },
   {
-    value: "Zand Institute of Higher Education",
-    label: "موسسه آموزش عالی زند",
+    "value": "Shahid Sattari University of Aeronautical Engineering",
+    "label": "دانشگاه صنعتی شهید ستاری"
   },
-  { value: "Allameh Tabataba'i University", label: "دانشگاه علامه طباطبایی" },
-  { value: "University of Yazd", label: "دانشگاه یزد" },
-  { value: "Baqir al-Olum University", label: "دانشگاه باقر العلوم" },
   {
-    value: "Islamic Azad University, Ahvaz",
-    label: "دانشگاه آزاد اسلامی واحد اهواز",
+    "value": "Shahrekord University",
+    "label": "دانشگاه شهرکرد"
   },
   {
-    value: "Islamic Azad University, Tunkabon branch",
-    label: "دانشگاه آزاد اسلامی واحد تنکابن",
+    "value": "Sharif University of Technology International Campus",
+    "label": "پردیس بین‌المللی دانشگاه صنعتی شریف"
   },
-  { value: "University of Gonabad", label: "دانشگاه گناباد" },
   {
-    value: "Islamic Azad University, Naragh Branch",
-    label: "دانشگاه آزاد اسلامی واحد نراق",
+    "value": "Sheikh Bahaei University",
+    "label": "دانشگاه شیخ بهایی"
   },
-  { value: "Farhangian University of Ilam", label: "دانشگاه فرهنگیان ایلام" },
-  { value: "University of Bojnord", label: "دانشگاه بجنورد" },
   {
-    value: "Islamic Azad University of Khorasgan",
-    label: "دانشگاه آزاد اسلامی واحد خوراسگان",
+    "value": "Shiraz Pasargad Higher Education Institute",
+    "label": "موسسه آموزش عالی پاسارگاد شیراز"
   },
-  { value: "Ilam University", label: "دانشگاه ایلام" },
   {
-    value: "Semnan University of Medical Sciences and Health Services",
-    label: "دانشگاه علوم پزشکی و خدمات بهداشتی درمانی سمنان",
+    "value": "Shiraz University of Technology",
+    "label": "دانشگاه صنعتی شیراز"
   },
   {
-    value: "Kermanshah University of Technology",
-    label: "دانشگاه صنعتی کرمانشاه",
+    "value": "Shomal University",
+    "label": "دانشگاه شمال"
   },
   {
-    value: "Islamic Azad University, Semnan Science and Research Unit",
-    label: "دانشگاه آزاد اسلامی واحد علوم و تحقیقات سمنان",
+    "value": "Tafresh University",
+    "label": "دانشگاه تفرش"
   },
   {
-    value: "University of Judicial Sciences and Administrative Services",
-    label: "دانشگاه علوم قضایی و خدمات اداری",
+    "value": "Tarbiat Modares University",
+    "label": "دانشگاه تربیت مدرس"
   },
   {
-    value: "Islamic Azad University of Ardabil",
-    label: "دانشگاه آزاد اسلامی واحد اردبیل",
+    "value": "University of Birjand",
+    "label": "دانشگاه بیرجند"
   },
   {
-    value: "Sari Agricultural Sciences and Natural Resources University",
-    label: "دانشگاه علوم کشاورزی و منابع طبیعی ساری",
+    "value": "University of Bonab",
+    "label": "دانشگاه بناب"
   },
-  { value: "Karaj Payame Noor University", label: "دانشگاه پیام نور کرج" },
   {
-    value: "Islamic Azad University of Shahrud",
-    label: "دانشگاه آزاد اسلامی واحد شاهرود",
+    "value": "University of Guilan",
+    "label": "دانشگاه گیلان"
   },
-  { value: "Hormozgan University", label: "دانشگاه هرمزگان" },
-  { value: "Farabi University", label: "دانشگاه فرابی" },
   {
-    value: "Kermanshah Technical and Vocational University",
-    label: "دانشگاه فنی و حرفه‌ای کرمانشاه",
+    "value": "University of Mohaghegh Ardabili",
+    "label": "دانشگاه محقق اردبیلی"
   },
-  { value: "Birjand University of Technology", label: "دانشگاه صنعتی بیرجند" },
   {
-    value: "Islamic Azad University, Sarab branch",
-    label: "دانشگاه آزاد اسلامی واحد سراب",
+    "value": "University of Religions and Denominations",
+    "label": "دانشگاه ادیان و مذاهب"
   },
   {
-    value: "Islamic Azad University of Arsanjan",
-    label: "دانشگاه آزاد اسلامی واحد ارسنجان",
+    "value": "University of Science and Culture",
+    "label": "دانشگاه علم و فرهنگ"
   },
   {
-    value: "AJA University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی آجا",
+    "value": "University of Sistan and Baluchestan",
+    "label": "دانشگاه سیستان و بلوچستان"
   },
   {
-    value: "Islamic Azad University, Abarkoh branch",
-    label: "دانشگاه آزاد اسلامی واحد ابرکوه",
+    "value": "Zand Institute of Higher Education",
+    "label": "موسسه آموزش عالی زند"
   },
   {
-    value: "Zanjan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی زنجان",
+    "value": "Allameh Tabataba'i University",
+    "label": "دانشگاه علامه طباطبایی"
   },
-  { value: "University of Islamic Religions", label: "دانشگاه ادیان اسلامی" },
   {
-    value: "Zahedan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی زاهدان",
+    "value": "University of Yazd",
+    "label": "دانشگاه یزد"
   },
   {
-    value: "Dezful University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی دزفول",
+    "value": "Baqir al-Olum University",
+    "label": "دانشگاه باقر العلوم"
   },
   {
-    value: "Islamic Azad University gives a unit",
-    label: "دانشگاه آزاد اسلامی واحد دهدز",
+    "value": "Islamic Azad University, Ahvaz",
+    "label": "دانشگاه آزاد اسلامی واحد اهواز"
   },
   {
-    value: "Qazvin University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی قزوین",
+    "value": "Islamic Azad University, Tunkabon branch",
+    "label": "دانشگاه آزاد اسلامی واحد تنکابن"
   },
   {
-    value: "Islamic Azad University, Islamshahr branch",
-    label: "دانشگاه آزاد اسلامی واحد اسلامشهر",
+    "value": "University of Gonabad",
+    "label": "دانشگاه گناباد"
   },
-  { value: "Damghan University", label: "دانشگاه دامغان" },
-  { value: "Azad University of Iran", label: "دانشگاه آزاد اسلامی ایران" },
   {
-    value: "Allameh Tabatabaei University (RA)",
-    label: "دانشگاه علامه طباطبایی (ره)",
+    "value": "Islamic Azad University, Naragh Branch",
+    "label": "دانشگاه آزاد اسلامی واحد نراق"
   },
   {
-    value: "Al-Mustafa International University",
-    label: "دانشگاه بین‌المللی المصطفی",
+    "value": "Farhangian University of Ilam",
+    "label": "دانشگاه فرهنگیان ایلام"
   },
-  { value: "Lorestan University", label: "دانشگاه لرستان" },
-  { value: "Sadjad University of Technology", label: "دانشگاه صنعتی سجاد" },
   {
-    value: "Payame Noor University, Khanj branch",
-    label: "دانشگاه پیام نور واحد خانج",
+    "value": "University of Bojnord",
+    "label": "دانشگاه بجنورد"
   },
   {
-    value: "Hormozgan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی هرمزگان",
+    "value": "Islamic Azad University of Khorasgan",
+    "label": "دانشگاه آزاد اسلامی واحد خوراسگان"
   },
   {
-    value: "Applied Scientific University of Persepolis",
-    label: "دانشگاه علمی کاربردی پرسپولیس",
+    "value": "Ilam University",
+    "label": "دانشگاه ایلام"
   },
   {
-    value: "Islamic Azad University of Rudehen",
-    label: "دانشگاه آزاد اسلامی واحد رودهن",
+    "value": "Kermanshah University of Technology",
+    "label": "دانشگاه صنعتی کرمانشاه"
   },
-  { value: "University of Maragheh", label: "دانشگاه مراغه" },
   {
-    value: "Razavi University of Islamic Sciences",
-    label: "دانشگاه علوم اسلامی رضوی",
+    "value": "Islamic Azad University, Semnan Science and Research Unit",
+    "label": "دانشگاه آزاد اسلامی واحد علوم و تحقیقات سمنان"
   },
   {
-    value: "Chabahar University of Maritime and Marine Sciences",
-    label: "دانشگاه دریانوردی و علوم دریایی چابهار",
+    "value": "University of Judicial Sciences and Administrative Services",
+    "label": "دانشگاه علوم قضایی و خدمات اداری"
   },
-  { value: "Golestan University", label: "دانشگاه گلستان" },
   {
-    value: "Rafsanjan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی رفسنجان",
+    "value": "Islamic Azad University of Ardabil",
+    "label": "دانشگاه آزاد اسلامی واحد اردبیل"
   },
   {
-    value: "Islamic Azad University of Saqqez",
-    label: "دانشگاه آزاد اسلامی واحد سقز",
+    "value": "Sari Agricultural Sciences and Natural Resources University",
+    "label": "دانشگاه علوم کشاورزی و منابع طبیعی ساری"
   },
   {
-    value: "Islamic Azad University of Borujerd",
-    label: "دانشگاه آزاد اسلامی واحد بروجرد",
+    "value": "Karaj Payame Noor University",
+    "label": "دانشگاه پیام نور کرج"
   },
   {
-    value: "Kurdistan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی کردستان",
+    "value": "Islamic Azad University of Shahrud",
+    "label": "دانشگاه آزاد اسلامی واحد شاهرود"
   },
   {
-    value: "Islamic Azad University of Varamin-Pishva",
-    label: "دانشگاه آزاد اسلامی واحد ورامین-پیشوا",
+    "value": "Hormozgan University",
+    "label": "دانشگاه هرمزگان"
   },
   {
-    value: "Larestan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی لارستان",
+    "value": "Farabi University",
+    "label": "دانشگاه فرابی"
   },
   {
-    value: "Islamic Azad University of Semnan",
-    label: "دانشگاه آزاد اسلامی واحد سمنان",
+    "value": "Kermanshah Technical and Vocational University",
+    "label": "دانشگاه فنی و حرفه‌ای کرمانشاه"
   },
   {
-    value: "Islamic Azad University, Aligudarz branch",
-    label: "دانشگاه آزاد اسلامی واحد الیگودرز",
+    "value": "Birjand University of Technology",
+    "label": "دانشگاه صنعتی بیرجند"
   },
-  { value: "Yasuj University", label: "دانشگاه یاسوج" },
-  { value: "Kerman Medical University", label: "دانشگاه علوم پزشکی کرمان" },
   {
-    value: "University of Social Welfare and Rehabilitation Sciences",
-    label: "دانشگاه علوم بهزیستی و توانبخشی",
+    "value": "Islamic Azad University, Sarab branch",
+    "label": "دانشگاه آزاد اسلامی واحد سراب"
   },
   {
-    value: "Islamic Azad University of Hamadan",
-    label: "دانشگاه آزاد اسلامی واحد همدان",
+    "value": "Islamic Azad University of Arsanjan",
+    "label": "دانشگاه آزاد اسلامی واحد ارسنجان"
   },
-  { value: "University of Environment", label: "دانشگاه محیط زیست" },
   {
-    value: "Imam Reza International University",
-    label: "دانشگاه بین‌المللی امام رضا",
+    "value": "Islamic Azad University, Abarkoh branch",
+    "label": "دانشگاه آزاد اسلامی واحد ابرکوه"
   },
   {
-    value: "Iran University of Science and Technology, Arak branch",
-    label: "دانشگاه علم و صنعت ایران، واحد اراک",
+    "value": "University of Islamic Religions",
+    "label": "دانشگاه ادیان اسلامی"
   },
   {
-    value: "Applied Scientific University of Karaj Municipality",
-    label: "دانشگاه علمی کاربردی شهرداری کرج",
+    "value": "Islamic Azad University gives a unit",
+    "label": "دانشگاه آزاد اسلامی واحد دهدز"
   },
   {
-    value: "Islamic Azad University of Dezful",
-    label: "دانشگاه آزاد اسلامی واحد دزفول",
+    "value": "Islamic Azad University, Islamshahr branch",
+    "label": "دانشگاه آزاد اسلامی واحد اسلامشهر"
   },
   {
-    value: "Islamic Azad University, Khorramabad branch",
-    label: "دانشگاه آزاد اسلامی واحد خرم‌آباد",
+    "value": "Damghan University",
+    "label": "دانشگاه دامغان"
   },
   {
-    value: "Islamic Azad University of Astara",
-    label: "دانشگاه آزاد اسلامی واحد آستارا",
+    "value": "Azad University of Iran",
+    "label": "دانشگاه آزاد اسلامی ایران"
   },
   {
-    value: "Islamic Azad University of Amol",
-    label: "دانشگاه آزاد اسلامی واحد آمل",
+    "value": "Allameh Tabatabaei University (RA)",
+    "label": "دانشگاه علامه طباطبایی (ره)"
   },
   {
-    value: "Islamic Azad University, Marvdasht",
-    label: "دانشگاه آزاد اسلامی واحد مرودشت",
+    "value": "Al-Mustafa International University",
+    "label": "دانشگاه بین‌المللی المصطفی"
   },
-  { value: "Sirjan University of Technology", label: "دانشگاه صنعتی سیرجان" },
   {
-    value: "Islamic Azad University of Sari",
-    label: "دانشگاه آزاد اسلامی واحد ساری",
+    "value": "Lorestan University",
+    "label": "دانشگاه لرستان"
   },
-  { value: "University of Economic Sciences", label: "دانشگاه علوم اقتصادی" },
   {
-    value: "Iranian Research Institute of Philosophy",
-    label: "پژوهشگاه فلسفه ایران",
+    "value": "Sadjad University of Technology",
+    "label": "دانشگاه صنعتی سجاد"
   },
-  { value: "Payam Noor University of Shiraz", label: "دانشگاه پیام نور شیراز" },
   {
-    value: "Islamic Azad University, Gonabad branch",
-    label: "دانشگاه آزاد اسلامی واحد گناباد",
+    "value": "Payame Noor University, Khanj branch",
+    "label": "دانشگاه پیام نور واحد خانج"
   },
   {
-    value: "Institute for Humanities and Cultural Studies",
-    label: "پژوهشگاه علوم انسانی و مطالعات فرهنگی",
+    "value": "Applied Scientific University of Persepolis",
+    "label": "دانشگاه علمی کاربردی پرسپولیس"
   },
-  { value: "National University of Iran", label: "دانشگاه ملی ایران" },
-  { value: "Urmia University of Technology", label: "دانشگاه صنعتی ارومیه" },
   {
-    value: "Islamic Azad University, Takestan branch",
-    label: "دانشگاه آزاد اسلامی واحد تاکستان",
+    "value": "Islamic Azad University of Rudehen",
+    "label": "دانشگاه آزاد اسلامی واحد رودهن"
   },
-  { value: "University of Kashan", label: "دانشگاه کاشان" },
   {
-    value: "Isfahan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی اصفهان",
+    "value": "University of Maragheh",
+    "label": "دانشگاه مراغه"
   },
-  { value: "Isfahan University of Technology", label: "دانشگاه صنعتی اصفهان" },
   {
-    value: "Islamic Azad University Dental Branch of Tehran",
-    label: "دانشگاه آزاد اسلامی واحد دندانپزشکی تهران",
+    "value": "Razavi University of Islamic Sciences",
+    "label": "دانشگاه علوم اسلامی رضوی"
   },
   {
-    value: "Islamic Azad University, Fars Science and Research Branch",
-    label: "دانشگاه آزاد اسلامی واحد علوم و تحقیقات فارس",
+    "value": "Chabahar University of Maritime and Marine Sciences",
+    "label": "دانشگاه دریانوردی و علوم دریایی چابهار"
   },
   {
-    value: "Islamic Azad University of Anar",
-    label: "دانشگاه آزاد اسلامی واحد انار",
+    "value": "Golestan University",
+    "label": "دانشگاه گلستان"
   },
   {
-    value: "Islamic Azad University North Tehran Branch",
-    label: "دانشگاه آزاد اسلامی واحد تهران شمال",
+    "value": "Islamic Azad University of Saqqez",
+    "label": "دانشگاه آزاد اسلامی واحد سقز"
   },
   {
-    value: "Islamic Azad University of Ahar",
-    label: "دانشگاه آزاد اسلامی واحد اهر",
+    "value": "Islamic Azad University of Borujerd",
+    "label": "دانشگاه آزاد اسلامی واحد بروجرد"
   },
   {
-    value: "Islamic Azad University, South Tehran Branch",
-    label: "دانشگاه آزاد اسلامی واحد تهران جنوب",
+    "value": "Islamic Azad University of Varamin-Pishva",
+    "label": "دانشگاه آزاد اسلامی واحد ورامین-پیشوا"
   },
   {
-    value: "Islamic Azad University of Arak",
-    label: "دانشگاه آزاد اسلامی واحد اراک",
+    "value": "Islamic Azad University of Semnan",
+    "label": "دانشگاه آزاد اسلامی واحد سمنان"
   },
   {
-    value: "Islamic Azad University of Anzali",
-    label: "دانشگاه آزاد اسلامی واحد انزلی",
+    "value": "Islamic Azad University, Aligudarz branch",
+    "label": "دانشگاه آزاد اسلامی واحد الیگودرز"
   },
   {
-    value: "Islamic Azad University of Bojnord",
-    label: "دانشگاه آزاد اسلامی واحد بجنورد",
+    "value": "Yasuj University",
+    "label": "دانشگاه یاسوج"
   },
   {
-    value: "Islamic Azad University of Garmsar",
-    label: "دانشگاه آزاد اسلامی واحد گرمسار",
+    "value": "Islamic Azad University of Hamadan",
+    "label": "دانشگاه آزاد اسلامی واحد همدان"
   },
   {
-    value: "Islamic Azad University of Gorgan",
-    label: "دانشگاه آزاد اسلامی واحد گرگان",
+    "value": "University of Environment",
+    "label": "دانشگاه محیط زیست"
   },
   {
-    value: "Islamic Azad University of Karaj",
-    label: "دانشگاه آزاد اسلامی واحد کرج",
+    "value": "Imam Reza International University",
+    "label": "دانشگاه بین‌المللی امام رضا"
   },
   {
-    value: "Islamic Azad University of Kermanshah",
-    label: "دانشگاه آزاد اسلامی واحد کرمانشاه",
+    "value": "Iran University of Science and Technology, Arak branch",
+    "label": "دانشگاه علم و صنعت ایران، واحد اراک"
   },
   {
-    value: "Islamic Azad University of Khomeynishahr",
-    label: "دانشگاه آزاد اسلامی واحد خمینی‌شهر",
+    "value": "Applied Scientific University of Karaj Municipality",
+    "label": "دانشگاه علمی کاربردی شهرداری کرج"
   },
   {
-    value: "Islamic Azad University of Majlesi",
-    label: "دانشگاه آزاد اسلامی واحد مجلس",
+    "value": "Islamic Azad University of Dezful",
+    "label": "دانشگاه آزاد اسلامی واحد دزفول"
   },
   {
-    value: "Islamic Azad University of Mashhad",
-    label: "دانشگاه آزاد اسلامی واحد مشهد",
+    "value": "Islamic Azad University, Khorramabad branch",
+    "label": "دانشگاه آزاد اسلامی واحد خرم‌آباد"
   },
   {
-    value: "Islamic Azad University of Malard",
-    label: "دانشگاه آزاد اسلامی واحد ملارد",
+    "value": "Islamic Azad University of Astara",
+    "label": "دانشگاه آزاد اسلامی واحد آستارا"
   },
   {
-    value: "Islamic Azad University of Rasht",
-    label: "دانشگاه آزاد اسلامی واحد رشت",
+    "value": "Islamic Azad University of Amol",
+    "label": "دانشگاه آزاد اسلامی واحد آمل"
   },
   {
-    value: "Islamic Azad University of Parand",
-    label: "دانشگاه آزاد اسلامی واحد پرند",
+    "value": "Islamic Azad University, Marvdasht",
+    "label": "دانشگاه آزاد اسلامی واحد مرودشت"
   },
   {
-    value: "Islamic Azad University of Ray",
-    label: "دانشگاه آزاد اسلامی واحد ری",
+    "value": "Sirjan University of Technology",
+    "label": "دانشگاه صنعتی سیرجان"
   },
   {
-    value: "Islamic Azad University of Shiraz",
-    label: "دانشگاه آزاد اسلامی واحد شیراز",
+    "value": "Islamic Azad University of Sari",
+    "label": "دانشگاه آزاد اسلامی واحد ساری"
   },
-  { value: "Jami Institute of Technology", label: "موسسه فناوری جامی" },
   {
-    value: "Kermanshah University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی کرمانشاه",
+    "value": "University of Economic Sciences",
+    "label": "دانشگاه علوم اقتصادی"
   },
   {
-    value: "Islamic Azad University, Buin-Zahra",
-    label: "دانشگاه آزاد اسلامی واحد بوئین‌زهرا",
+    "value": "Iranian Research Institute of Philosophy",
+    "label": "پژوهشگاه فلسفه ایران"
   },
   {
-    value: "Khuzestan Institute of Higher Education",
-    label: "موسسه آموزش عالی خوزستان",
+    "value": "Payam Noor University of Shiraz",
+    "label": "دانشگاه پیام نور شیراز"
   },
   {
-    value: "Islamic Azad University Yasuj",
-    label: "دانشگاه آزاد اسلامی واحد یاسوج",
+    "value": "Islamic Azad University, Gonabad branch",
+    "label": "دانشگاه آزاد اسلامی واحد گناباد"
   },
-  { value: "Urmia University", label: "دانشگاه ارومیه" },
-  { value: "College of Agriculture", label: "دانشکده کشاورزی" },
-  { value: "Q28936333", label: "Q28936333" },
-  { value: "Hakim Sabzevari University", label: "دانشگاه حکیم سبزواری" },
   {
-    value: "Imam Khomeini International University",
-    label: "دانشگاه بین‌المللی امام خمینی",
+    "value": "Institute for Humanities and Cultural Studies",
+    "label": "پژوهشگاه علوم انسانی و مطالعات فرهنگی"
   },
   {
-    value: "Islamic Azad University of Birjand",
-    label: "دانشگاه آزاد اسلامی واحد بیرجند",
+    "value": "National University of Iran",
+    "label": "دانشگاه ملی ایران"
   },
-  { value: "Tabriz Art University", label: "دانشگاه هنر تبریز" },
   {
-    value: "Shahid Chamran University of Ahvaz",
-    label: "دانشگاه شهید چمران اهواز",
+    "value": "Urmia University of Technology",
+    "label": "دانشگاه صنعتی ارومیه"
   },
   {
-    value: "Islamic Azad University of Farahan",
-    label: "دانشگاه آزاد اسلامی واحد فراهان",
+    "value": "Islamic Azad University, Takestan branch",
+    "label": "دانشگاه آزاد اسلامی واحد تاکستان"
   },
-  { value: "University of Arak", label: "دانشگاه اراک" },
   {
-    value: "Islamic Azad University, Babol branch",
-    label: "دانشگاه آزاد اسلامی واحد بابل",
+    "value": "University of Kashan",
+    "label": "دانشگاه کاشان"
   },
-  { value: "Razi University", label: "دانشگاه رازی" },
   {
-    value: "Islamic Azad University of Nishapur",
-    label: "دانشگاه آزاد اسلامی واحد نیشابور",
+    "value": "Isfahan University of Technology",
+    "label": "دانشگاه صنعتی اصفهان"
   },
   {
-    value: "BahÃ¡'Ã­ Institute for Higher Education",
-    label: "موسسه آموزش عالی بهائی",
+    "value": "Islamic Azad University, Fars Science and Research Branch",
+    "label": "دانشگاه آزاد اسلامی واحد علوم و تحقیقات فارس"
   },
-  { value: "Tabriz University of Technology", label: "دانشگاه صنعتی تبریز" },
-  { value: "University of Zanjan", label: "دانشگاه زنجان" },
   {
-    value: "Islamic Azad University of Lahijan",
-    label: "دانشگاه آزاد اسلامی واحد لاهیجان",
+    "value": "Islamic Azad University of Anar",
+    "label": "دانشگاه آزاد اسلامی واحد انار"
   },
-  { value: "University of Neyshabur", label: "دانشگاه نیشابور" },
   {
-    value: "Iran University of Science and Technology",
-    label: "دانشگاه علم و صنعت ایران",
+    "value": "Islamic Azad University North Tehran Branch",
+    "label": "دانشگاه آزاد اسلامی واحد تهران شمال"
   },
-  { value: "Persian Gulf University", label: "دانشگاه خلیج فارس" },
-  { value: "University of Qom", label: "دانشگاه قم" },
   {
-    value: "Power and Water University of Technology",
-    label: "دانشگاه صنعت آب و برق",
+    "value": "Islamic Azad University of Ahar",
+    "label": "دانشگاه آزاد اسلامی واحد اهر"
   },
-  { value: "Shamsipour Technical College", label: "دانشکده فنی شمسی‌پور" },
   {
-    value: "Research Institute of Petroleum Industry",
-    label: "پژوهشگاه صنعت نفت",
+    "value": "Islamic Azad University, South Tehran Branch",
+    "label": "دانشگاه آزاد اسلامی واحد تهران جنوب"
   },
   {
-    value: "Ahvaz Jundishapur University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی جندیشاپور اهواز",
+    "value": "Islamic Azad University of Arak",
+    "label": "دانشگاه آزاد اسلامی واحد اراک"
   },
   {
-    value: "Allameh Mohaddes Noori University",
-    label: "دانشگاه علامه محدث نوری",
+    "value": "Islamic Azad University of Anzali",
+    "label": "دانشگاه آزاد اسلامی واحد انزلی"
   },
-  { value: "Arak University of Technology", label: "دانشگاه صنعتی اراک" },
   {
-    value: "Arak University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی اراک",
+    "value": "Islamic Azad University of Bojnord",
+    "label": "دانشگاه آزاد اسلامی واحد بجنورد"
   },
   {
-    value: "Azad University Tehran medical Branch",
-    label: "دانشگاه آزاد اسلامی واحد پزشکی تهران",
+    "value": "Islamic Azad University of Garmsar",
+    "label": "دانشگاه آزاد اسلامی واحد گرمسار"
   },
   {
-    value: "Azarbaijan Shahid Madani University",
-    label: "دانشگاه شهید مدنی آذربایجان",
+    "value": "Islamic Azad University of Gorgan",
+    "label": "دانشگاه آزاد اسلامی واحد گرگان"
   },
   {
-    value: "Babol University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی بابل",
+    "value": "Islamic Azad University of Karaj",
+    "label": "دانشگاه آزاد اسلامی واحد کرج"
   },
   {
-    value: "Baqiyatallah University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی باقرالعلوم",
+    "value": "Islamic Azad University of Kermanshah",
+    "label": "دانشگاه آزاد اسلامی واحد کرمانشاه"
   },
   {
-    value: "Besat Institute of Higher Education of Kerman",
-    label: "موسسه آموزش عالی بعثت کرمان",
+    "value": "Islamic Azad University of Khomeynishahr",
+    "label": "دانشگاه آزاد اسلامی واحد خمینی‌شهر"
   },
   {
-    value: "Birjand University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی بیرجند",
+    "value": "Islamic Azad University of Majlesi",
+    "label": "دانشگاه آزاد اسلامی واحد مجلس"
   },
   {
-    value: "University College of Azarabadegan",
-    label: "کالج دانشگاهی آذربایجان",
+    "value": "Islamic Azad University of Mashhad",
+    "label": "دانشگاه آزاد اسلامی واحد مشهد"
   },
-  { value: "Bu-Ali Sina University", label: "دانشگاه بوعلی سینا" },
   {
-    value: "Bushehr University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی بوشهر",
+    "value": "Islamic Azad University of Malard",
+    "label": "دانشگاه آزاد اسلامی واحد ملارد"
   },
   {
-    value: "Faculty of Engineering - Kharazmi University",
-    label: "دانشکده مهندسی دانشگاه خوارزمی",
+    "value": "Islamic Azad University of Rasht",
+    "label": "دانشگاه آزاد اسلامی واحد رشت"
   },
-  { value: "Amol University", label: "دانشگاه آمل" },
-  { value: "Babylon University", label: "دانشگاه بابل" },
-  { value: "Behshahr University", label: "دانشگاه بهشهر" },
-  { value: "College of Agriculture in Gonbad", label: "دانشکده کشاورزی گنبد" },
   {
-    value: "Islamic Azad University Science and Research Branch",
-    label: "دانشگاه آزاد اسلامی واحد علوم و تحقیقات",
+    "value": "Islamic Azad University of Parand",
+    "label": "دانشگاه آزاد اسلامی واحد پرند"
   },
   {
-    value: "Lorestan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی لرستان",
+    "value": "Islamic Azad University of Ray",
+    "label": "دانشگاه آزاد اسلامی واحد ری"
   },
   {
-    value:
-      "Faculty of Agriculture of Islamic azad university Science and Research branch",
-    label: "دانشکده کشاورزی دانشگاه آزاد اسلامی واحد علوم و تحقیقات",
+    "value": "Islamic Azad University of Shiraz",
+    "label": "دانشگاه آزاد اسلامی واحد شیراز"
   },
   {
-    value: "Faculty of Agriculture of Islamic Azad university Roudehen Branch",
-    label: "دانشکده کشاورزی دانشگاه آزاد اسلامی واحد رودهن",
+    "value": "Jami Institute of Technology",
+    "label": "موسسه فناوری جامی"
   },
   {
-    value: "Fatemiye University of Medical Sciences, Qom",
-    label: "دانشگاه علوم پزشکی فاطمیه قم",
+    "value": "Islamic Azad University, Buin-Zahra",
+    "label": "دانشگاه آزاد اسلامی واحد بوئین‌زهرا"
   },
   {
-    value: "Gonabad University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی گناباد",
+    "value": "Khuzestan Institute of Higher Education",
+    "label": "موسسه آموزش عالی خوزستان"
   },
   {
-    value: "Islamic Azad University of Falavarjan",
-    label: "دانشگاه آزاد اسلامی واحد فلاورجان",
+    "value": "Islamic Azad University Yasuj",
+    "label": "دانشگاه آزاد اسلامی واحد یاسوج"
   },
   {
-    value: "Gilan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی گیلان",
+    "value": "Urmia University",
+    "label": "دانشگاه ارومیه"
   },
   {
-    value: "Golpayegan University of Engineering",
-    label: "دانشگاه صنعتی گلپایگان",
+    "value": "College of Agriculture",
+    "label": "دانشکده کشاورزی"
   },
-  { value: "Gorgan University", label: "دانشگاه گرگان" },
+
   {
-    value: "Department of civil engineering of Semnan university",
-    label: "گروه مهندسی عمران دانشگاه سمنان",
+    "value": "Hakim Sabzevari University",
+    "label": "دانشگاه حکیم سبزواری"
   },
   {
-    value: "Amirkabir University of Technology, Mahshahr branch",
-    label: "دانشگاه صنعتی امیرکبیر، واحد ماهشهر",
+    "value": "Imam Khomeini International University",
+    "label": "دانشگاه بین‌المللی امام خمینی"
   },
   {
-    value: "Amirkabir University of Technology, Bandar Abbas branch",
-    label: "دانشگاه صنعتی امیرکبیر، واحد بندرعباس",
+    "value": "Islamic Azad University of Birjand",
+    "label": "دانشگاه آزاد اسلامی واحد بیرجند"
   },
-  { value: "Medical University of Ilam", label: "دانشگاه علوم پزشکی ایلام" },
   {
-    value: "Islamic Azad University, Torbat Jam branch",
-    label: "دانشگاه آزاد اسلامی واحد تربت جام",
+    "value": "Tabriz Art University",
+    "label": "دانشگاه هنر تبریز"
   },
   {
-    value: "List of universities of medical sciences of Iran",
-    label: "فهرست دانشگاه‌های علوم پزشکی ایران",
+    "value": "Shahid Chamran University of Ahvaz",
+    "label": "دانشگاه شهید چمران اهواز"
   },
   {
-    value: "Islamic Azad University Kurdistan Province",
-    label: "دانشگاه آزاد اسلامی استان کردستان",
+    "value": "Islamic Azad University of Farahan",
+    "label": "دانشگاه آزاد اسلامی واحد فراهان"
   },
   {
-    value: "Jundi-shapur University of Technology",
-    label: "دانشگاه صنعتی جندی‌شاپور",
+    "value": "University of Arak",
+    "label": "دانشگاه اراک"
   },
-  { value: "Yasouj University", label: "دانشگاه یاسوج" },
-  { value: "Shahid Motahari University", label: "دانشگاه شهید مطهری" },
   {
-    value: "Islamic Azad University, Miyaneh Branch",
-    label: "دانشگاه آزاد اسلامی واحد میانه",
+    "value": "Islamic Azad University, Babol branch",
+    "label": "دانشگاه آزاد اسلامی واحد بابل"
   },
-  { value: "Daneshgahe majlesi", label: "دانشگاه مجلسی" },
   {
-    value: "Daneshgah e Azade Mobarakeh",
-    label: "دانشگاه آزاد اسلامی واحد مبارکه",
+    "value": "Razi University",
+    "label": "دانشگاه رازی"
   },
   {
-    value: "Iranshahr University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی ایرانشهر",
+    "value": "Islamic Azad University of Nishapur",
+    "label": "دانشگاه آزاد اسلامی واحد نیشابور"
   },
-  { value: "sepehr art university", label: "دانشگاه هنر سپهر" },
   {
-    value: "Yasuj University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی یاسوج",
+    "value": "BahÃ¡'Ã­ Institute for Higher Education",
+    "label": "موسسه آموزش عالی بهائی"
   },
   {
-    value: "Golestan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی گلستان",
+    "value": "Tabriz University of Technology",
+    "label": "دانشگاه صنعتی تبریز"
   },
-  { value: "Gonbad-e Kavus University", label: "دانشگاه گنبد کاووس" },
   {
-    value: "Islamic Azad University of Tonekabon",
-    label: "دانشگاه آزاد اسلامی واحد تنکابن",
+    "value": "University of Zanjan",
+    "label": "دانشگاه زنجان"
   },
   {
-    value: "Islamic Azad University Of Urmia",
-    label: "دانشگاه آزاد اسلامی واحد ارومیه",
+    "value": "Islamic Azad University of Lahijan",
+    "label": "دانشگاه آزاد اسلامی واحد لاهیجان"
   },
   {
-    value: "Islamic Azad University of Yazd",
-    label: "دانشگاه آزاد اسلامی واحد یزد",
+    "value": "University of Neyshabur",
+    "label": "دانشگاه نیشابور"
   },
   {
-    value: "Islamic Azad University of Takestan",
-    label: "دانشگاه آزاد اسلامی واحد تاکستان",
+    "value": "Iran University of Science and Technology",
+    "label": "دانشگاه علم و صنعت ایران"
   },
   {
-    value: "Islamic Azad University of Qaem Shahr",
-    label: "دانشگاه آزاد اسلامی واحد قائم‌شهر",
+    "value": "Persian Gulf University",
+    "label": "دانشگاه خلیج فارس"
   },
   {
-    value: "Islamic Azad University of Fasa",
-    label: "دانشگاه آزاد اسلامی واحد فسا",
+    "value": "University of Qom",
+    "label": "دانشگاه قم"
   },
   {
-    value: "Islamic Azad University of Bandar Abbas",
-    label: "دانشگاه آزاد اسلامی واحد بندرعباس",
+    "value": "Power and Water University of Technology",
+    "label": "دانشگاه صنعت آب و برق"
   },
   {
-    value: "Islamic Azad University of Dehaghan",
-    label: "دانشگاه آزاد اسلامی واحد دهاقان",
+    "value": "Shamsipour Technical College",
+    "label": "دانشکده فنی شمسی‌پور"
   },
   {
-    value: "Islamic Azad University of Kazerun",
-    label: "دانشگاه آزاد اسلامی واحد کازرون",
+    "value": "Research Institute of Petroleum Industry",
+    "label": "پژوهشگاه صنعت نفت"
   },
   {
-    value: "Islamic Azad University of Jenah",
-    label: "دانشگاه آزاد اسلامی واحد جناح",
+    "value": "Allameh Mohaddes Noori University",
+    "label": "دانشگاه علامه محدث نوری"
   },
   {
-    value: "Islamic Azad University of Mobarakeh",
-    label: "دانشگاه آزاد اسلامی واحد مبارکه",
+    "value": "Arak University of Technology",
+    "label": "دانشگاه صنعتی اراک"
   },
   {
-    value: "Islamic Azad University of Bostanabad",
-    label: "دانشگاه آزاد اسلامی واحد بستان‌آباد",
+    "value": "Azarbaijan Shahid Madani University",
+    "label": "دانشگاه شهید مدنی آذربایجان"
   },
   {
-    value: "Islamic Azad University of Meybod",
-    label: "دانشگاه آزاد اسلامی واحد میبد",
+    "value": "Besat Institute of Higher Education of Kerman",
+    "label": "موسسه آموزش عالی بعثت کرمان"
   },
   {
-    value: "Islamic Azad University of Mehriz",
-    label: "دانشگاه آزاد اسلامی واحد مهریز",
+    "value": "University College of Azarabadegan",
+    "label": "کالج دانشگاهی آذربایجان"
   },
   {
-    value: "Islamic Azad University of Qom",
-    label: "دانشگاه آزاد اسلامی واحد قم",
+    "value": "Bu-Ali Sina University",
+    "label": "دانشگاه بوعلی سینا"
   },
   {
-    value: "Islamic Azad University of Quchan",
-    label: "دانشگاه آزاد اسلامی واحد قوچان",
+    "value": "Faculty of Engineering - Kharazmi University",
+    "label": "دانشکده مهندسی دانشگاه خوارزمی"
   },
   {
-    value: "Islamic Azad University of Shirvan",
-    label: "دانشگاه آزاد اسلامی واحد شیروان",
+    "value": "Amol University",
+    "label": "دانشگاه آمل"
   },
   {
-    value: "Islamic Azad University of Firuzkuh",
-    label: "دانشگاه آزاد اسلامی واحد فیروزکوه",
+    "value": "Babylon University",
+    "label": "دانشگاه بابل"
   },
   {
-    value: "Abadan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی آبادان",
+    "value": "Behshahr University",
+    "label": "دانشگاه بهشهر"
   },
   {
-    value: "Daneshgah e Azade Dehaghan",
-    label: "دانشگاه آزاد اسلامی واحد دهاقان",
+    "value": "College of Agriculture in Gonbad",
+    "label": "دانشکده کشاورزی گنبد"
   },
   {
-    value: "Semnan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی سمنان",
+    "value": "Islamic Azad University Science and Research Branch",
+    "label": "دانشگاه آزاد اسلامی واحد علوم و تحقیقات"
   },
-  { value: "Fasa University", label: "دانشگاه فسا" },
   {
-    value: "Islamic Azad University of Khomein",
-    label: "دانشگاه آزاد اسلامی واحد خمین",
+    "value": "Faculty of Agriculture of Islamic azad university Science and Research branch",
+    "label": "دانشکده کشاورزی دانشگاه آزاد اسلامی واحد علوم و تحقیقات"
   },
   {
-    value: "Islamic Azad University of Aliabad Katoul",
-    label: "دانشگاه آزاد اسلامی واحد علی‌آباد کتول",
+    "value": "Faculty of Agriculture of Islamic Azad university Roudehen Branch",
+    "label": "دانشکده کشاورزی دانشگاه آزاد اسلامی واحد رودهن"
   },
   {
-    value: "Islamic Azad University, Marand",
-    label: "دانشگاه آزاد اسلامی واحد مرند",
+    "value": "Islamic Azad University of Falavarjan",
+    "label": "دانشگاه آزاد اسلامی واحد فلاورجان"
   },
   {
-    value: "Islamic Azad University, Langarud Branch",
-    label: "دانشگاه آزاد اسلامی واحد لنگرود",
+    "value": "Golpayegan University of Engineering",
+    "label": "دانشگاه صنعتی گلپایگان"
   },
   {
-    value: "Faculty of Basic Sciences and Engineering, Bijar",
-    label: "دانشکده علوم پایه و مهندسی بیجار",
+    "value": "Gorgan University",
+    "label": "دانشگاه گرگان"
   },
-  { value: "University of Kurdistan", label: "دانشگاه کردستان" },
-  { value: "Meybod University", label: "دانشگاه میبد" },
   {
-    value: "University of Applied Science and Technology of Kazerun",
-    label: "دانشگاه علمی کاربردی کازرون",
+    "value": "Department of civil engineering of Semnan university",
+    "label": "گروه مهندسی عمران دانشگاه سمنان"
   },
-  { value: "Art University of Isfahan", label: "دانشگاه هنر اصفهان" },
   {
-    value: "Islamic Azad University of Najafabad",
-    label: "دانشگاه آزاد اسلامی واحد نجف‌آباد",
+    "value": "Amirkabir University of Technology, Mahshahr branch",
+    "label": "دانشگاه صنعتی امیرکبیر، واحد ماهشهر"
   },
-  { value: "Payame Noor University", label: "دانشگاه پیام نور" },
   {
-    value: "Institute for Advanced Studies in Basic Sciences",
-    label: "موسسه مطالعات پیشرفته علوم پایه",
+    "value": "Amirkabir University of Technology, Bandar Abbas branch",
+    "label": "دانشگاه صنعتی امیرکبیر، واحد بندرعباس"
   },
   {
-    value: "Shahid Beheshti Teacher Training College",
-    label: "دانشسرای تربیت معلم شهید بهشتی",
+    "value": "Islamic Azad University, Torbat Jam branch",
+    "label": "دانشگاه آزاد اسلامی واحد تربت جام"
   },
   {
-    value: "Islamic Republic of Iran Army University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی ارتش جمهوری اسلامی ایران",
+    "value": "Islamic Azad University Kurdistan Province",
+    "label": "دانشگاه آزاد اسلامی استان کردستان"
   },
-  { value: "Dar ul-Funun", label: "دارالفنون" },
   {
-    value: "Islamic Azad University of Komijan",
-    label: "دانشگاه آزاد اسلامی واحد کمیجان",
+    "value": "Jundi-shapur University of Technology",
+    "label": "دانشگاه صنعتی جندی‌شاپور"
   },
   {
-    value: "Ardabil University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی اردبیل",
+    "value": "Yasouj University",
+    "label": "دانشگاه یاسوج"
   },
   {
-    value: "Islamic Azad University Central Tehran Branch",
-    label: "دانشگاه آزاد اسلامی واحد تهران مرکزی",
+    "value": "Shahid Motahari University",
+    "label": "دانشگاه شهید مطهری"
   },
   {
-    value: "Islamic Azad University of Sabzevar",
-    label: "دانشگاه آزاد اسلامی واحد سبزوار",
+    "value": "Islamic Azad University, Miyaneh Branch",
+    "label": "دانشگاه آزاد اسلامی واحد میانه"
   },
   {
-    value: "Islamic Azad University of Mahabad",
-    label: "دانشگاه آزاد اسلامی واحد مهاباد",
+    "value": "Daneshgahe majlesi",
+    "label": "دانشگاه مجلسی"
   },
   {
-    value: "Islamic Azad University, Malayer Branch",
-    label: "دانشگاه آزاد اسلامی واحد ملایر",
+    "value": "Daneshgah e Azade Mobarakeh",
+    "label": "دانشگاه آزاد اسلامی واحد مبارکه"
   },
   {
-    value: "Islamic Azad University of Kashan",
-    label: "دانشگاه آزاد اسلامی واحد کاشان",
+    "value": "sepehr art university",
+    "label": "دانشگاه هنر سپهر"
   },
   {
-    value: "Montazeri Technical University of Mashhad",
-    label: "دانشگاه صنعتی منتظری مشهد",
+    "value": "Gonbad-e Kavus University",
+    "label": "دانشگاه گنبد کاووس"
   },
-  { value: "Qom University of Technology", label: "دانشگاه صنعتی قم" },
-  { value: "Shahrud University of Technology", label: "دانشگاه صنعتی شاهرود" },
   {
-    value: "Sabzevar University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی سبزوار",
+    "value": "Islamic Azad University of Tonekabon",
+    "label": "دانشگاه آزاد اسلامی واحد تنکابن"
   },
-  { value: "Garmsar University", label: "دانشگاه گرمسار" },
   {
-    value: "Institute for Cognitive Science Studies",
-    label: "پژوهشگاه علوم شناختی",
+    "value": "Islamic Azad University Of Urmia",
+    "label": "دانشگاه آزاد اسلامی واحد ارومیه"
   },
   {
-    value: "K. N. Toosi University of Technology",
-    label: "دانشگاه صنعتی خواجه نصیرالدین طوسی",
+    "value": "Islamic Azad University of Yazd",
+    "label": "دانشگاه آزاد اسلامی واحد یزد"
   },
   {
-    value: "Islamic Azad University, Firdous branch",
-    label: "دانشگاه آزاد اسلامی واحد فردوس",
+    "value": "Islamic Azad University of Takestan",
+    "label": "دانشگاه آزاد اسلامی واحد تاکستان"
   },
-  { value: "Farhangian University", label: "دانشگاه فرهنگیان" },
   {
-    value: "Islamic Azad University of Damavand",
-    label: "دانشگاه آزاد اسلامی واحد دماوند",
+    "value": "Islamic Azad University of Qaem Shahr",
+    "label": "دانشگاه آزاد اسلامی واحد قائم‌شهر"
   },
   {
-    value: "Persian Gulf International Education Center",
-    label: "مرکز بین‌المللی آموزش خلیج فارس",
+    "value": "Islamic Azad University of Fasa",
+    "label": "دانشگاه آزاد اسلامی واحد فسا"
   },
-  { value: "Shiraz University of Arts", label: "دانشگاه هنر شیراز" },
   {
-    value: "Quchan University of Advanced Technologies Engineering",
-    label: "دانشگاه صنعتی پیشرفته قوچان",
+    "value": "Islamic Azad University of Bandar Abbas",
+    "label": "دانشگاه آزاد اسلامی واحد بندرعباس"
   },
   {
-    value: "Adiban Institute of Higher Education",
-    label: "موسسه آموزش عالی آدیبان",
+    "value": "Islamic Azad University of Dehaghan",
+    "label": "دانشگاه آزاد اسلامی واحد دهاقان"
   },
-  { value: "Damavand College", label: "کالج دماوند" },
   {
-    value: "Kerman Graduate University of Technology",
-    label: "دانشگاه صنعتی تحصیلات تکمیلی کرمان",
+    "value": "Islamic Azad University of Kazerun",
+    "label": "دانشگاه آزاد اسلامی واحد کازرون"
   },
   {
-    value: "Islamic Azad University of Masjed Soleyman",
-    label: "دانشگاه آزاد اسلامی واحد مسجدسلیمان",
+    "value": "Islamic Azad University of Jenah",
+    "label": "دانشگاه آزاد اسلامی واحد جناح"
   },
   {
-    value: "Islamic Azad University Bushehr Branch",
-    label: "دانشگاه آزاد اسلامی واحد بوشهر",
+    "value": "Islamic Azad University of Mobarakeh",
+    "label": "دانشگاه آزاد اسلامی واحد مبارکه"
   },
   {
-    value: "Islamic Azad University of Shahrekord",
-    label: "دانشگاه آزاد اسلامی واحد شهرکرد",
+    "value": "Islamic Azad University of Bostanabad",
+    "label": "دانشگاه آزاد اسلامی واحد بستان‌آباد"
   },
   {
-    value: "Amirkabir University of Technology, Garmsar branch",
-    label: "دانشگاه صنعتی امیرکبیر، واحد گرمسار",
+    "value": "Islamic Azad University of Meybod",
+    "label": "دانشگاه آزاد اسلامی واحد میبد"
   },
   {
-    value: "Islamic Azad University, Mahalat branch",
-    label: "دانشگاه آزاد اسلامی واحد محلات",
+    "value": "Islamic Azad University of Mehriz",
+    "label": "دانشگاه آزاد اسلامی واحد مهریز"
   },
   {
-    value: "Islamic Azad University of Mohajeran",
-    label: "دانشگاه آزاد اسلامی واحد مهاجران",
+    "value": "Islamic Azad University of Qom",
+    "label": "دانشگاه آزاد اسلامی واحد قم"
   },
   {
-    value:
-      "Islamic Azad University, Mazandaran Graduate School of Science and Research",
-    label: "دانشگاه آزاد اسلامی واحد تحصیلات تکمیلی علوم و تحقیقات مازندران",
+    "value": "Islamic Azad University of Quchan",
+    "label": "دانشگاه آزاد اسلامی واحد قوچان"
   },
-  { value: "Khayyam University of Mashhad", label: "دانشگاه خیام مشهد" },
   {
-    value: "University of Science and Arts (Yazd)",
-    label: "دانشگاه علم و هنر (یزد)",
+    "value": "Islamic Azad University of Shirvan",
+    "label": "دانشگاه آزاد اسلامی واحد شیروان"
   },
   {
-    value: "Torbat Heydarieh University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی تربت حیدریه",
+    "value": "Islamic Azad University of Firuzkuh",
+    "label": "دانشگاه آزاد اسلامی واحد فیروزکوه"
   },
-  { value: "Mehr Alborz University", label: "دانشگاه مهر البرز" },
   {
-    value: "Zabol University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی زابل",
+    "value": "Daneshgah e Azade Dehaghan",
+    "label": "دانشگاه آزاد اسلامی واحد دهاقان"
   },
   {
-    value: "Shahrekord University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی شهرکرد",
+    "value": "Fasa University",
+    "label": "دانشگاه فسا"
   },
   {
-    value: "Islamic Azad University, Arak Science and Research Unit",
-    label: "دانشگاه آزاد اسلامی واحد علوم و تحقیقات اراک",
+    "value": "Islamic Azad University of Khomein",
+    "label": "دانشگاه آزاد اسلامی واحد خمین"
   },
   {
-    value: "Islamic Azad University, Saveh Science and Research Unit",
-    label: "دانشگاه آزاد اسلامی واحد علوم و تحقیقات ساوه",
+    "value": "Islamic Azad University of Aliabad Katoul",
+    "label": "دانشگاه آزاد اسلامی واحد علی‌آباد کتول"
   },
   {
-    value: "Dehlran University of Applied Sciences",
-    label: "دانشگاه علمی کاربردی دهلران",
+    "value": "Islamic Azad University, Marand",
+    "label": "دانشگاه آزاد اسلامی واحد مرند"
   },
-  { value: "Zabol Medical ScienceUnivers", label: "دانشگاه علوم پزشکی زابل" },
-  { value: "Isfahan Sepehr College", label: "کالج سپهر اصفهان" },
   {
-    value: "Najand Institute of Higher Education",
-    label: "موسسه آموزش عالی ناجند",
+    "value": "Islamic Azad University, Langarud Branch",
+    "label": "دانشگاه آزاد اسلامی واحد لنگرود"
   },
   {
-    value: "Shahid Sadoughi University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی شهید صدوقی",
+    "value": "Faculty of Basic Sciences and Engineering, Bijar",
+    "label": "دانشکده علوم پایه و مهندسی بیجار"
   },
   {
-    value: "Islamic Azad University of Shahinshahr",
-    label: "دانشگاه آزاد اسلامی واحد شاهین‌شهر",
+    "value": "University of Kurdistan",
+    "label": "دانشگاه کردستان"
   },
-  { value: "Jahrom University", label: "دانشگاه جهرم" },
   {
-    value: "Islamic Azad University, Jiroft Branch",
-    label: "دانشگاه آزاد اسلامی واحد جیرفت",
+    "value": "Meybod University",
+    "label": "دانشگاه میبد"
   },
-  { value: "Amin Police Academy", label: "دانشگاه علوم انتظامی امین" },
   {
-    value: "Islamic Azad University of Bukan",
-    label: "دانشگاه آزاد اسلامی واحد بوکان",
+    "value": "University of Applied Science and Technology of Kazerun",
+    "label": "دانشگاه علمی کاربردی کازرون"
   },
   {
-    value: "Islamic Azad University, Shush branch",
-    label: "دانشگاه آزاد اسلامی واحد شوش",
+    "value": "Art University of Isfahan",
+    "label": "دانشگاه هنر اصفهان"
   },
   {
-    value: "Islamic Azad University of Mahshahr",
-    label: "دانشگاه آزاد اسلامی واحد ماهشهر",
+    "value": "Islamic Azad University of Najafabad",
+    "label": "دانشگاه آزاد اسلامی واحد نجف‌آباد"
   },
-  { value: "Jiroft University", label: "دانشگاه جیرفت" },
   {
-    value: "Shahroud University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی شاهرود",
+    "value": "Payame Noor University",
+    "label": "دانشگاه پیام نور"
   },
-  { value: "Supreme National Defense University", label: "دانشگاه دفاع ملی" },
   {
-    value: "Amol University of Special Modern Technologies",
-    label: "دانشگاه فناوری‌های مدرن خاص آمل",
+    "value": "Institute for Advanced Studies in Basic Sciences",
+    "label": "موسسه مطالعات پیشرفته علوم پایه"
   },
   {
-    value: "Islamic Azad University Islamshahr Branch",
-    label: "دانشگاه آزاد اسلامی واحد اسلامشهر",
+    "value": "Shahid Beheshti Teacher Training College",
+    "label": "دانشسرای تربیت معلم شهید بهشتی"
   },
   {
-    value: "Islamic Azad University, Khorramabad Branch",
-    label: "دانشگاه آزاد اسلامی واحد خرم‌آباد",
+    "value": "Dar ul-Funun",
+    "label": "دارالفنون"
   },
   {
-    value: "Islamic Azad University, Zahedan Branch",
-    label: "دانشگاه آزاد اسلامی واحد زاهدان",
+    "value": "Islamic Azad University of Komijan",
+    "label": "دانشگاه آزاد اسلامی واحد کمیجان"
   },
   {
-    value: "Islamic Azad University, Khoy Branch",
-    label: "دانشگاه آزاد اسلامی واحد خوی",
+    "value": "Islamic Azad University Central Tehran Branch",
+    "label": "دانشگاه آزاد اسلامی واحد تهران مرکزی"
   },
   {
-    value: "Islamic Azad University, Larestan Branch",
-    label: "دانشگاه آزاد اسلامی واحد لارستان",
+    "value": "Islamic Azad University of Sabzevar",
+    "label": "دانشگاه آزاد اسلامی واحد سبزوار"
   },
   {
-    value: "Islamic Azad University, Nowshahr Branch",
-    label: "دانشگاه آزاد اسلامی واحد نوشهر",
+    "value": "Islamic Azad University of Mahabad",
+    "label": "دانشگاه آزاد اسلامی واحد مهاباد"
   },
   {
-    value: "Islamic Azad University, Sirjan Branch",
-    label: "دانشگاه آزاد اسلامی واحد سیرجان",
+    "value": "Islamic Azad University, Malayer Branch",
+    "label": "دانشگاه آزاد اسلامی واحد ملایر"
   },
-  { value: "Abhar Islamic Azad University", label: "دانشگاه آزاد اسلامی ابهر" },
   {
-    value: "Ashtian Islamic Azad University",
-    label: "دانشگاه آزاد اسلامی آشتیان",
+    "value": "Islamic Azad University of Kashan",
+    "label": "دانشگاه آزاد اسلامی واحد کاشان"
   },
   {
-    value: "Islamic Azad University Ahwaz Branch",
-    label: "دانشگاه آزاد اسلامی واحد اهواز",
+    "value": "Montazeri Technical University of Mashhad",
+    "label": "دانشگاه صنعتی منتظری مشهد"
   },
   {
-    value: "Islamic Azad University Science and Research Branch Ahwaz",
-    label: "دانشگاه آزاد اسلامی واحد علوم و تحقیقات اهواز",
+    "value": "Qom University of Technology",
+    "label": "دانشگاه صنعتی قم"
   },
   {
-    value: "Islamic Azad University Aliabad Katoul Branch",
-    label: "دانشگاه آزاد اسلامی واحد علی‌آباد کتول",
+    "value": "Shahrud University of Technology",
+    "label": "دانشگاه صنعتی شاهرود"
   },
   {
-    value: "Islamic Azad University Ardestan Branch",
-    label: "دانشگاه آزاد اسلامی واحد اردستان",
+    "value": "Garmsar University",
+    "label": "دانشگاه گرمسار"
   },
   {
-    value: "Islamic Azad University Babol Branch",
-    label: "دانشگاه آزاد اسلامی واحد بابل",
+    "value": "Institute for Cognitive Science Studies",
+    "label": "پژوهشگاه علوم شناختی"
   },
   {
-    value: "Islamic Azad University Bonab Branch",
-    label: "دانشگاه آزاد اسلامی واحد بناب",
+    "value": "K. N. Toosi University of Technology",
+    "label": "دانشگاه صنعتی خواجه نصیرالدین طوسی"
   },
   {
-    value: "Islamic Azad University of Estahban",
-    label: "دانشگاه آزاد اسلامی واحد استهبان",
+    "value": "Islamic Azad University, Firdous branch",
+    "label": "دانشگاه آزاد اسلامی واحد فردوس"
   },
   {
-    value: "Islamic Azad University of Firuzabad",
-    label: "دانشگاه آزاد اسلامی واحد فیروزآباد",
+    "value": "Farhangian University",
+    "label": "دانشگاه فرهنگیان"
   },
   {
-    value: "Islamic Azad University of Izeh",
-    label: "دانشگاه آزاد اسلامی واحد ایذه",
+    "value": "Islamic Azad University of Damavand",
+    "label": "دانشگاه آزاد اسلامی واحد دماوند"
   },
   {
-    value: "Islamic Azad University of Jiroft",
-    label: "دانشگاه آزاد اسلامی واحد جیرفت",
+    "value": "Persian Gulf International Education Center",
+    "label": "مرکز بین‌المللی آموزش خلیج فارس"
   },
   {
-    value: "Islamic Azad University Kashmar",
-    label: "دانشگاه آزاد اسلامی واحد کاشمر",
+    "value": "Shiraz University of Arts",
+    "label": "دانشگاه هنر شیراز"
   },
-  { value: "Bagher Aloloum University", label: "دانشگاه باقرالعلوم" },
   {
-    value: "Islamic Azad University Shahre Rey Branch",
-    label: "دانشگاه آزاد اسلامی واحد شهر ری",
+    "value": "Quchan University of Advanced Technologies Engineering",
+    "label": "دانشگاه صنعتی پیشرفته قوچان"
   },
   {
-    value: "Shahid Ashrafi Esfahani University",
-    label: "دانشگاه شهید اشرفی اصفهانی",
+    "value": "Adiban Institute of Higher Education",
+    "label": "موسسه آموزش عالی آدیبان"
   },
   {
-    value: "Islamic Azad University of Torbate Heydarieh",
-    label: "دانشگاه آزاد اسلامی واحد تربت حیدریه",
+    "value": "Damavand College",
+    "label": "کالج دماوند"
   },
   {
-    value: "University of Tabriz Department of English Language and Literature",
-    label: "گروه زبان و ادبیات انگلیسی دانشگاه تبریز",
+    "value": "Kerman Graduate University of Technology",
+    "label": "دانشگاه صنعتی تحصیلات تکمیلی کرمان"
   },
   {
-    value: "Iranian Law and Legal Research Institute",
-    label: "پژوهشگاه حقوق و مطالعات قانونی ایران",
+    "value": "Islamic Azad University of Masjed Soleyman",
+    "label": "دانشگاه آزاد اسلامی واحد مسجدسلیمان"
   },
-  { value: "Q110967012", label: "Q110967012" },
-  { value: "Kashmar Higher Education Center", label: "مرکز آموزش عالی کاشمر" },
   {
-    value: "Payame Noor University of Bahnemir",
-    label: "دانشگاه پیام نور بهنمیر",
+    "value": "Islamic Azad University Bushehr Branch",
+    "label": "دانشگاه آزاد اسلامی واحد بوشهر"
   },
   {
-    value: "Gerash University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی گراش",
+    "value": "Islamic Azad University of Shahrekord",
+    "label": "دانشگاه آزاد اسلامی واحد شهرکرد"
   },
   {
-    value: "Islamic Azad University of Kish",
-    label: "دانشگاه آزاد اسلامی واحد کیش",
+    "value": "Amirkabir University of Technology, Garmsar branch",
+    "label": "دانشگاه صنعتی امیرکبیر، واحد گرمسار"
   },
   {
-    value: "Islamic Azad University of Qeshm",
-    label: "دانشگاه آزاد اسلامی واحد قشم",
+    "value": "Islamic Azad University, Mahalat branch",
+    "label": "دانشگاه آزاد اسلامی واحد محلات"
   },
   {
-    value: "Payame Noor University of Bushehr",
-    label: "دانشگاه پیام نور بوشهر",
+    "value": "Islamic Azad University of Mohajeran",
+    "label": "دانشگاه آزاد اسلامی واحد مهاجران"
   },
   {
-    value: "Khalkhal University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی خلخال",
+    "value": "Islamic Azad University, Mazandaran Graduate School of Science and Research",
+    "label": "دانشگاه آزاد اسلامی واحد تحصیلات تکمیلی علوم و تحقیقات مازندران"
   },
   {
-    value: "Islamic Azad University of Natanz",
-    label: "دانشگاه آزاد اسلامی واحد نطنز",
+    "value": "Khayyam University of Mashhad",
+    "label": "دانشگاه خیام مشهد"
   },
-  { value: "College of Fine Arts", label: "دانشکده هنرهای زیبا" },
-  { value: "CATC", label: "مرکز آموزش فنی حرفه‌ای" },
   {
-    value: "Boyeh Gorgan Faculty of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی بویه گرگان",
+    "value": "University of Science and Arts (Yazd)",
+    "label": "دانشگاه علم و هنر (یزد)"
   },
   {
-    value:
-      "Faculty of Theology and Islamic Studies of the University of Tehran",
-    label: "دانشکده الهیات و معارف اسلامی دانشگاه تهران",
+    "value": "Mehr Alborz University",
+    "label": "دانشگاه مهر البرز"
   },
   {
-    value:
-      "Faculty of Art and Architecture, Islamic Azad University, South Tehran Branch",
-    label: "دانشکده هنر و معماری دانشگاه آزاد اسلامی واحد تهران جنوب",
+    "value": "Islamic Azad University, Arak Science and Research Unit",
+    "label": "دانشگاه آزاد اسلامی واحد علوم و تحقیقات اراک"
   },
   {
-    value:
-      "Sharif University of Technology, Department of Electrical Engineering",
-    label: "دانشکده مهندسی برق دانشگاه صنعتی شریف",
+    "value": "Islamic Azad University, Saveh Science and Research Unit",
+    "label": "دانشگاه آزاد اسلامی واحد علوم و تحقیقات ساوه"
   },
-  { value: "Shushtar Art Faculty", label: "دانشکده هنر شوشتر" },
   {
-    value: "Kashan School of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی کاشان",
+    "value": "Dehlran University of Applied Sciences",
+    "label": "دانشگاه علمی کاربردی دهلران"
   },
   {
-    value: "Shahid Beheshti College of Nursing and Midwifery, Tehran",
-    label: "دانشکده پرستاری و مامایی شهید بهشتی تهران",
+    "value": "Isfahan Sepehr College",
+    "label": "کالج سپهر اصفهان"
   },
   {
-    value: "Shushtar Faculty of Medical Sciences",
-    label: "دانشکده علوم پزشکی شوشتر",
+    "value": "Najand Institute of Higher Education",
+    "label": "موسسه آموزش عالی ناجند"
   },
   {
-    value:
-      "Faculty of Chemical Engineering, Iran University of Science and Technology",
-    label: "دانشکده مهندسی شیمی دانشگاه علم و صنعت ایران",
+    "value": "Islamic Azad University of Shahinshahr",
+    "label": "دانشگاه آزاد اسلامی واحد شاهین‌شهر"
   },
   {
-    value: "Allameh Tabatabai Management School",
-    label: "دانشکده مدیریت علامه طباطبایی",
+    "value": "Jahrom University",
+    "label": "دانشگاه جهرم"
   },
   {
-    value: "Faculty of Science, Khajahansiruddin Tusi University of Technology",
-    label: "دانشکده علوم دانشگاه صنعتی خواجه نصیرالدین طوسی",
+    "value": "Islamic Azad University, Jiroft Branch",
+    "label": "دانشگاه آزاد اسلامی واحد جیرفت"
   },
   {
-    value: "Hamadan School of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی همدان",
+    "value": "Amin Police Academy",
+    "label": "دانشگاه علوم انتظامی امین"
   },
   {
-    value:
-      "Faculty of Architecture, Design and Fine Arts of the American University of Kyrenia",
-    label: "دانشکده معماری، طراحی و هنرهای زیبای دانشگاه آمریکایی گیرنه",
+    "value": "Islamic Azad University of Bukan",
+    "label": "دانشگاه آزاد اسلامی واحد بوکان"
   },
   {
-    value: "Neyshabur Faculty of Medical Sciences",
-    label: "دانشکده علوم پزشکی نیشابور",
+    "value": "Islamic Azad University, Shush branch",
+    "label": "دانشگاه آزاد اسلامی واحد شوش"
   },
   {
-    value: "Faculty of Nursing and Midwifery of Iran",
-    label: "دانشکده پرستاری و مامایی ایران",
+    "value": "Islamic Azad University of Mahshahr",
+    "label": "دانشگاه آزاد اسلامی واحد ماهشهر"
   },
   {
-    value:
-      "Faculty of Electrical Engineering, Amirkabir University of Technology",
-    label: "دانشکده مهندسی برق دانشگاه صنعتی امیرکبیر",
+    "value": "Jiroft University",
+    "label": "دانشگاه جیرفت"
   },
   {
-    value: "Hormozgan School of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی هرمزگان",
+    "value": "Supreme National Defense University",
+    "label": "دانشگاه دفاع ملی"
   },
   {
-    value: "Kermanshah School of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی کرمانشاه",
+    "value": "Amol University of Special Modern Technologies",
+    "label": "دانشگاه فناوری‌های مدرن خاص آمل"
   },
   {
-    value: "Mazandaran School of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی مازندران",
+    "value": "Islamic Azad University Islamshahr Branch",
+    "label": "دانشگاه آزاد اسلامی واحد اسلامشهر"
   },
   {
-    value: "Urmia College of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی ارومیه",
+    "value": "Islamic Azad University, Khorramabad Branch",
+    "label": "دانشگاه آزاد اسلامی واحد خرم‌آباد"
   },
   {
-    value: "Faculty of Geography, University of Tabriz",
-    label: "دانشکده جغرافیا دانشگاه تبریز",
+    "value": "Islamic Azad University, Zahedan Branch",
+    "label": "دانشگاه آزاد اسلامی واحد زاهدان"
   },
   {
-    value:
-      "Faculty of Chemical and Petroleum Engineering, University of Tabriz",
-    label: "دانشکده مهندسی شیمی و نفت دانشگاه تبریز",
+    "value": "Islamic Azad University, Khoy Branch",
+    "label": "دانشگاه آزاد اسلامی واحد خوی"
   },
-  { value: "Shahrekord Medical School", label: "دانشکده پزشکی شهرکرد" },
   {
-    value: "Tabriz University Faculty of Economics, Management and Commerce",
-    label: "دانشکده اقتصاد، مدیریت و بازرگانی دانشگاه تبریز",
+    "value": "Islamic Azad University, Larestan Branch",
+    "label": "دانشگاه آزاد اسلامی واحد لارستان"
   },
   {
-    value: "Technical and engineering faculty of Tabriz University",
-    label: "دانشکده فنی و مهندسی دانشگاه تبریز",
+    "value": "Islamic Azad University, Nowshahr Branch",
+    "label": "دانشگاه آزاد اسلامی واحد نوشهر"
   },
   {
-    value: "Faculty of Engineering, Ferdowsi University of Mashhad",
-    label: "دانشکده مهندسی دانشگاه فردوسی مشهد",
+    "value": "Islamic Azad University, Sirjan Branch",
+    "label": "دانشگاه آزاد اسلامی واحد سیرجان"
   },
   {
-    value: "Faculty of Social Sciences of the University of Tehran",
-    label: "دانشکده علوم اجتماعی دانشگاه تهران",
+    "value": "Abhar Islamic Azad University",
+    "label": "دانشگاه آزاد اسلامی ابهر"
   },
   {
-    value: "Faculty of Science, University of Isfahan",
-    label: "دانشکده علوم دانشگاه اصفهان",
+    "value": "Ashtian Islamic Azad University",
+    "label": "دانشگاه آزاد اسلامی آشتیان"
   },
   {
-    value: "Technical and Engineering Faculty of Shahid University",
-    label: "دانشکده فنی و مهندسی دانشگاه شهید",
+    "value": "Islamic Azad University Ahwaz Branch",
+    "label": "دانشگاه آزاد اسلامی واحد اهواز"
   },
   {
-    value: "Faculty of Mathematics, University of Tabriz",
-    label: "دانشکده ریاضی دانشگاه تبریز",
+    "value": "Islamic Azad University Science and Research Branch Ahwaz",
+    "label": "دانشگاه آزاد اسلامی واحد علوم و تحقیقات اهواز"
   },
   {
-    value: "Shahid Rajaei Lahijan Technical College",
-    label: "دانشکده فنی شهید رجایی لاهیجان",
+    "value": "Islamic Azad University Aliabad Katoul Branch",
+    "label": "دانشگاه آزاد اسلامی واحد علی‌آباد کتول"
   },
   {
-    value:
-      "Faculty of Petroleum Engineering, Amirkabir University of Technology",
-    label: "دانشکده مهندسی نفت دانشگاه صنعتی امیرکبیر",
+    "value": "Islamic Azad University Ardestan Branch",
+    "label": "دانشگاه آزاد اسلامی واحد اردستان"
   },
   {
-    value:
-      "Faculty of Nursing and Midwifery, Mashhad University of Medical Sciences",
-    label: "دانشکده پرستاری و مامایی دانشگاه علوم پزشکی مشهد",
+    "value": "Islamic Azad University Babol Branch",
+    "label": "دانشگاه آزاد اسلامی واحد بابل"
   },
   {
-    value: "Faculty of Management and Accounting, Azad Qazvin University",
-    label: "دانشکده مدیریت و حسابداری دانشگاه آزاد قزوین",
+    "value": "Islamic Azad University Bonab Branch",
+    "label": "دانشگاه آزاد اسلامی واحد بناب"
   },
-  { value: "Shiraz medical school", label: "دانشکده پزشکی شیراز" },
   {
-    value:
-      "Faculty of Engineering and Science and Materials of Sharif University of Technology",
-    label: "دانشکده مهندسی و علوم مواد دانشگاه صنعتی شریف",
+    "value": "Islamic Azad University of Estahban",
+    "label": "دانشگاه آزاد اسلامی واحد استهبان"
   },
   {
-    value:
-      "Faculty of Nuclear Engineering and Physics, Amirkabir University of Technology",
-    label: "دانشکده مهندسی هسته‌ای و فیزیک دانشگاه صنعتی امیرکبیر",
+    "value": "Islamic Azad University of Firuzabad",
+    "label": "دانشگاه آزاد اسلامی واحد فیروزآباد"
   },
   {
-    value: "Faculty of Chemistry, Sharif University of Technology",
-    label: "دانشکده شیمی دانشگاه صنعتی شریف",
+    "value": "Islamic Azad University of Izeh",
+    "label": "دانشگاه آزاد اسلامی واحد ایذه"
   },
   {
-    value: "Tabriz University Faculty of Literature and Human Sciences",
-    label: "دانشکده ادبیات و علوم انسانی دانشگاه تبریز",
+    "value": "Islamic Azad University of Jiroft",
+    "label": "دانشگاه آزاد اسلامی واحد جیرفت"
   },
   {
-    value:
-      "Faculty of Literature and Humanities, Dr. Ali Shariati, Ferdowsi University of Mashhad",
-    label: "دانشکده ادبیات و علوم انسانی دکتر علی شریعتی دانشگاه فردوسی مشهد",
+    "value": "Islamic Azad University Kashmar",
+    "label": "دانشگاه آزاد اسلامی واحد کاشمر"
   },
   {
-    value: "Technical Faculty of Tabriz University",
-    label: "دانشکده فنی دانشگاه تبریز",
+    "value": "Bagher Aloloum University",
+    "label": "دانشگاه باقرالعلوم"
   },
   {
-    value:
-      "Faculty of Civil Engineering and Architecture, Azad Qazvin University",
-    label: "دانشکده مهندسی عمران و معماری دانشگاه آزاد قزوین",
+    "value": "Islamic Azad University Shahre Rey Branch",
+    "label": "دانشگاه آزاد اسلامی واحد شهر ری"
   },
   {
-    value:
-      "Faculty of Medicine, Shahid Beheshti University of Medical Sciences",
-    label: "دانشکده پزشکی دانشگاه علوم پزشکی شهید بهشتی",
+    "value": "Shahid Ashrafi Esfahani University",
+    "label": "دانشگاه شهید اشرفی اصفهانی"
   },
   {
-    value: "Faculty of Law, Shahid Beheshti University",
-    label: "دانشکده حقوق دانشگاه شهید بهشتی",
+    "value": "Islamic Azad University of Torbate Heydarieh",
+    "label": "دانشگاه آزاد اسلامی واحد تربت حیدریه"
   },
   {
-    value: "Faculty of Physics, University of Tabriz",
-    label: "دانشکده فیزیک دانشگاه تبریز",
+    "value": "University of Tabriz Department of English Language and Literature",
+    "label": "گروه زبان و ادبیات انگلیسی دانشگاه تبریز"
   },
   {
-    value:
-      "Faculty of Mechanical Engineering, Amir Kabir University of Technology",
-    label: "دانشکده مهندسی مکانیک دانشگاه صنعتی امیرکبیر",
+    "value": "Iranian Law and Legal Research Institute",
+    "label": "پژوهشگاه حقوق و مطالعات قانونی ایران"
   },
   {
-    value: "History of Science Research Institute",
-    label: "پژوهشگاه تاریخ علم",
+    "value": "Q110967012",
+    "label": "Q110967012"
   },
   {
-    value: "Faculty of Civil Engineering, Sharif University of Technology",
-    label: "دانشکده مهندسی عمران دانشگاه صنعتی شریف",
+    "value": "Kashmar Higher Education Center",
+    "label": "مرکز آموزش عالی کاشمر"
   },
   {
-    value:
-      "Faculty of Industrial Engineering, Iran University of Science and Technology",
-    label: "دانشکده مهندسی صنایع دانشگاه علم و صنعت ایران",
+    "value": "Payame Noor University of Bahnemir",
+    "label": "دانشگاه پیام نور بهنمیر"
   },
   {
-    value:
-      "Faculty of Electrical and Computer Engineering and Information Technology of Qazvin Azad University",
-    label: "دانشکده مهندسی برق و کامپیوتر و فناوری اطلاعات دانشگاه آزاد قزوین",
+    "value": "Islamic Azad University of Kish",
+    "label": "دانشگاه آزاد اسلامی واحد کیش"
   },
   {
-    value: "Technical and Vocational University of Soroush Center, Isfahan",
-    label: "دانشگاه فنی و حرفه‌ای مرکز سروش اصفهان",
+    "value": "Islamic Azad University of Qeshm",
+    "label": "دانشگاه آزاد اسلامی واحد قشم"
   },
   {
-    value: "Faculty of Theology and Religions of Shahid Beheshti University",
-    label: "دانشکده الهیات و ادیان دانشگاه شهید بهشتی",
+    "value": "Payame Noor University of Bushehr",
+    "label": "دانشگاه پیام نور بوشهر"
   },
   {
-    value: "Faculty of Industry and Mechanics, Qazvin Azad University",
-    label: "دانشکده صنعت و مکانیک دانشگاه آزاد قزوین",
+    "value": "Islamic Azad University of Natanz",
+    "label": "دانشگاه آزاد اسلامی واحد نطنز"
   },
   {
-    value: "Central Tehran Islamic Azad University Technical Faculty",
-    label: "دانشکده فنی دانشگاه آزاد اسلامی مرکز تهران",
+    "value": "College of Fine Arts",
+    "label": "دانشکده هنرهای زیبا"
   },
   {
-    value: "Faculty of Social Sciences, Allameh Tabatabai University",
-    label: "دانشکده علوم اجتماعی دانشگاه علامه طباطبایی",
+    "value": "CATC",
+    "label": "مرکز آموزش فنی حرفه‌ای"
   },
   {
-    value:
-      "Faculty of Computer Engineering and Information Technology, Amirkabir University of Technology",
-    label: "دانشکده مهندسی کامپیوتر و فناوری اطلاعات دانشگاه صنعتی امیرکبیر",
+    "value": "Faculty of Theology and Islamic Studies of the University of Tehran",
+    "label": "دانشکده الهیات و معارف اسلامی دانشگاه تهران"
   },
   {
-    value: "Tabriz University Faculty of Humanities and Social Sciences",
-    label: "دانشکده علوم انسانی و اجتماعی دانشگاه تبریز",
+    "value": "Faculty of Art and Architecture, Islamic Azad University, South Tehran Branch",
+    "label": "دانشکده هنر و معماری دانشگاه آزاد اسلامی واحد تهران جنوب"
   },
   {
-    value: "Tabriz University Faculty of Theology and Islamic Sciences",
-    label: "دانشکده الهیات و علوم اسلامی دانشگاه تبریز",
+    "value": "Sharif University of Technology, Department of Electrical Engineering",
+    "label": "دانشکده مهندسی برق دانشگاه صنعتی شریف"
   },
   {
-    value:
-      "Faculty of Architecture and Urban Planning, Iran University of Science and Technology",
-    label: "دانشکده معماری و شهرسازی دانشگاه علم و صنعت ایران",
+    "value": "Shushtar Art Faculty",
+    "label": "دانشکده هنر شوشتر"
   },
   {
-    value: "Faculty of Mathematics, Iran University of Science and Technology",
-    label: "دانشکده ریاضی دانشگاه علم و صنعت ایران",
+    "value": "Faculty of Chemical Engineering, Iran University of Science and Technology",
+    "label": "دانشکده مهندسی شیمی دانشگاه علم و صنعت ایران"
   },
   {
-    value:
-      "Faculty of Mining Engineering, Metallurgy, Amirkabir University of Technology",
-    label: "دانشکده مهندسی معدن، متالورژی دانشگاه صنعتی امیرکبیر",
+    "value": "Allameh Tabatabai Management School",
+    "label": "دانشکده مدیریت علامه طباطبایی"
   },
   {
-    value: "Faculty of Earth Sciences, Shahid Beheshti University",
-    label: "دانشکده علوم زمین دانشگاه شهید بهشتی",
+    "value": "Faculty of Science, Khajahansiruddin Tusi University of Technology",
+    "label": "دانشکده علوم دانشگاه صنعتی خواجه نصیرالدین طوسی"
   },
   {
-    value: "Tabriz University Faculty of Natural Sciences",
-    label: "دانشکده علوم طبیعی دانشگاه تبریز",
+    "value": "Faculty of Architecture, Design and Fine Arts of the American University of Kyrenia",
+    "label": "دانشکده معماری، طراحی و هنرهای زیبای دانشگاه آمریکایی گیرنه"
   },
   {
-    value:
-      "Tabriz University Faculty of Persian Literature and Foreign Languages",
-    label: "دانشکده ادبیات فارسی و زبان‌های خارجی دانشگاه تبریز",
+    "value": "Faculty of Electrical Engineering, Amirkabir University of Technology",
+    "label": "دانشکده مهندسی برق دانشگاه صنعتی امیرکبیر"
   },
   {
-    value: "Faculty of Mechanical Engineering, University of Tabriz",
-    label: "دانشکده مهندسی مکانیک دانشگاه تبریز",
+    "value": "Faculty of Geography, University of Tabriz",
+    "label": "دانشکده جغرافیا دانشگاه تبریز"
   },
   {
-    value: "Faculty of Agriculture, University of Tabriz",
-    label: "دانشکده کشاورزی دانشگاه تبریز",
+    "value": "Faculty of Chemical and Petroleum Engineering, University of Tabriz",
+    "label": "دانشکده مهندسی شیمی و نفت دانشگاه تبریز"
   },
   {
-    value:
-      "Faculty of Architecture and Urban Planning, Shahid Beheshti University",
-    label: "دانشکده معماری و شهرسازی دانشگاه شهید بهشتی",
+    "value": "Tabriz University Faculty of Economics, Management and Commerce",
+    "label": "دانشکده اقتصاد، مدیریت و بازرگانی دانشگاه تبریز"
   },
   {
-    value: "Faculty of Civil Engineering, University of Tabriz",
-    label: "دانشکده مهندسی عمران دانشگاه تبریز",
+    "value": "Technical and engineering faculty of Tabriz University",
+    "label": "دانشکده فنی و مهندسی دانشگاه تبریز"
   },
-  { value: "School of Railway Engineering", label: "دانشکده مهندسی راه‌آهن" },
   {
-    value:
-      "Faculty of Mechanical Engineering, Khwajahansiruddin Tusi University of Technology",
-    label: "دانشکده مهندسی مکانیک دانشگاه صنعتی خواجه نصیرالدین طوسی",
+    "value": "Faculty of Engineering, Ferdowsi University of Mashhad",
+    "label": "دانشکده مهندسی دانشگاه فردوسی مشهد"
   },
   {
-    value: "Faculty of Physics, Iran University of Science and Technology",
-    label: "دانشکده فیزیک دانشگاه علم و صنعت ایران",
+    "value": "Faculty of Social Sciences of the University of Tehran",
+    "label": "دانشکده علوم اجتماعی دانشگاه تهران"
   },
   {
-    value: "Faculty of Medicine, Tehran University of Medical Sciences",
-    label: "دانشکده پزشکی دانشگاه علوم پزشکی تهران",
+    "value": "Faculty of Science, University of Isfahan",
+    "label": "دانشکده علوم دانشگاه اصفهان"
   },
   {
-    value:
-      "Faculty of Automotive Engineering, Iran University of Science and Technology",
-    label: "دانشکده مهندسی خودرو دانشگاه علم و صنعت ایران",
+    "value": "Technical and Engineering Faculty of Shahid University",
+    "label": "دانشکده فنی و مهندسی دانشگاه شهید"
   },
   {
-    value: "Faculty of Chemistry, Iran University of Science and Technology",
-    label: "دانشکده شیمی دانشگاه علم و صنعت ایران",
+    "value": "Faculty of Mathematics, University of Tabriz",
+    "label": "دانشکده ریاضی دانشگاه تبریز"
   },
   {
-    value:
-      "Faculty of Economic and Political Sciences, Shahid Beheshti University",
-    label: "دانشکده علوم اقتصادی و سیاسی دانشگاه شهید بهشتی",
+    "value": "Shahid Rajaei Lahijan Technical College",
+    "label": "دانشکده فنی شهید رجایی لاهیجان"
   },
   {
-    value:
-      "Faculty of Physical Education and Sports Sciences of Shahid Beheshti University",
-    label: "دانشکده تربیت بدنی و علوم ورزشی دانشگاه شهید بهشتی",
+    "value": "Faculty of Petroleum Engineering, Amirkabir University of Technology",
+    "label": "دانشکده مهندسی نفت دانشگاه صنعتی امیرکبیر"
   },
   {
-    value: "Faculty of Mechanical Engineering, Sharif University of Technology",
-    label: "دانشکده مهندسی مکانیک دانشگاه صنعتی شریف",
+    "value": "Faculty of Management and Accounting, Azad Qazvin University",
+    "label": "دانشکده مدیریت و حسابداری دانشگاه آزاد قزوین"
   },
-  { value: "Faculty of Cinema and Theater", label: "دانشکده سینما و تئاتر" },
   {
-    value: "Tabriz University Faculty of Educational Sciences and Psychology",
-    label: "دانشکده علوم تربیتی و روانشناسی دانشگاه تبریز",
+    "value": "Faculty of Engineering and Science and Materials of Sharif University of Technology",
+    "label": "دانشکده مهندسی و علوم مواد دانشگاه صنعتی شریف"
   },
   {
-    value:
-      "Faculty of Mechanical Engineering, Iran University of Science and Technology",
-    label: "دانشکده مهندسی مکانیک دانشگاه علم و صنعت ایران",
+    "value": "Faculty of Nuclear Engineering and Physics, Amirkabir University of Technology",
+    "label": "دانشکده مهندسی هسته‌ای و فیزیک دانشگاه صنعتی امیرکبیر"
   },
   {
-    value: "Faculty of Literature and Humanities, Shahid Beheshti University",
-    label: "دانشکده ادبیات و علوم انسانی دانشگاه شهید بهشتی",
+    "value": "Faculty of Chemistry, Sharif University of Technology",
+    "label": "دانشکده شیمی دانشگاه صنعتی شریف"
   },
-  { value: "Faculty of News", label: "دانشکده خبر" },
   {
-    value:
-      "Faculty of Architecture and Art, Islamic Azad University, Tabriz branch",
-    label: "دانشکده معماری و هنر دانشگاه آزاد اسلامی واحد تبریز",
+    "value": "Tabriz University Faculty of Literature and Human Sciences",
+    "label": "دانشکده ادبیات و علوم انسانی دانشگاه تبریز"
   },
   {
-    value:
-      "Faculty of Aerospace Engineering, Khwajahansiruddin Tusi University of Technology",
-    label: "دانشکده مهندسی هوافضا دانشگاه صنعتی خواجه نصیرالدین طوسی",
+    "value": "Faculty of Literature and Humanities, Dr. Ali Shariati, Ferdowsi University of Mashhad",
+    "label": "دانشکده ادبیات و علوم انسانی دکتر علی شریعتی دانشگاه فردوسی مشهد"
   },
   {
-    value:
-      "Faculty of Management, Economics and Accounting, Islamic Azad University, Tabriz branch",
-    label: "دانشکده مدیریت، اقتصاد و حسابداری دانشگاه آزاد اسلامی واحد تبریز",
+    "value": "Technical Faculty of Tabriz University",
+    "label": "دانشکده فنی دانشگاه تبریز"
   },
   {
-    value: "Tehran University technical faculties campus",
-    label: "پردیس دانشکده‌های فنی دانشگاه تهران",
+    "value": "Faculty of Civil Engineering and Architecture, Azad Qazvin University",
+    "label": "دانشکده مهندسی عمران و معماری دانشگاه آزاد قزوین"
   },
   {
-    value: "Faculty of Chemistry, University of Tabriz",
-    label: "دانشکده شیمی دانشگاه تبریز",
+    "value": "Faculty of Law, Shahid Beheshti University",
+    "label": "دانشکده حقوق دانشگاه شهید بهشتی"
   },
   {
-    value: "Faculty of Entrepreneurship of the University of Tehran",
-    label: "دانشکده کارآفرینی دانشگاه تهران",
+    "value": "Faculty of Physics, University of Tabriz",
+    "label": "دانشکده فیزیک دانشگاه تبریز"
   },
   {
-    value:
-      "Faculty of Industrial Engineering, Amirkabir University of Technology",
-    label: "دانشکده مهندسی صنایع دانشگاه صنعتی امیرکبیر",
+    "value": "Faculty of Mechanical Engineering, Amir Kabir University of Technology",
+    "label": "دانشکده مهندسی مکانیک دانشگاه صنعتی امیرکبیر"
   },
   {
-    value: "Sharif Graduate School of Management and Economics",
-    label: "دانشکده مدیریت و اقتصاد دانشگاه صنعتی شریف",
+    "value": "History of Science Research Institute",
+    "label": "پژوهشگاه تاریخ علم"
   },
   {
-    value:
-      "Faculty of Civil and Environmental Engineering, Amirkabir University of Technology",
-    label: "دانشکده مهندسی عمران و محیط زیست دانشگاه صنعتی امیرکبیر",
+    "value": "Faculty of Civil Engineering, Sharif University of Technology",
+    "label": "دانشکده مهندسی عمران دانشگاه صنعتی شریف"
   },
   {
-    value:
-      "Faculty of Engineering, Islamic Azad University, South Tehran branch",
-    label: "دانشکده مهندسی دانشگاه آزاد اسلامی واحد تهران جنوب",
+    "value": "Faculty of Industrial Engineering, Iran University of Science and Technology",
+    "label": "دانشکده مهندسی صنایع دانشگاه علم و صنعت ایران"
   },
   {
-    value: "N.I.O.C. school of Accounting and Finance",
-    label: "دانشکده حسابداری و مالی شرکت ملی نفت ایران",
+    "value": "Faculty of Electrical and Computer Engineering and Information Technology of Qazvin Azad University",
+    "label": "دانشکده مهندسی برق و کامپیوتر و فناوری اطلاعات دانشگاه آزاد قزوین"
   },
   {
-    value: "Faculty of Persian Language and Literature",
-    label: "دانشکده زبان و ادبیات فارسی",
+    "value": "Technical and Vocational University of Soroush Center, Isfahan",
+    "label": "دانشگاه فنی و حرفه‌ای مرکز سروش اصفهان"
   },
   {
-    value: "Faculty of Mathematical Sciences, Alzahra University",
-    label: "دانشکده علوم ریاضی دانشگاه الزهرا",
+    "value": "Faculty of Theology and Religions of Shahid Beheshti University",
+    "label": "دانشکده الهیات و ادیان دانشگاه شهید بهشتی"
   },
   {
-    value: "University of Tehran, College of Agriculture & Natural Resources",
-    label: "دانشکده کشاورزی و منابع طبیعی دانشگاه تهران",
+    "value": "Faculty of Industry and Mechanics, Qazvin Azad University",
+    "label": "دانشکده صنعت و مکانیک دانشگاه آزاد قزوین"
   },
   {
-    value: "Faculty of World Studies of the University of Tehran",
-    label: "دانشکده مطالعات جهان دانشگاه تهران",
+    "value": "Central Tehran Islamic Azad University Technical Faculty",
+    "label": "دانشکده فنی دانشگاه آزاد اسلامی مرکز تهران"
   },
-  { value: "Faculty of Desert Studies", label: "دانشکده مطالعات بیابان" },
   {
-    value:
-      "Faculty of New Sciences and Technologies of the University of Tehran",
-    label: "دانشکده علوم و فناوری‌های نوین دانشگاه تهران",
+    "value": "Faculty of Social Sciences, Allameh Tabatabai University",
+    "label": "دانشکده علوم اجتماعی دانشگاه علامه طباطبایی"
   },
   {
-    value: "Mohajer Technical University of Isfahan (MTU)",
-    label: "دانشگاه صنعتی مهاجر اصفهان",
+    "value": "Faculty of Computer Engineering and Information Technology, Amirkabir University of Technology",
+    "label": "دانشکده مهندسی کامپیوتر و فناوری اطلاعات دانشگاه صنعتی امیرکبیر"
   },
   {
-    value: "Department of Industrial Engineering, South Teheran",
-    label: "گروه مهندسی صنایع جنوب تهران",
+    "value": "Tabriz University Faculty of Humanities and Social Sciences",
+    "label": "دانشکده علوم انسانی و اجتماعی دانشگاه تبریز"
   },
   {
-    value: "Arak Faculty of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی اراک",
+    "value": "Tabriz University Faculty of Theology and Islamic Sciences",
+    "label": "دانشکده الهیات و علوم اسلامی دانشگاه تبریز"
   },
   {
-    value: "Faculty of Nursing and Midwifery, Isfahan",
-    label: "دانشکده پرستاری و مامایی اصفهان",
+    "value": "Faculty of Architecture and Urban Planning, Iran University of Science and Technology",
+    "label": "دانشکده معماری و شهرسازی دانشگاه علم و صنعت ایران"
   },
   {
-    value: "Faculty of Nursing and Midwifery, Tabriz",
-    label: "دانشکده پرستاری و مامایی تبریز",
+    "value": "Faculty of Mathematics, Iran University of Science and Technology",
+    "label": "دانشکده ریاضی دانشگاه علم و صنعت ایران"
   },
-  { value: "Neyshabur College of Nursing", label: "دانشکده پرستاری نیشابور" },
   {
-    value: "Khorramabad College of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی خرم‌آباد",
+    "value": "Faculty of Mining Engineering, Metallurgy, Amirkabir University of Technology",
+    "label": "دانشکده مهندسی معدن، متالورژی دانشگاه صنعتی امیرکبیر"
   },
-  { value: "Nursing and Midwifery School", label: "دانشکده پرستاری و مامایی" },
   {
-    value: "Shahrekord School of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی شهرکرد",
+    "value": "Faculty of Earth Sciences, Shahid Beheshti University",
+    "label": "دانشکده علوم زمین دانشگاه شهید بهشتی"
   },
   {
-    value:
-      "Ahvaz Jondishapour University of Medical Sciences Faculty of Medicine",
-    label: "دانشکده پزشکی دانشگاه علوم پزشکی جندیشاپور اهواز",
+    "value": "Tabriz University Faculty of Natural Sciences",
+    "label": "دانشکده علوم طبیعی دانشگاه تبریز"
   },
   {
-    value:
-      "Ahvaz Jondishapour University of Medical Sciences Faculty of Paramedical Sciences",
-    label: "دانشکده پیراپزشکی دانشگاه علوم پزشکی جندیشاپور اهواز",
+    "value": "Tabriz University Faculty of Persian Literature and Foreign Languages",
+    "label": "دانشکده ادبیات فارسی و زبان‌های خارجی دانشگاه تبریز"
   },
   {
-    value:
-      "Ahvaz Jondishapour University of Medical Sciences Faculty of Public Health",
-    label: "دانشکده بهداشت دانشگاه علوم پزشکی جندیشاپور اهواز",
+    "value": "Faculty of Mechanical Engineering, University of Tabriz",
+    "label": "دانشکده مهندسی مکانیک دانشگاه تبریز"
   },
   {
-    value:
-      "Babol University of Medical Science Faculty of Allied Medical Science",
-    label: "دانشکده علوم پیراپزشکی دانشگاه علوم پزشکی بابل",
+    "value": "Faculty of Agriculture, University of Tabriz",
+    "label": "دانشکده کشاورزی دانشگاه تبریز"
   },
   {
-    value: "Babol University of Medical Science Faculty of Medicine",
-    label: "دانشکده پزشکی دانشگاه علوم پزشکی بابل",
+    "value": "Faculty of Architecture and Urban Planning, Shahid Beheshti University",
+    "label": "دانشکده معماری و شهرسازی دانشگاه شهید بهشتی"
   },
   {
-    value:
-      "Babol University of Medical Science Faculty of Paramedical Sciences",
-    label: "دانشکده پیراپزشکی دانشگاه علوم پزشکی بابل",
+    "value": "Faculty of Civil Engineering, University of Tabriz",
+    "label": "دانشکده مهندسی عمران دانشگاه تبریز"
   },
   {
-    value: "Bu Ali Sina University Faculty of Agriculture",
-    label: "دانشکده کشاورزی دانشگاه بوعلی سینا",
+    "value": "School of Railway Engineering",
+    "label": "دانشکده مهندسی راه‌آهن"
   },
   {
-    value: "Bu Ali Sina University Faculty of Literature and Humanities",
-    label: "دانشکده ادبیات و علوم انسانی دانشگاه بوعلی سینا",
+    "value": "Faculty of Mechanical Engineering, Khwajahansiruddin Tusi University of Technology",
+    "label": "دانشکده مهندسی مکانیک دانشگاه صنعتی خواجه نصیرالدین طوسی"
   },
   {
-    value: "Bu Ali Sina University Faculty of Chemistry",
-    label: "دانشکده شیمی دانشگاه بوعلی سینا",
+    "value": "Faculty of Physics, Iran University of Science and Technology",
+    "label": "دانشکده فیزیک دانشگاه علم و صنعت ایران"
   },
   {
-    value: "Bu Ali Sina University Faculty of Economics and Social Science",
-    label: "دانشکده اقتصاد و علوم اجتماعی دانشگاه بوعلی سینا",
+    "value": "Faculty of Automotive Engineering, Iran University of Science and Technology",
+    "label": "دانشکده مهندسی خودرو دانشگاه علم و صنعت ایران"
   },
   {
-    value: "Bu Ali Sina University Faculty of Science",
-    label: "دانشکده علوم دانشگاه بوعلی سینا",
+    "value": "Faculty of Chemistry, Iran University of Science and Technology",
+    "label": "دانشکده شیمی دانشگاه علم و صنعت ایران"
   },
   {
-    value: "Hormozgan University of Medical Sciences Faculty of Medicine",
-    label: "دانشکده پزشکی دانشگاه علوم پزشکی هرمزگان",
+    "value": "Faculty of Economic and Political Sciences, Shahid Beheshti University",
+    "label": "دانشکده علوم اقتصادی و سیاسی دانشگاه شهید بهشتی"
   },
   {
-    value: "Ilam University Faculty of Sciences",
-    label: "دانشکده علوم دانشگاه ایلام",
+    "value": "Faculty of Physical Education and Sports Sciences of Shahid Beheshti University",
+    "label": "دانشکده تربیت بدنی و علوم ورزشی دانشگاه شهید بهشتی"
   },
   {
-    value:
-      "Isfahan University of Medical Sciences and Health Services Faculty of Medicine",
-    label: "دانشکده پزشکی دانشگاه علوم پزشکی و خدمات بهداشتی درمانی اصفهان",
+    "value": "Faculty of Mechanical Engineering, Sharif University of Technology",
+    "label": "دانشکده مهندسی مکانیک دانشگاه صنعتی شریف"
   },
   {
-    value: "Isfahan University of Technology College of Chemistry",
-    label: "دانشکده شیمی دانشگاه صنعتی اصفهان",
+    "value": "Faculty of Cinema and Theater",
+    "label": "دانشکده سینما و تئاتر"
   },
   {
-    value: "Isfahan University of Technology Faculty of Natural Resources",
-    label: "دانشکده منابع طبیعی دانشگاه صنعتی اصفهان",
+    "value": "Tabriz University Faculty of Educational Sciences and Psychology",
+    "label": "دانشکده علوم تربیتی و روانشناسی دانشگاه تبریز"
   },
   {
-    value: "Isfahan University of Technology College of Agriculture",
-    label: "دانشکده کشاورزی دانشگاه صنعتی اصفهان",
+    "value": "Faculty of Mechanical Engineering, Iran University of Science and Technology",
+    "label": "دانشکده مهندسی مکانیک دانشگاه علم و صنعت ایران"
   },
   {
-    value:
-      "Islamic Azad University of Khorasgan Faculty of Agriculture and Natural Resources",
-    label: "دانشکده کشاورزی و منابع طبیعی دانشگاه آزاد اسلامی واحد خوراسگان",
+    "value": "Faculty of Literature and Humanities, Shahid Beheshti University",
+    "label": "دانشکده ادبیات و علوم انسانی دانشگاه شهید بهشتی"
   },
   {
-    value: "Aja University of Medical Sciences Faculty of Medicine",
-    label: "دانشکده پزشکی دانشگاه علوم پزشکی آجا",
+    "value": "Faculty of News",
+    "label": "دانشکده خبر"
   },
   {
-    value: "Aja University of Medical Sciences Faculty of Paramedicine",
-    label: "دانشکده پیراپزشکی دانشگاه علوم پزشکی آجا",
+    "value": "Faculty of Architecture and Art, Islamic Azad University, Tabriz branch",
+    "label": "دانشکده معماری و هنر دانشگاه آزاد اسلامی واحد تبریز"
   },
   {
-    value: "Allameh Tabatabai University Faculty of Economics",
-    label: "دانشکده اقتصاد دانشگاه علامه طباطبایی",
+    "value": "Faculty of Aerospace Engineering, Khwajahansiruddin Tusi University of Technology",
+    "label": "دانشکده مهندسی هوافضا دانشگاه صنعتی خواجه نصیرالدین طوسی"
   },
   {
-    value: "Ferdowsi University of Mashhad Faculty of Sciences",
-    label: "دانشکده علوم دانشگاه فردوسی مشهد",
+    "value": "Faculty of Management, Economics and Accounting, Islamic Azad University, Tabriz branch",
+    "label": "دانشکده مدیریت، اقتصاد و حسابداری دانشگاه آزاد اسلامی واحد تبریز"
   },
   {
-    value: "Allameh Tabatabai University Faculty of Psychology and Education",
-    label: "دانشکده روانشناسی و علوم تربیتی دانشگاه علامه طباطبایی",
+    "value": "Tehran University technical faculties campus",
+    "label": "پردیس دانشکده‌های فنی دانشگاه تهران"
   },
   {
-    value: "Azarbaijan Shahid Madani University Faculty of Humanities",
-    label: "دانشکده علوم انسانی دانشگاه شهید مدنی آذربایجان",
+    "value": "Faculty of Chemistry, University of Tabriz",
+    "label": "دانشکده شیمی دانشگاه تبریز"
   },
   {
-    value:
-      "Azarbaijan Shahid Madani University Faculty of Information Technology",
-    label: "دانشکده فناوری اطلاعات دانشگاه شهید مدنی آذربایجان",
+    "value": "Faculty of Entrepreneurship of the University of Tehran",
+    "label": "دانشکده کارآفرینی دانشگاه تهران"
   },
   {
-    value: "Allameh Tabatabai University Faculty of Law and Political Sciences",
-    label: "دانشکده حقوق و علوم سیاسی دانشگاه علامه طباطبایی",
+    "value": "Faculty of Industrial Engineering, Amirkabir University of Technology",
+    "label": "دانشکده مهندسی صنایع دانشگاه صنعتی امیرکبیر"
   },
   {
-    value:
-      "Allameh Tabatabai University Faculty of Persian Literature and Foreign Languages",
-    label: "دانشکده ادبیات فارسی و زبان‌های خارجی دانشگاه علامه طباطبایی",
+    "value": "Sharif Graduate School of Management and Economics",
+    "label": "دانشکده مدیریت و اقتصاد دانشگاه صنعتی شریف"
   },
   {
-    value: "Azarbaijan Shahid Madani University Faculty of Basic Sciences",
-    label: "دانشکده علوم پایه دانشگاه شهید مدنی آذربایجان",
+    "value": "Faculty of Civil and Environmental Engineering, Amirkabir University of Technology",
+    "label": "دانشکده مهندسی عمران و محیط زیست دانشگاه صنعتی امیرکبیر"
   },
   {
-    value:
-      "Ferdowski University of Mashhad Faculty of Sports and Physical Education",
-    label: "دانشکده تربیت بدنی و علوم ورزشی دانشگاه فردوسی مشهد",
+    "value": "Faculty of Engineering, Islamic Azad University, South Tehran branch",
+    "label": "دانشکده مهندسی دانشگاه آزاد اسلامی واحد تهران جنوب"
   },
   {
-    value:
-      "Allameh Tabatabai University Faculty of Social Sciences and Communication",
-    label: "دانشکده علوم اجتماعی و ارتباطات دانشگاه علامه طباطبایی",
+    "value": "N.I.O.C. school of Accounting and Finance",
+    "label": "دانشکده حسابداری و مالی شرکت ملی نفت ایران"
   },
   {
-    value: "Kashan University of Medical Sciences Faculty of Health",
-    label: "دانشکده بهداشت دانشگاه علوم پزشکی کاشان",
+    "value": "Faculty of Persian Language and Literature",
+    "label": "دانشکده زبان و ادبیات فارسی"
   },
   {
-    value: "Azarbaijan Shahid Madani University Faculty of Theology",
-    label: "دانشکده الهیات دانشگاه شهید مدنی آذربایجان",
+    "value": "Faculty of Mathematical Sciences, Alzahra University",
+    "label": "دانشکده علوم ریاضی دانشگاه الزهرا"
   },
   {
-    value: "Al Zahra University Faculty of Sciences",
-    label: "دانشکده علوم دانشگاه الزهرا",
+    "value": "University of Tehran, College of Agriculture & Natural Resources",
+    "label": "دانشکده کشاورزی و منابع طبیعی دانشگاه تهران"
   },
   {
-    value:
-      "Alzahra University Faculty of Physical Education and Sport Sciences",
-    label: "دانشکده تربیت بدنی و علوم ورزشی دانشگاه الزهرا",
+    "value": "Faculty of World Studies of the University of Tehran",
+    "label": "دانشکده مطالعات جهان دانشگاه تهران"
   },
   {
-    value: "Shahid Chamran University Faculty of Education and Psychology",
-    label: "دانشکده علوم تربیتی و روانشناسی دانشگاه شهید چمران",
+    "value": "Faculty of Desert Studies",
+    "label": "دانشکده مطالعات بیابان"
   },
   {
-    value: "Shahid Chamran University Faculty of Science",
-    label: "دانشکده علوم دانشگاه شهید چمران",
+    "value": "Faculty of New Sciences and Technologies of the University of Tehran",
+    "label": "دانشکده علوم و فناوری‌های نوین دانشگاه تهران"
   },
   {
-    value: "Shahid Chamran University Faculty of Agriculture",
-    label: "دانشکده کشاورزی دانشگاه شهید چمران",
+    "value": "Mohajer Technical University of Isfahan (MTU)",
+    "label": "دانشگاه صنعتی مهاجر اصفهان"
   },
   {
-    value: "Guilan University Faculty of Agriculture",
-    label: "دانشکده کشاورزی دانشگاه گیلان",
+    "value": "Department of Industrial Engineering, South Teheran",
+    "label": "گروه مهندسی صنایع جنوب تهران"
   },
   {
-    value: "Imam Khomeini International University Faculty of Science",
-    label: "دانشکده علوم دانشگاه بین‌المللی امام خمینی",
+    "value": "Bu Ali Sina University Faculty of Agriculture",
+    "label": "دانشکده کشاورزی دانشگاه بوعلی سینا"
   },
   {
-    value:
-      "Imam Khomeini International University Faculty of Literature and Humanities",
-    label: "دانشکده ادبیات و علوم انسانی دانشگاه بین‌المللی امام خمینی",
+    "value": "Bu Ali Sina University Faculty of Literature and Humanities",
+    "label": "دانشکده ادبیات و علوم انسانی دانشگاه بوعلی سینا"
   },
   {
-    value: "Mashhad University of Medical Sciences Faculty of Medicine",
-    label: "دانشکده پزشکی دانشگاه علوم پزشکی مشهد",
+    "value": "Bu Ali Sina University Faculty of Chemistry",
+    "label": "دانشکده شیمی دانشگاه بوعلی سینا"
   },
   {
-    value:
-      "Mashhad University of Medical Sciences Faculty of Health and Paramedical Sciences",
-    label: "دانشکده بهداشت و پیراپزشکی دانشگاه علوم پزشکی مشهد",
+    "value": "Bu Ali Sina University Faculty of Economics and Social Science",
+    "label": "دانشکده اقتصاد و علوم اجتماعی دانشگاه بوعلی سینا"
   },
   {
-    value:
-      "Mazandaran University of Medical Sciences Faculty of Paramedical Science",
-    label: "دانشکده پیراپزشکی دانشگاه علوم پزشکی مازندران",
+    "value": "Bu Ali Sina University Faculty of Science",
+    "label": "دانشکده علوم دانشگاه بوعلی سینا"
   },
   {
-    value: "Shahid Bahonar University Faculty of Agriculture",
-    label: "دانشکده کشاورزی دانشگاه شهید باهنر",
+    "value": "Ilam University Faculty of Sciences",
+    "label": "دانشکده علوم دانشگاه ایلام"
   },
   {
-    value: "Mazandaran University of Medical Sciences Faculty of Medicine",
-    label: "دانشکده پزشکی دانشگاه علوم پزشکی مازندران",
+    "value": "Isfahan University of Technology College of Chemistry",
+    "label": "دانشکده شیمی دانشگاه صنعتی اصفهان"
   },
   {
-    value: "University of Mazandaran Faculty of Basic Science",
-    label: "دانشکده علوم پایه دانشگاه مازندران",
+    "value": "Isfahan University of Technology Faculty of Natural Resources",
+    "label": "دانشکده منابع طبیعی دانشگاه صنعتی اصفهان"
   },
   {
-    value: "University of Mazandaran Faculty of Chemistry",
-    label: "دانشکده شیمی دانشگاه مازندران",
+    "value": "Isfahan University of Technology College of Agriculture",
+    "label": "دانشکده کشاورزی دانشگاه صنعتی اصفهان"
   },
   {
-    value:
-      "University of Isfahan Faculty of Educational Sciences and Psychology",
-    label: "دانشکده علوم تربیتی و روانشناسی دانشگاه اصفهان",
+    "value": "Islamic Azad University of Khorasgan Faculty of Agriculture and Natural Resources",
+    "label": "دانشکده کشاورزی و منابع طبیعی دانشگاه آزاد اسلامی واحد خوراسگان"
   },
   {
-    value: "University of Isfahan Faculty of Foreign Languages",
-    label: "دانشکده زبان‌های خارجی دانشگاه اصفهان",
+    "value": "Allameh Tabatabai University Faculty of Economics",
+    "label": "دانشکده اقتصاد دانشگاه علامه طباطبایی"
   },
   {
-    value: "University of Isfahan Faculty of Chemistry",
-    label: "دانشکده شیمی دانشگاه اصفهان",
+    "value": "Ferdowsi University of Mashhad Faculty of Sciences",
+    "label": "دانشکده علوم دانشگاه فردوسی مشهد"
   },
   {
-    value: "University of Isfahan Faculty of Literature and Humanities",
-    label: "دانشکده ادبیات و علوم انسانی دانشگاه اصفهان",
+    "value": "Allameh Tabatabai University Faculty of Psychology and Education",
+    "label": "دانشکده روانشناسی و علوم تربیتی دانشگاه علامه طباطبایی"
   },
   {
-    value: "University of Isfahan Faculty of New Sciences and Technology",
-    label: "دانشکده علوم و فناوری‌های نوین دانشگاه اصفهان",
+    "value": "Azarbaijan Shahid Madani University Faculty of Humanities",
+    "label": "دانشکده علوم انسانی دانشگاه شهید مدنی آذربایجان"
   },
   {
-    value: "KN Toosi University of Technology Faculty of Science",
-    label: "دانشکده علوم دانشگاه صنعتی خواجه نصیرالدین طوسی",
+    "value": "Azarbaijan Shahid Madani University Faculty of Information Technology",
+    "label": "دانشکده فناوری اطلاعات دانشگاه شهید مدنی آذربایجان"
   },
   {
-    value: "University of Kashan Faculty of Foreign Languages and Literatures",
-    label: "دانشکده زبان‌ها و ادبیات خارجی دانشگاه کاشان",
+    "value": "Allameh Tabatabai University Faculty of Law and Political Sciences",
+    "label": "دانشکده حقوق و علوم سیاسی دانشگاه علامه طباطبایی"
   },
   {
-    value: "University of Kashan Faculty of Chemistry",
-    label: "دانشکده شیمی دانشگاه کاشان",
+    "value": "Allameh Tabatabai University Faculty of Persian Literature and Foreign Languages",
+    "label": "دانشکده ادبیات فارسی و زبان‌های خارجی دانشگاه علامه طباطبایی"
   },
   {
-    value: "Semnan University Faculty of Chemistry",
-    label: "دانشکده شیمی دانشگاه سمنان",
+    "value": "Azarbaijan Shahid Madani University Faculty of Basic Sciences",
+    "label": "دانشکده علوم پایه دانشگاه شهید مدنی آذربایجان"
   },
   {
-    value: "Semnan University Faculty of Humanities",
-    label: "دانشکده علوم انسانی دانشگاه سمنان",
+    "value": "Ferdowski University of Mashhad Faculty of Sports and Physical Education",
+    "label": "دانشکده تربیت بدنی و علوم ورزشی دانشگاه فردوسی مشهد"
   },
   {
-    value: "Semnan University Faculty of Art",
-    label: "دانشکده هنر دانشگاه سمنان",
+    "value": "Allameh Tabatabai University Faculty of Social Sciences and Communication",
+    "label": "دانشکده علوم اجتماعی و ارتباطات دانشگاه علامه طباطبایی"
   },
   {
-    value: "Shahrekord University Faculty of Art",
-    label: "دانشکده هنر دانشگاه شهرکرد",
+    "value": "Azarbaijan Shahid Madani University Faculty of Theology",
+    "label": "دانشکده الهیات دانشگاه شهید مدنی آذربایجان"
   },
   {
-    value: "Shahrekord University Faculty of Basic Sciences",
-    label: "دانشکده علوم پایه دانشگاه شهرکرد",
+    "value": "Al Zahra University Faculty of Sciences",
+    "label": "دانشکده علوم دانشگاه الزهرا"
   },
   {
-    value: "Shahrekord University Faculty of Agriculture",
-    label: "دانشکده کشاورزی دانشگاه شهرکرد",
+    "value": "Alzahra University Faculty of Physical Education and Sport Sciences",
+    "label": "دانشکده تربیت بدنی و علوم ورزشی دانشگاه الزهرا"
   },
   {
-    value: "ShahreKord University Faculty of Natural Resources and Geosciences",
-    label: "دانشکده منابع طبیعی و علوم زمین دانشگاه شهرکرد",
+    "value": "Shahid Chamran University Faculty of Education and Psychology",
+    "label": "دانشکده علوم تربیتی و روانشناسی دانشگاه شهید چمران"
   },
   {
-    value: "Shahrekord University Faculty of Letters and Humanities",
-    label: "دانشکده ادبیات و علوم انسانی دانشگاه شهرکرد",
+    "value": "Shahid Chamran University Faculty of Science",
+    "label": "دانشکده علوم دانشگاه شهید چمران"
   },
   {
-    value: "Shiraz University Faculty of Sciences",
-    label: "دانشکده علوم دانشگاه شیراز",
+    "value": "Shahid Chamran University Faculty of Agriculture",
+    "label": "دانشکده کشاورزی دانشگاه شهید چمران"
   },
   {
-    value: "Payame Noor University Faculty of Basic Sciences",
-    label: "دانشکده علوم پایه دانشگاه پیام نور",
+    "value": "Guilan University Faculty of Agriculture",
+    "label": "دانشکده کشاورزی دانشگاه گیلان"
   },
   {
-    value:
-      "Tabriz University of Medical Sciences Faculty of Health and Nutrition",
-    label: "دانشکده بهداشت و تغذیه دانشگاه علوم پزشکی تبریز",
+    "value": "Imam Khomeini International University Faculty of Science",
+    "label": "دانشکده علوم دانشگاه بین‌المللی امام خمینی"
   },
   {
-    value: "University of Guilan Faculty of Humanities",
-    label: "دانشکده علوم انسانی دانشگاه گیلان",
+    "value": "Imam Khomeini International University Faculty of Literature and Humanities",
+    "label": "دانشکده ادبیات و علوم انسانی دانشگاه بین‌المللی امام خمینی"
   },
   {
-    value:
-      "Tabriz University of Medical Sciences Faculty of Paramedical Sciences",
-    label: "دانشکده پیراپزشکی دانشگاه علوم پزشکی تبریز",
+    "value": "Shahid Bahonar University Faculty of Agriculture",
+    "label": "دانشکده کشاورزی دانشگاه شهید باهنر"
   },
   {
-    value: "Shahid Beheshti University Faculty of Earth Sciences",
-    label: "دانشکده علوم زمین دانشگاه شهید بهشتی",
+    "value": "University of Mazandaran Faculty of Basic Science",
+    "label": "دانشکده علوم پایه دانشگاه مازندران"
   },
   {
-    value:
-      "Shahid Beheshti University Faculty of Economics and Political Sciences",
-    label: "دانشکده علوم اقتصادی و سیاسی دانشگاه شهید بهشتی",
+    "value": "University of Mazandaran Faculty of Chemistry",
+    "label": "دانشکده شیمی دانشگاه مازندران"
   },
   {
-    value: "Shahid Beheshti University Faculty of Biological Sciences",
-    label: "دانشکده علوم زیستی دانشگاه شهید بهشتی",
+    "value": "University of Isfahan Faculty of Educational Sciences and Psychology",
+    "label": "دانشکده علوم تربیتی و روانشناسی دانشگاه اصفهان"
   },
   {
-    value: "Shahid Beheshti University Faculty of Chemistry",
-    label: "دانشکده شیمی دانشگاه شهید بهشتی",
+    "value": "University of Isfahan Faculty of Foreign Languages",
+    "label": "دانشکده زبان‌های خارجی دانشگاه اصفهان"
   },
   {
-    value: "Shahid Beheshti University Faculty of Physics",
-    label: "دانشکده فیزیک دانشگاه شهید بهشتی",
+    "value": "University of Isfahan Faculty of Chemistry",
+    "label": "دانشکده شیمی دانشگاه اصفهان"
   },
   {
-    value:
-      "Shahid Beheshti University Faculty of Theology and Religious Studies",
-    label: "دانشکده الهیات و مطالعات ادیان دانشگاه شهید بهشتی",
+    "value": "University of Isfahan Faculty of Literature and Humanities",
+    "label": "دانشکده ادبیات و علوم انسانی دانشگاه اصفهان"
   },
   {
-    value: "Tarbiat Modares University Faculty of Biological Sciences",
-    label: "دانشکده علوم زیستی دانشگاه تربیت مدرس",
+    "value": "University of Isfahan Faculty of New Sciences and Technology",
+    "label": "دانشکده علوم و فناوری‌های نوین دانشگاه اصفهان"
   },
   {
-    value: "Tarbiat Modares University Faculty of Agriculture",
-    label: "دانشکده کشاورزی دانشگاه تربیت مدرس",
+    "value": "KN Toosi University of Technology Faculty of Science",
+    "label": "دانشکده علوم دانشگاه صنعتی خواجه نصیرالدین طوسی"
   },
   {
-    value: "Tarbiat Modares University Faculty of Basic Sciences",
-    label: "دانشکده علوم پایه دانشگاه تربیت مدرس",
+    "value": "University of Kashan Faculty of Foreign Languages and Literatures",
+    "label": "دانشکده زبان‌ها و ادبیات خارجی دانشگاه کاشان"
   },
   {
-    value: "Tarbiat Modares University Faculty of Humanities",
-    label: "دانشکده علوم انسانی دانشگاه تربیت مدرس",
+    "value": "University of Kashan Faculty of Chemistry",
+    "label": "دانشکده شیمی دانشگاه کاشان"
   },
   {
-    value: "University of Tabriz Faculty of Agriculture",
-    label: "دانشکده کشاورزی دانشگاه تبریز",
+    "value": "Semnan University Faculty of Chemistry",
+    "label": "دانشکده شیمی دانشگاه سمنان"
   },
   {
-    value: "University of Tabriz Faculty of Persian and Foreign Languages",
-    label: "دانشکده زبان‌های فارسی و خارجی دانشگاه تبریز",
+    "value": "Semnan University Faculty of Humanities",
+    "label": "دانشکده علوم انسانی دانشگاه سمنان"
   },
   {
-    value: "Tehran University of Medical Sciences Faculty of Rehabilitation",
-    label: "دانشکده توانبخشی دانشگاه علوم پزشکی تهران",
+    "value": "Semnan University Faculty of Art",
+    "label": "دانشکده هنر دانشگاه سمنان"
   },
   {
-    value: "University of Tehran Faculty of Environment",
-    label: "دانشکده محیط زیست دانشگاه تهران",
+    "value": "Shahrekord University Faculty of Art",
+    "label": "دانشکده هنر دانشگاه شهرکرد"
   },
   {
-    value: "University of Tehran Faculty of Economics",
-    label: "دانشکده اقتصاد دانشگاه تهران",
+    "value": "Shahrekord University Faculty of Basic Sciences",
+    "label": "دانشکده علوم پایه دانشگاه شهرکرد"
   },
   {
-    value:
-      "University of Sistan and Baluchistan Faculty of Agriculture and Natural Resources",
-    label: "دانشکده کشاورزی و منابع طبیعی دانشگاه سیستان و بلوچستان",
+    "value": "Shahrekord University Faculty of Agriculture",
+    "label": "دانشکده کشاورزی دانشگاه شهرکرد"
   },
   {
-    value: "University of Sistan and Baluchistan Faculty of Science",
-    label: "دانشکده علوم دانشگاه سیستان و بلوچستان",
+    "value": "ShahreKord University Faculty of Natural Resources and Geosciences",
+    "label": "دانشکده منابع طبیعی و علوم زمین دانشگاه شهرکرد"
   },
   {
-    value: "University of Sistan and Baluchistan Faculty of Economics",
-    label: "دانشکده اقتصاد دانشگاه سیستان و بلوچستان",
+    "value": "Shahrekord University Faculty of Letters and Humanities",
+    "label": "دانشکده ادبیات و علوم انسانی دانشگاه شهرکرد"
   },
   {
-    value:
-      "University of Sistan and Baluchistan Faculty of Literature and Humanities",
-    label: "دانشکده ادبیات و علوم انسانی دانشگاه سیستان و بلوچستان",
+    "value": "Shiraz University Faculty of Sciences",
+    "label": "دانشکده علوم دانشگاه شیراز"
   },
   {
-    value: "University of Zanjan Faculty of Sciences",
-    label: "دانشکده علوم دانشگاه زنجان",
+    "value": "Payame Noor University Faculty of Basic Sciences",
+    "label": "دانشکده علوم پایه دانشگاه پیام نور"
   },
   {
-    value: "Yazd University Faculty of Natural Resources and Desert Studies",
-    label: "دانشکده منابع طبیعی و مطالعات بیابان دانشگاه یزد",
+    "value": "University of Guilan Faculty of Humanities",
+    "label": "دانشکده علوم انسانی دانشگاه گیلان"
   },
   {
-    value: "Islamic University Shabestar Branch",
-    label: "دانشگاه اسلامی واحد شبستر",
+    "value": "Shahid Beheshti University Faculty of Earth Sciences",
+    "label": "دانشکده علوم زمین دانشگاه شهید بهشتی"
   },
   {
-    value: "Mashhad University of Medical Sciences Faculty of Dentistry",
-    label: "دانشکده دندانپزشکی دانشگاه علوم پزشکی مشهد",
+    "value": "Shahid Beheshti University Faculty of Economics and Political Sciences",
+    "label": "دانشکده علوم اقتصادی و سیاسی دانشگاه شهید بهشتی"
   },
   {
-    value:
-      "Mazandaran University of Medical Sciences Faculty of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی دانشگاه علوم پزشکی مازندران",
+    "value": "Shahid Beheshti University Faculty of Biological Sciences",
+    "label": "دانشکده علوم زیستی دانشگاه شهید بهشتی"
   },
   {
-    value: "Shahid Bahonar University Faculty of Veterinary Medicine",
-    label: "دانشکده دامپزشکی دانشگاه شهید باهنر",
+    "value": "Shahid Beheshti University Faculty of Chemistry",
+    "label": "دانشکده شیمی دانشگاه شهید بهشتی"
   },
   {
-    value: "Mazandaran University of Medical Sciences Faculty of Pharmacy",
-    label: "دانشکده داروسازی دانشگاه علوم پزشکی مازندران",
+    "value": "Shahid Beheshti University Faculty of Physics",
+    "label": "دانشکده فیزیک دانشگاه شهید بهشتی"
   },
   {
-    value: "Islamic Azad University Tehran Medical Sciences",
-    label: "دانشگاه علوم پزشکی آزاد اسلامی تهران",
+    "value": "Shahid Beheshti University Faculty of Theology and Religious Studies",
+    "label": "دانشکده الهیات و مطالعات ادیان دانشگاه شهید بهشتی"
   },
   {
-    value:
-      "Qazvin University of Medical Sciences Qazvin School of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی قزوین دانشگاه علوم پزشکی قزوین",
+    "value": "Tarbiat Modares University Faculty of Biological Sciences",
+    "label": "دانشکده علوم زیستی دانشگاه تربیت مدرس"
   },
   {
-    value: "Qazvin University of Medical Sciences Qazvin School of Dentistry",
-    label: "دانشکده دندانپزشکی قزوین دانشگاه علوم پزشکی قزوین",
+    "value": "Tarbiat Modares University Faculty of Agriculture",
+    "label": "دانشکده کشاورزی دانشگاه تربیت مدرس"
   },
   {
-    value: "Shahrekord University Faculty of Veterinary Medicine",
-    label: "دانشکده دامپزشکی دانشگاه شهرکرد",
+    "value": "Tarbiat Modares University Faculty of Basic Sciences",
+    "label": "دانشکده علوم پایه دانشگاه تربیت مدرس"
   },
   {
-    value: "Shiraz University Faculty of Law and Political Science",
-    label: "دانشکده حقوق و علوم سیاسی دانشگاه شیراز",
+    "value": "Tarbiat Modares University Faculty of Humanities",
+    "label": "دانشکده علوم انسانی دانشگاه تربیت مدرس"
   },
   {
-    value:
-      "Shiraz University of Medical Sciences Department of Clinical Pharmacy",
-    label: "گروه داروسازی بالینی دانشگاه علوم پزشکی شیراز",
+    "value": "University of Tabriz Faculty of Agriculture",
+    "label": "دانشکده کشاورزی دانشگاه تبریز"
   },
   {
-    value: "Shiraz University of Medical Sciences Faculty of Dentistry",
-    label: "دانشکده دندانپزشکی دانشگاه علوم پزشکی شیراز",
+    "value": "University of Tabriz Faculty of Persian and Foreign Languages",
+    "label": "دانشکده زبان‌های فارسی و خارجی دانشگاه تبریز"
   },
   {
-    value:
-      "Shiraz University of Medical Sciences School of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی دانشگاه علوم پزشکی شیراز",
+    "value": "University of Tehran Faculty of Environment",
+    "label": "دانشکده محیط زیست دانشگاه تهران"
   },
   {
-    value: "Shiraz University of Medical Sciences School of Pharmacy",
-    label: "دانشکده داروسازی دانشگاه علوم پزشکی شیراز",
+    "value": "University of Tehran Faculty of Economics",
+    "label": "دانشکده اقتصاد دانشگاه تهران"
   },
   {
-    value: "Tabriz University of Medical Sciences Faculty of Dentistry",
-    label: "دانشکده دندانپزشکی دانشگاه علوم پزشکی تبریز",
+    "value": "University of Sistan and Baluchistan Faculty of Agriculture and Natural Resources",
+    "label": "دانشکده کشاورزی و منابع طبیعی دانشگاه سیستان و بلوچستان"
   },
   {
-    value:
-      "Tabriz University of Medical Sciences Faculty of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی دانشگاه علوم پزشکی تبریز",
+    "value": "University of Sistan and Baluchistan Faculty of Science",
+    "label": "دانشکده علوم دانشگاه سیستان و بلوچستان"
   },
   {
-    value:
-      "Shaheed Beheshti University of Medical Sciences Matryr Beheshti Dental Research Center",
-    label: "مرکز تحقیقات دندانپزشکی شهید بهشتی دانشگاه علوم پزشکی شهید بهشتی",
+    "value": "University of Sistan and Baluchistan Faculty of Economics",
+    "label": "دانشکده اقتصاد دانشگاه سیستان و بلوچستان"
   },
   {
-    value: "Shahed University Faculty of Medical Sciences",
-    label: "دانشکده علوم پزشکی دانشگاه شاهد",
+    "value": "University of Sistan and Baluchistan Faculty of Literature and Humanities",
+    "label": "دانشکده ادبیات و علوم انسانی دانشگاه سیستان و بلوچستان"
   },
   {
-    value:
-      "Shaheed Beheshti University of Medical Sciences School of Dentistry",
-    label: "دانشکده دندانپزشکی دانشگاه علوم پزشکی شهید بهشتی",
+    "value": "University of Zanjan Faculty of Sciences",
+    "label": "دانشکده علوم دانشگاه زنجان"
   },
   {
-    value: "Shahid Beheshti University Faculty of Law",
-    label: "دانشکده حقوق دانشگاه شهید بهشتی",
+    "value": "Yazd University Faculty of Natural Resources and Desert Studies",
+    "label": "دانشکده منابع طبیعی و مطالعات بیابان دانشگاه یزد"
   },
   {
-    value: "Shahid Beheshti University of Medical Sciences School of Medicine",
-    label: "دانشکده پزشکی دانشگاه علوم پزشکی شهید بهشتی",
+    "value": "Islamic University Shabestar Branch",
+    "label": "دانشگاه اسلامی واحد شبستر"
   },
   {
-    value: "Shahid Beheshti University of Medical Sciences School of Pharmacy",
-    label: "دانشکده داروسازی دانشگاه علوم پزشکی شهید بهشتی",
+    "value": "Shiraz University Faculty of Law and Political Science",
+    "label": "دانشکده حقوق و علوم سیاسی دانشگاه شیراز"
   },
   {
-    value:
-      "Shahid Beheshti University of Medical Sciences School of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی دانشگاه علوم پزشکی شهید بهشتی",
+    "value": "Shahid Beheshti University Faculty of Law",
+    "label": "دانشکده حقوق دانشگاه شهید بهشتی"
   },
   {
-    value:
-      "Shahid Beheshti University of Medical Sciences School of Traditional Medicine",
-    label: "دانشکده طب سنتی دانشگاه علوم پزشکی شهید بهشتی",
+    "value": "Tarbiat Modares University Department of Law",
+    "label": "گروه حقوق دانشگاه تربیت مدرس"
   },
   {
-    value: "Tarbiat Modares University Department of Law",
-    label: "گروه حقوق دانشگاه تربیت مدرس",
+    "value": "University of Tehran Faculty of Law and Political Science",
+    "label": "دانشکده حقوق و علوم سیاسی دانشگاه تهران"
   },
   {
-    value: "Tarbiat Modares University Faculty of Medical Sciences",
-    label: "دانشکده علوم پزشکی دانشگاه تربیت مدرس",
+    "value": "University of Tehran Faculty of Physical Education and Sport Science",
+    "label": "دانشکده تربیت بدنی و علوم ورزشی دانشگاه تهران"
   },
   {
-    value: "University of Tabriz College of Veterinary Medicine",
-    label: "دانشکده دامپزشکی دانشگاه تبریز",
+    "value": "Faculty of Management of the University of Tehran",
+    "label": "دانشکده مدیریت دانشگاه تهران"
   },
   {
-    value: "Tehran University of Medical Sciences Dental School",
-    label: "دانشکده دندانپزشکی دانشگاه علوم پزشکی تهران",
+    "value": "Faculty of Psychology and Education of the University of Tehran",
+    "label": "دانشکده روانشناسی و علوم تربیتی دانشگاه تهران"
   },
   {
-    value: "Tehran University of Medical Sciences Faculty of Pharmacy",
-    label: "دانشکده داروسازی دانشگاه علوم پزشکی تهران",
+    "value": "Amir Al-Momenin University of Military Sciences and Technology",
+    "label": "دانشگاه علوم و فنون نظامی امیرالمومنین"
   },
   {
-    value:
-      "Tehran University of Medical Sciences Pharmaceutical Sciences Research Center",
-    label: "مرکز تحقیقات علوم دارویی دانشگاه علوم پزشکی تهران",
+    "value": "Manjil Naval Base",
+    "label": "پایگاه دریایی منجیل"
   },
   {
-    value: "University of Tehran Faculty of Law and Political Science",
-    label: "دانشکده حقوق و علوم سیاسی دانشگاه تهران",
+    "value": "Faculty of Physical Education and Sport Sciences of the University of Tehran",
+    "label": "دانشکده تربیت بدنی و علوم ورزشی دانشگاه تهران"
   },
   {
-    value:
-      "University of Tehran Faculty of Physical Education and Sport Science",
-    label: "دانشکده تربیت بدنی و علوم ورزشی دانشگاه تهران",
+    "value": "Faculty of Science of the Salman Farsi University of Kazerun",
+    "label": "دانشکده علوم دانشگاه سلمان فارسی کازرون"
   },
   {
-    value:
-      "Urmia University of Medical Sciences School of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی دانشگاه علوم پزشکی ارومیه",
+    "value": "Farhangian University of Kazerun",
+    "label": "دانشگاه فرهنگیان کازرون"
   },
   {
-    value: "Faculty of Management of the University of Tehran",
-    label: "دانشکده مدیریت دانشگاه تهران",
+    "value": "Women's Skill National University of Kazerun",
+    "label": "دانشگاه ملی مهارت زنان کازرون"
   },
   {
-    value: "Faculty of Psychology and Education of the University of Tehran",
-    label: "دانشکده روانشناسی و علوم تربیتی دانشگاه تهران",
+    "value": "Faculty of Architecture",
+    "label": "دانشکده معماری"
   },
   {
-    value: "Amir Al-Momenin University of Military Sciences and Technology",
-    label: "دانشگاه علوم و فنون نظامی امیرالمومنین",
+    "value": "Imam Hossein University",
+    "label": "دانشگاه امام حسین"
   },
-  { value: "Manjil Naval Base", label: "پایگاه دریایی منجیل" },
   {
-    value:
-      "Faculty of Physical Education and Sport Sciences of the University of Tehran",
-    label: "دانشکده تربیت بدنی و علوم ورزشی دانشگاه تهران",
+    "value": "Hamadan University of Technology",
+    "label": "دانشگاه صنعتی همدان"
   },
   {
-    value: "Faculty of Science of the Salman Farsi University of Kazerun",
-    label: "دانشکده علوم دانشگاه سلمان فارسی کازرون",
+    "value": "Imam Khomeini International University Department of Law",
+    "label": "گروه حقوق دانشگاه بین‌المللی امام خمینی"
   },
   {
-    value: "Farhangian University of Kazerun",
-    label: "دانشگاه فرهنگیان کازرون",
+    "value": "University of Isfahan Department of Law",
+    "label": "گروه حقوق دانشگاه اصفهان"
   },
   {
-    value: "Women's Skill National University of Kazerun",
-    label: "دانشگاه ملی مهارت زنان کازرون",
+    "value": "University of Mazandaran Faculty of Law and Political Sciences",
+    "label": "دانشکده حقوق و علوم سیاسی دانشگاه مازندران"
   },
-  { value: "Faculty of Architecture", label: "دانشکده معماری" },
   {
-    value: "Shiraz University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی شیراز",
+    "value": "Shiraz University",
+    "label": "دانشگاه شیراز"
   },
-  { value: "Imam Hossein University", label: "دانشگاه امام حسین" },
-  { value: "Hamadan University of Technology", label: "دانشگاه صنعتی همدان" },
   {
-    value: "Mashhad University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی مشهد",
+    "value": "University of Tabriz",
+    "label": "دانشگاه تبریز"
   },
   {
-    value: "Urmia University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی ارومیه",
+    "value": "Sharif University of Technology",
+    "label": "دانشگاه صنعتی شریف"
   },
   {
-    value:
-      "Ahvaz Jondishapour University of Medical Sciences Faculty of Pharmacy",
-    label: "دانشکده داروسازی دانشگاه علوم پزشکی جندیشاپور اهواز",
+    "value": "Islamic Azad University",
+    "label": "دانشگاه آزاد اسلامی"
   },
   {
-    value:
-      "Isfahan University of Medical Sciences and Health Services School of Pharmacy and Pharmaceutical Sciences",
-    label:
-      "دانشکده داروسازی و علوم دارویی دانشگاه علوم پزشکی و خدمات بهداشتی درمانی اصفهان",
+    "value": "Iran University of Art",
+    "label": "دانشگاه هنر ایران"
   },
   {
-    value: "Mashhad University of Medical Sciences Faculty of Pharmacy",
-    label: "دانشکده داروسازی دانشگاه علوم پزشکی مشهد",
+    "value": "Alzahra University",
+    "label": "دانشگاه الزهرا"
   },
   {
-    value:
-      "Tabriz University of Medical Sciences Department of Medicinal Chemistry",
-    label: "گروه شیمی دارویی دانشگاه علوم پزشکی تبریز",
+    "value": "University of Isfahan",
+    "label": "دانشگاه اصفهان"
   },
   {
-    value: "Tabriz University of Medical Sciences Drug Applied Research Center",
-    label: "مرکز تحقیقات کاربردی دارو دانشگاه علوم پزشکی تبریز",
+    "value": "Ferdowsi University of Mashhad",
+    "label": "دانشگاه فردوسی مشهد"
   },
   {
-    value: "Tabriz University of Medical Sciences Faculty of Pharmacy",
-    label: "دانشکده داروسازی دانشگاه علوم پزشکی تبریز",
+    "value": "Amirkabir University of Technology",
+    "label": "دانشگاه صنعتی امیرکبیر"
   },
   {
-    value: "Imam Khomeini International University Department of Law",
-    label: "گروه حقوق دانشگاه بین‌المللی امام خمینی",
+    "value": "Shahid Beheshti University",
+    "label": "دانشگاه شهید بهشتی"
   },
   {
-    value: "University of Isfahan Department of Law",
-    label: "گروه حقوق دانشگاه اصفهان",
+    "value": "Babol Noshirvani University of Technology",
+    "label": "دانشگاه صنعتی نوشیروانی بابل"
   },
   {
-    value: "University of Mazandaran Faculty of Law and Political Sciences",
-    label: "دانشکده حقوق و علوم سیاسی دانشگاه مازندران",
+    "value": "University of Tehran",
+    "label": "دانشگاه تهران"
   },
   {
-    value: "Behbahan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی بهبهان",
+    "value": "Faculty of Foreign Languages and Literatures of the University of Tehran",
+    "label": "دانشکده زبان‌ها و ادبیات خارجی دانشگاه تهران"
   },
-  { value: "Medical University of Dezful", label: "دانشگاه علوم پزشکی دزفول" },
   {
-    value: "Qazvin University of Medical Sciences Qazvin Medical School",
-    label: "دانشکده پزشکی قزوین دانشگاه علوم پزشکی قزوین",
+    "value": "AJA University of Command and Staff",
+    "label": "دانشگاه فرماندهی و ستاد آجا"
   },
   {
-    value: "Iran University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی ایران",
+    "value": "Payame Noor University of Kazerun",
+    "label": "دانشگاه پیام نور کازرون"
   },
   {
-    value: "Ardabil University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی اردبیل",
+    "value": "Imam Khomeini Naval University",
+    "label": "دانشگاه دریایی امام خمینی"
   },
-  { value: "Shiraz University", label: "دانشگاه شیراز" },
-  { value: "University of Tabriz", label: "دانشگاه تبریز" },
-  { value: "Sharif University of Technology", label: "دانشگاه صنعتی شریف" },
-  { value: "Islamic Azad University", label: "دانشگاه آزاد اسلامی" },
   {
-    value: "Faculty of Veterinary Medicine of the University of Tehran",
-    label: "دانشکده دامپزشکی دانشگاه تهران",
+    "value": "Hayati School",
+    "label": "مدرسه حیاتی"
   },
   {
-    value: "Jahrom University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی جهرم",
+    "value": "Faculty of Literature and Humanities of the University of Tehran",
+    "label": "دانشکده ادبیات و علوم انسانی دانشگاه تهران"
   },
-  { value: "Iran University of Art", label: "دانشگاه هنر ایران" },
-  { value: "Alzahra University", label: "دانشگاه الزهرا" },
-  { value: "University of Isfahan", label: "دانشگاه اصفهان" },
-  { value: "Ferdowsi University of Mashhad", label: "دانشگاه فردوسی مشهد" },
   {
-    value: "Amirkabir University of Technology",
-    label: "دانشگاه صنعتی امیرکبیر",
+    "value": "Iran Bethel School",
+    "label": "مدرسه ایران بیتل"
   },
-  { value: "Shahid Beheshti University", label: "دانشگاه شهید بهشتی" },
   {
-    value: "Babol Noshirvani University of Technology",
-    label: "دانشگاه صنعتی نوشیروانی بابل",
+    "value": "Soureh University",
+    "label": "دانشگاه سوره"
   },
   {
-    value: "Shahid Beheshti University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی شهید بهشتی",
+    "value": "Imam Ali Officers' Academy",
+    "label": "دانشگاه افسری امام علی"
   },
-  { value: "University of Tehran", label: "دانشگاه تهران" },
   {
-    value:
-      "Faculty of Foreign Languages and Literatures of the University of Tehran",
-    label: "دانشکده زبان‌ها و ادبیات خارجی دانشگاه تهران",
+    "value": "EnghelÄb-e EslÄmi Technical College",
+    "label": "کالج فنی انقلاب اسلامی"
   },
   {
-    value: "Alborz University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی البرز",
+    "value": "Faculty of Law and Political Science of the University of Tehran",
+    "label": "دانشکده حقوق و علوم سیاسی دانشگاه تهران"
   },
   {
-    value: "AJA University of Command and Staff",
-    label: "دانشگاه فرماندهی و ستاد آجا",
+    "value": "Faculty of Geography of the University of Tehran",
+    "label": "دانشکده جغرافیا دانشگاه تهران"
   },
   {
-    value: "Payame Noor University of Kazerun",
-    label: "دانشگاه پیام نور کازرون",
+    "value": "Salman Farsi University of Kazerun",
+    "label": "دانشگاه سلمان فارسی کازرون"
   },
   {
-    value: "Imam Khomeini Naval University",
-    label: "دانشگاه دریایی امام خمینی",
+    "value": "Islamic Azad University of Tabriz",
+    "label": "دانشگاه آزاد اسلامی واحد تبریز"
   },
-  { value: "Hayati School", label: "مدرسه حیاتی" },
   {
-    value: "Faculty of Literature and Humanities of the University of Tehran",
-    label: "دانشکده ادبیات و علوم انسانی دانشگاه تهران",
+    "value": "Imam Sadiq University",
+    "label": "دانشگاه امام صادق"
   },
-  { value: "Iran Bethel School", label: "مدرسه ایران بیتل" },
-  { value: "Soureh University", label: "دانشگاه سوره" },
-  { value: "Imam Ali Officers' Academy", label: "دانشگاه افسری امام علی" },
   {
-    value: "EnghelÄb-e EslÄmi Technical College",
-    label: "کالج فنی انقلاب اسلامی",
+    "value": "University of Applied Science and Technology",
+    "label": "دانشگاه علمی کاربردی"
   },
   {
-    value: "Faculty of Law and Political Science of the University of Tehran",
-    label: "دانشکده حقوق و علوم سیاسی دانشگاه تهران",
+    "value": "College of Science of the University of Tehran",
+    "label": "دانشکده علوم دانشگاه تهران"
   },
   {
-    value: "Faculty of Geography of the University of Tehran",
-    label: "دانشکده جغرافیا دانشگاه تهران",
+    "value": "Faculty of Economics of the University of Tehran",
+    "label": "دانشکده اقتصاد دانشگاه تهران"
   },
   {
-    value: "Salman Farsi University of Kazerun",
-    label: "دانشگاه سلمان فارسی کازرون",
+    "value": "Khatam al-Anbia Air Defense Academy",
+    "label": "دانشگاه پدافند هوایی خاتم‌الانبیا"
   },
   {
-    value: "Islamic Azad University of Tabriz",
-    label: "دانشگاه آزاد اسلامی واحد تبریز",
+    "value": "Ferdowsi University of Mashhad Faculty of Agriculture",
+    "label": "دانشکده کشاورزی دانشگاه فردوسی مشهد"
   },
-  { value: "Imam Sadiq University", label: "دانشگاه امام صادق" },
   {
-    value: "University of Applied Science and Technology",
-    label: "دانشگاه علمی کاربردی",
+    "value": "Ferdowsi University of Mashhad Faculty of Architecture and Urban Planning",
+    "label": "دانشکده معماری و شهرسازی دانشگاه فردوسی مشهد"
   },
   {
-    value: "College of Science of the University of Tehran",
-    label: "دانشکده علوم دانشگاه تهران",
+    "value": "Ferdowsi University of Mashhad Faculty of Letters and Humanities",
+    "label": "دانشکده ادبیات و علوم انسانی دانشگاه فردوسی مشهد"
   },
   {
-    value: "Hamadan University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی همدان",
+    "value": "Ferdowsi University of Mashhad Faculty of Natural Resources and Environment",
+    "label": "دانشکده منابع طبیعی و محیط زیست دانشگاه فردوسی مشهد"
   },
   {
-    value: "Faculty of Economics of the University of Tehran",
-    label: "دانشکده اقتصاد دانشگاه تهران",
+    "value": "Islamic Azad University Marand Branch",
+    "label": "دانشگاه آزاد اسلامی واحد مرند"
   },
   {
-    value: "Tabriz University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی تبریز",
+    "value": "Islamic Azad University of Maragheh",
+    "label": "دانشگاه آزاد اسلامی واحد مراغه"
   },
   {
-    value: "Tehran University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی تهران",
+    "value": "Shahid Chamran University Department of Law",
+    "label": "گروه حقوق دانشگاه شهید چمران"
   },
   {
-    value: "Khatam al-Anbia Air Defense Academy",
-    label: "دانشگاه پدافند هوایی خاتم‌الانبیا",
+    "value": "Shahid Chamran University Faculty of Physical Education and Sport Sciences",
+    "label": "دانشکده تربیت بدنی و علوم ورزشی دانشگاه شهید چمران"
   },
   {
-    value:
-      "Ahvaz Jondishapour University of Medical Sciences Abadan Faculty of Nursing and Midwifery Abadan",
-    label: "دانشکده پرستاری و مامایی آبادان دانشگاه علوم پزشکی جندیشاپور اهواز",
+    "value": "Lorestan University Faculty of Basic Science",
+    "label": "دانشکده علوم پایه دانشگاه لرستان"
   },
   {
-    value:
-      "Ahvaz Jondishapour University of Medical Sciences Faculty of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی دانشگاه علوم پزشکی جندیشاپور اهواز",
+    "value": "Lorestan University Faculty of Agriculture",
+    "label": "دانشکده کشاورزی دانشگاه لرستان"
   },
   {
-    value:
-      "Ahvaz Jondishapour University of Medical Sciences Faculty of Dentistry",
-    label: "دانشکده دندانپزشکی دانشگاه علوم پزشکی جندیشاپور اهواز",
+    "value": "Islamic Azad University of Masjid-i-Solieman",
+    "label": "دانشگاه آزاد اسلامی واحد مسجدسلیمان"
   },
   {
-    value: "Babol University of Medical Science Faculty of Dentistry",
-    label: "دانشکده دندانپزشکی دانشگاه علوم پزشکی بابل",
+    "value": "Islamic Azad University of Omidiyeh",
+    "label": "دانشگاه آزاد اسلامی واحد امیدیه"
   },
   {
-    value:
-      "Golestan University of Medical Sciences and Health Services Medical School",
-    label: "دانشکده پزشکی دانشگاه علوم پزشکی و خدمات بهداشتی درمانی گلستان",
+    "value": "Islamic Azad University Meshkin Shahr Branch",
+    "label": "دانشگاه آزاد اسلامی واحد مشکین‌شهر"
   },
   {
-    value:
-      "Hamadan University of Medical Sciences School of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی دانشگاه علوم پزشکی همدان",
+    "value": "Islamic Azad University Naein Branch",
+    "label": "دانشگاه آزاد اسلامی واحد نایین"
   },
   {
-    value: "Hamadan University of Medical Sciences School of Dentistry",
-    label: "دانشکده دندانپزشکی دانشگاه علوم پزشکی همدان",
+    "value": "Islamic Azad University of Safashahr",
+    "label": "دانشگاه آزاد اسلامی واحد صفاشهر"
   },
   {
-    value:
-      "Hormozgan University of Medical Sciences School of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی دانشگاه علوم پزشکی هرمزگان",
+    "value": "Islamic Azad University Sarab",
+    "label": "دانشگاه آزاد اسلامی واحد سراب"
   },
-  {
+{
     value:
-      "Isfahan University of Medical Sciences and Health Services School of Nursing and Midwifery",
-    label:
-      "دانشکده پرستاری و مامایی دانشگاه علوم پزشکی و خدمات بهداشتی درمانی اصفهان",
+      "Bozorgmehr University",
+    label: " دانشگاه بزرگمهر قائنات",
   },
-  {
+{
     value:
-      "Isfahan University of Medical Sciences and Health Services Faculty of Dentistry",
-    label:
-      "دانشکده دندانپزشکی دانشگاه علوم پزشکی و خدمات بهداشتی درمانی اصفهان",
-  },
-  {
-    value: "Islamic Azad University of Khorasgan Nursing and Midwifery Faculty",
-    label: "دانشکده پرستاری و مامایی دانشگاه آزاد اسلامی واحد خوراسگان",
-  },
-  {
-    value: "Islamic Azad University of Khorasgan Dentistry College",
-    label: "دانشکده دندانپزشکی دانشگاه آزاد اسلامی واحد خوراسگان",
-  },
-  {
-    value: "Ferdowsi University of Mashhad Faculty of Agriculture",
-    label: "دانشکده کشاورزی دانشگاه فردوسی مشهد",
+      "Azad University of Ferdows",
+    label: " دانشگاه آزاد فردوس",
   },
-  {
+{
     value:
-      "Ferdowsi University of Mashhad Faculty of Architecture and Urban Planning",
-    label: "دانشکده معماری و شهرسازی دانشگاه فردوسی مشهد",
+      "Azad University of Qaenat",
+    label: " دانشگاه آزاد قائنات",
   },
-  {
-    value: "Aja University of Medical Sciences Faculty of Nursing",
-    label: "دانشکده پرستاری دانشگاه علوم پزشکی آجا",
-  },
-  {
-    value: "Ferdowsi University of Mashhad Faculty of Letters and Humanities",
-    label: "دانشکده ادبیات و علوم انسانی دانشگاه فردوسی مشهد",
-  },
-  {
+{
     value:
-      "Ferdowsi University of Mashhad Faculty of Natural Resources and Environment",
-    label: "دانشکده منابع طبیعی و محیط زیست دانشگاه فردوسی مشهد",
-  },
-  {
-    value: "Ferdowsi University of Mashhad Faculty of Veterinary Medicine",
-    label: "دانشکده دامپزشکی دانشگاه فردوسی مشهد",
-  },
-  {
+      "Payame Noor University of Birjand",
+    label: " دانشگاه پیام نور بیرجند",
+  },{
     value:
-      "Lorestan University of Medical Sciences School of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی دانشگاه علوم پزشکی لرستان",
+      "Payame Noor University of Sarbishe",
+    label: " دانشگاه پیام نور سربیشه",
   },
-  {
-    value: "Islamic Azad University Marand Branch",
-    label: "دانشگاه آزاد اسلامی واحد مرند",
-  },
-  {
-    value: "Kerman University of Medical Sciences Faculty of Pharmacy",
-    label: "دانشکده داروسازی دانشگاه علوم پزشکی کرمان",
-  },
-  {
-    value: "Islamic Azad University of Maragheh",
-    label: "دانشگاه آزاد اسلامی واحد مراغه",
-  },
-  {
-    value: "Artesh University of Medical Sciences",
-    label: "دانشگاه علوم پزشکی ارتش",
-  },
-  {
-    value: "Shahid Chamran University Department of Law",
-    label: "گروه حقوق دانشگاه شهید چمران",
-  },
-  {
+{
     value:
-      "Larestan University of Medical Sciences Lar Hazrat-e-Zeinab School of Nursing",
-    label: "دانشکده پرستاری لار حضرت زینب دانشگاه علوم پزشکی لارستان",
+      "Payame Noor University of Qaenat",
+    label: " دانشگاه پیام نور قائنات",
   },
-  {
+{
     value:
-      "Shahid Chamran University Faculty of Physical Education and Sport Sciences",
-    label: "دانشکده تربیت بدنی و علوم ورزشی دانشگاه شهید چمران",
-  },
-  {
-    value: "Lorestan University Faculty of Basic Science",
-    label: "دانشکده علوم پایه دانشگاه لرستان",
-  },
-  {
-    value: "Lorestan University Faculty of Agriculture",
-    label: "دانشکده کشاورزی دانشگاه لرستان",
-  },
-  {
-    value: "Shahid Chamran University Faculty of Veterinary Medicine",
-    label: "دانشکده دامپزشکی دانشگاه شهید چمران",
-  },
-  {
-    value: "Lorestan University Veterinary Faculty",
-    label: "دانشکده دامپزشکی دانشگاه لرستان",
-  },
-  {
-    value: "Islamic Azad University of Masjid-i-Solieman",
-    label: "دانشگاه آزاد اسلامی واحد مسجدسلیمان",
-  },
-  {
-    value: "Islamic Azad University of Omidiyeh",
-    label: "دانشگاه آزاد اسلامی واحد امیدیه",
-  },
-  {
-    value: "Islamic Azad University Meshkin Shahr Branch",
-    label: "دانشگاه آزاد اسلامی واحد مشکین‌شهر",
-  },
-  {
-    value: "Islamic Azad University Naein Branch",
-    label: "دانشگاه آزاد اسلامی واحد نایین",
+      "Payame Noor University of Nehbandan",
+    label: " دانشگاه پیام نور نهبندان",
   },
-  {
-    value: "Islamic Azad University of Safashahr",
-    label: "دانشگاه آزاد اسلامی واحد صفاشهر",
+{
+    value:
+      "Payame Noor University of Saarayan",
+    label: " دانشگاه پیام نور سرایان",
   },
-  {
-    value: "Islamic Azad University Sarab",
-    label: "دانشگاه آزاد اسلامی واحد سراب",
+{
+    value:
+      "Payame Noor University of Tabas",
+    label: " دانشگاه پیام نور طبس",
   },
-  {
+{
     value:
-      "Mashhad University of Medical Sciences Faculty of Nursing and Midwifery",
-    label: "دانشکده پرستاری و مامایی دانشگاه علوم پزشکی مشهد",
+      "Payame Noor University of Khoosf",
+    label: " دانشگاه پیام نور خوسف",
   },
+{
+    value:
+      "Payame Noor University of Boshroye",
+    label: " دانشگاه پیام نور بشرویه",
+  }
 ];
