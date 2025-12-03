@@ -11,5 +11,5 @@ export default [
     // route("login", "routes/auth/login/login.tsx"),
   ]),
 
-  route("dashboard", "routes/dashboard/index.tsx"),
+  route("*", "routes/notfound/404.tsx"),
 ];
