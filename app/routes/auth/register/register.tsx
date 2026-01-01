@@ -29,16 +29,16 @@ const floatingIconsConfig = [
   { icon: "mdi:language-python", color: "#389e0d", minSize: 19, maxSize: 27 },
 
   // Competition & Achievement Icons
-  { icon: "mdi:trophy", color: "#faad14", minSize: 22, maxSize: 30 },
-  { icon: "mdi:medal", color: "#fadb14", minSize: 20, maxSize: 28 },
+  // { icon: "mdi:trophy", color: "#faad14", minSize: 22, maxSize: 30 },
+  // { icon: "mdi:medal", color: "#fadb14", minSize: 20, maxSize: 28 },
   { icon: "mdi:star", color: "#ffe58f", minSize: 16, maxSize: 24 },
   { icon: "mdi:star-four-points", color: "#ff7875", minSize: 16, maxSize: 22 },
-  { icon: "mdi:crown", color: "#ffd666", minSize: 18, maxSize: 26 },
+  // { icon: "mdi:crown", color: "#ffd666", minSize: 18, maxSize: 26 },
 
-  // Team & Group Icons
-  { icon: "mdi:account-group", color: "#722ed1", minSize: 20, maxSize: 28 },
-  { icon: "mdi:account-multiple", color: "#13c2c2", minSize: 18, maxSize: 26 },
-  { icon: "mdi:human-greeting", color: "#eb2f96", minSize: 19, maxSize: 27 },
+  // Ballon Icons
+  { icon: "tabler:ballon", color: "#722ed1", minSize: 20, maxSize: 28 },
+  { icon: "tabler:ballon", color: "#13c2c2", minSize: 18, maxSize: 26 },
+  { icon: "tabler:ballon", color: "#eb2f96", minSize: 19, maxSize: 27 },
 
   // Algorithm & Logic Icons
   { icon: "mdi:brain", color: "#cf1322", minSize: 16, maxSize: 24 },
@@ -48,7 +48,7 @@ const floatingIconsConfig = [
   // Technology & Computer Icons
   { icon: "mdi:desktop-classic", color: "#40a9ff", minSize: 22, maxSize: 30 },
   { icon: "mdi:cpu-64-bit", color: "#36cfc9", minSize: 19, maxSize: 27 },
-  { icon: "mdi:database", color: "#95de64", minSize: 20, maxSize: 28 },
+  // { icon: "mdi:database", color: "#95de64", minSize: 20, maxSize: 28 },
 ];
 
 export default function Register() {
