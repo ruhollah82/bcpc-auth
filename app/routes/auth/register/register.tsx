@@ -72,54 +72,55 @@ export default function Register() {
   } = useRegistration(redirectTo, navigate);
 
   return (
-    <div
-      style={{
-        position: "relative",
-        width: "100%",
-        height: "100vh",
-        overflow: "hidden",
-      }}
-    >
-      <FloatingIcons count={15} icons={memoizedFloatingIcons} zIndex={0} />
+    <>
       <div
-        className="w-full flex justify-center items-start"
-        style={{ position: "relative", zIndex: 1 }}
+        style={{
+          position: "relative",
+          width: "100%",
+          minHeight: "100%",
+        }}
       >
+        <FloatingIcons count={15} icons={memoizedFloatingIcons} zIndex={0} />
         <div
-          className="
+          className="w-full flex justify-center items-start"
+          style={{ position: "relative", zIndex: 1 }}
+        >
+          <div
+            className="
           w-full p-3 
           md:w-[70%] md:p-6 
           max-w-4xl
         "
-        >
-          <div className="text-center mb-6">
-            <Space direction="vertical" size="small">
-              <Image
-                src="/favicon.svg"
-                preview={false}
-                style={{
-                  padding: "10px",
-                  alignItems: "center",
-                }}
-              />
-            </Space>
+          >
+            <div className="text-center mb-6">
+              <Space direction="vertical" size="small">
+                <Image
+                  src="/favicon.svg"
+                  preview={false}
+                  style={{
+                    padding: "10px",
+                    alignItems: "center",
+                  }}
+                />
+              </Space>
+            </div>
+
+            <RegistrationWizard
+              currentStep={currentStep}
+              direction={direction}
+              isSubmitting={isSubmitting}
+              error={error}
+              formData={formData}
+              onNext={handleNext}
+              onBack={handleBack}
+              onSubmit={handleSubmit}
+              onFormDataChange={updateFormData}
+            />
           </div>
 
-          <RegistrationWizard
-            currentStep={currentStep}
-            direction={direction}
-            isSubmitting={isSubmitting}
-            error={error}
-            formData={formData}
-            onNext={handleNext}
-            onBack={handleBack}
-            onSubmit={handleSubmit}
-            onFormDataChange={updateFormData}
-          />
+          <AppModal />
         </div>
-
-        <AppModal />
       </div>
-    </div>
+    </>
   );
 }
