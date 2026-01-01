@@ -24,6 +24,7 @@ export const useRegistration = (redirectTo: string, navigate: any) => {
     organization_id: "",
     phoneNumber: "",
     teamUsers: "",
+    agreementAccepted: false,
   });
 
   const updateFormData = (newData: Partial<FormData>) => {

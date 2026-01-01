@@ -10,6 +10,7 @@ export interface FormData {
   organization_id: string;
   phoneNumber: string;
   teamUsers: string;
+  agreementAccepted: boolean;
 }
 
 export interface StepComponentProps {
