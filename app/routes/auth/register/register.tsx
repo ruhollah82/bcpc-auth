@@ -83,7 +83,13 @@ export default function Register() {
         <FloatingIcons count={15} icons={memoizedFloatingIcons} zIndex={0} />
         <div
           className="w-full flex justify-center items-start"
-          style={{ position: "relative", zIndex: 1 }}
+          style={{
+            position: "relative",
+            zIndex: 1,
+            alignItems: "center",
+            justifyContent: "center",
+            height: "100%",
+          }}
         >
           <div
             className="
